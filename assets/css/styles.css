@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 /*MOBILE SCREEN*/
 @media(max-width:992px){
   /*sidebar popup color and width*/
@@ -24,29 +32,49 @@
     padding-right: 12px;
     padding-bottom: 30px;
   }
-  /*About section*/
-  #about-text{
-    top: 80px;
-    left: 20px;
-    right: 20px;
-  }
-  #about-us{
-    bottom: 70px;
-    left:110px;
-  }
-  /*Feature Section*/
-  #feature-col-right{
+  #home-col-left{
+    text-align: center;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 50px;
   }
-  #feature-gradient-box{
-    text-align: center;
-    align-items: center;
+  #btn-home{
+    margin-left: 17%;
+    margin-right: 17%;
+    margin-top: 30px; 
   }
+
+  /*About section*/
+  #about-text-container{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+ 
+  /*Feature Section*/
+  #feature-container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+
   /*Gallery Section*/
   #gallery-col-left{
     padding-left: 23px;
     padding-right: 30px;
+  }
+
+  /*Connect Section*/
+  #connect-title{
+    padding-bottom: 20px;
+  }
+
+  /*Footer Section*/
+  #footer-text-left{
+    text-align: center;
+  }
+  #footer-text-right{
+    text-align: center;
   }
 }
 
@@ -55,8 +83,8 @@
 @media(min-width:992px){
     /*sidebar popup color and width*/
     .wrapper{
-        width: 80%;
-        background: linear-gradient(to right, rgba(0,59,59,1), rgba(0,139,139,0));
+        width: 100%;
+        background: linear-gradient(to right, rgba(0,59,59,1), rgba(0,139,139,0.75));
     }
     /*sidebar menu items*/
     .wrapper ul{
@@ -69,29 +97,27 @@
       }
   /*Home section*/
   #home-container{
-    padding-top: 40px;
+    padding-top: 10px;
     padding-bottom: 60px;
   }
   #home-text{
     padding-left: 90px;
     padding-top: 80px;
   }
-  /*About section*/
-  #about-text{
-    top: 80px;
-    left: 80px;
-    right: 650px;
-    font-size: 30px; 
-    line-height: 40px;
+  #home-col-left{
+    padding-left: 60px;
   }
-  #about-us{
-    bottom: 130px;
-    left:80px;
+  #home-col-left p{
+  padding-left: 20px;
+  }
+  #btn-home{
+    margin-top: 30px; 
   }
 
-  /*Download Section*/
-  #download-container{
-    padding-top: 50px;
+  /*About section*/
+  #about-text-container{
+    padding-left: 22%;
+    padding-right: 22%;
   }
 
   /*Feature container*/
@@ -113,19 +139,29 @@
     padding-top: 50px;
   }
   #gallery-col-left{
-    padding-top: 100px;
     padding-left: 150px;
     padding-right: 150px;
   }
+  /*Connect with us*/
+  #connect-col-left{
+    padding-left: 40px;
+  }
+  #info-text{
+    padding-left: 40px;
+  }
+
+  /*Footer Section*/
+  #footer-text-left{
+    text-align: left;
+    padding-left: 50px;
+  }
+  #footer-text-right{
+    text-align: right;
+    padding-right: 50px;
+  }
 }
 /* NAV SIDEBAR */
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+
 .wrapper{
   display: none;
   position: fixed;
@@ -219,9 +255,10 @@
     width: 40px;
 }
 
-#navbar{
+.navbar{
     height: 80px;
     margin-bottom: 50px;
+    background-color: white;
 }
 
 /*Home section*/
@@ -232,10 +269,17 @@
 }
 #home-col-left{
 }
+#home-col-left p{
+  color: #787878;
+  padding-top: 20px;
+  font-size: 18px;
+}
 #home-col-right{
 }
 #home-img{
   max-width: 100%;
+}
+#btn-home{
 }
 
 /*About section*/
@@ -245,76 +289,76 @@
 }
 
 #about-container{
-  position: relative;
-  margin-top: 50px;
-  margin-bottom: 70px;
+  background-color: #F4F9FA ;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 70px;
 }
-#about-text{
-  position: absolute;
-  color: white;
+#about-container h1{
   letter-spacing: 0.08em;
 }
-#about-us{
-  position: absolute;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  justify-content: center;
+#about-container p{
+  letter-spacing: 0.08em;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: #555;
+}
+#btn-abt-section{
   width: 150px;
-  border: 1px solid;
-  border-radius: 20px;
-  background: linear-gradient(to right, #C3519C,#EE4322);
-  padding-top: 5px;
+  height: 40px;
+  border: 4px solid transparent; 
+  border-image: linear-gradient(-45deg, #7AEBEB, #162A6F);
+  border-image-slice: 1;
 }
-#about-us :hover{
+#btn-abt-section a{
+  text-decoration: none;
+  color: black;
 }
-
+#btn-abt-section a:hover{
+  color: #7aebeb;
+}
 
 /*Feature Section*/
 #feature-container{
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-#feature-col-left{
+  padding-bottom: 90px;
   text-align: center;
 }
-.ifram{
+#feature-link{
+  text-decoration: none;
+  color: #162A6F;
 }
-#feature-title{
-  font-size: 20px;
-  font-weight: bold;
-  font-family: Aveny T, Franklin Gothic, Helvetica Neue, Helvetica, Arial, sans-serif;;
-  padding-top: 30px;
-}
-#feature-text{
-  letter-spacing: 0.08em;
-  font-family: Franklin Gothic, Helvetica Neue, Helvetica, Arial, sans-serif;;
-  font-size: 30px;
-  font-weight:300;
-}
-
 
 /*Gallery Container*/
 #gallery-container{
+  padding-top: 80px;
   padding-bottom: 50px;
 }
 #gallery-col-left{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 #gallery-title{
-  font-size: 22px;
   font-weight: bold;
   font-family: Aveny T, Franklin Gothic, Helvetica Neue, Helvetica, Arial, sans-serif;;
-  padding-top: 30px;
+  padding-bottom: 30px;
 }
 #gallery-text{
+  padding-bottom: 20px;
   letter-spacing: 0.08em;
   font-family: Franklin Gothic, Helvetica Neue, Helvetica, Arial, sans-serif;;
   font-size: 30px;
   font-weight:300;
 }
+#bubo-text{
+  color: #162A6F;
+  font-weight: bold;
+}
 
 /*Download Section*/
+  /*Download Section*/
 #download-container{
+    padding-top: 80px;
   text-align: center;
   margin-bottom: 70px;
 }
@@ -324,6 +368,39 @@
 }
 
 
+/*Connect With US*/
+#connect{
+  text-align: center;
+  background-color: #F4F9FA;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#connect-title{
+  font-weight: bold;
+}
+#info-text{
+  color: #787878;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 0.08em;
+  line-height: 15px;
+}
+#btn-connect-icon{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  margin: 10px;
+}
+
+#btn-connect-icon a{
+  text-decoration: none;
+  color: black;
+}
+#btn-connect-icon a:hover{
+  color: #7AEBEB;
+}
 /*Footer*/
 #footer{
 }
@@ -331,21 +408,19 @@
   text-align: center;
   font-size: small;
   font-family: Arial, Helvetica, sans-serif;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 40px;
 }
-#footer-text{
+#footer-text-left{
   font-size: 18px;
-  color: #095053;
+  color: #787878;
 }
-#footer i{
-  font-size:xx-large;
-  padding: 5px;
-  padding-top: 20px;
-  color: #2B8388;
+#footer-text-right{
+  font-size: 18px;
 }
-#footer i:hover{
-  color: #095053;
+#footer-text-right a{
+  text-decoration: none;
+  color: #787878;
 }
 
   /*next and previous icon*/
@@ -374,14 +449,16 @@
   max-width: 100%;
 } 
 
+
+
+
 #gradient-box{
   text-align: center;
   justify-content: center;
   width: 120px;
   height: 50px;
-  /* transform: translate(-50%, -50%); */  
  border: 4px solid transparent; 
- border-image: linear-gradient(-45deg, #ff0, #f0f);
+ border-image: linear-gradient(-45deg, #7AEBEB, #162A6F);
  /* extra #ff0, #00f, #0f0*/
  border-image-slice: 1;
  margin-top: 25px;
@@ -394,3 +471,7 @@
   color: black;
   padding-top: 10px;
 }
+#gradient-box :hover{
+  color: #7aebeb;
+}
+
