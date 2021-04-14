@@ -28,6 +28,7 @@ $(".wrapper a").click(function(){
     })
 });
 
+
 // Home Section 
 $('#home-carousel').owlCarousel({
     autoplay: true,
@@ -112,21 +113,3 @@ $('#feature-carousel').owlCarousel({
         }
     }
 });
-
-
-
-$( window ).on( "load", function() {
-    mainNav();
-    $(window).scroll(function() {
-        mainNav();
-    });
-    function mainNav() {
-        var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-        if (top){
-        $('.navbar').start().animate({
-            "opacity": "1",
-            "top": "0",
-        });
-        }
-	}
-     });
