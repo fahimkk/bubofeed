@@ -22,11 +22,16 @@
 <body>
 
 
-<nav class="navbar sticky-top navbar-expand-lg navbar-light" >
-    <h2 class="mx-auto pt-3">
+<nav class="navbar sticky-top navbar-expand-lg navbar-light " >
+<div style="display: flex; flex-direction: row; align-items: center; position: absolute; left: 40%; justify-content: center;" >
+    <a href="#home-section">
+        <img src="./assets/images/logo/bubo_logo_small.png" class="img-thumbnail" alt="..." id="bubo-btn">
+    </a>
+
+    <h2 class="mx-auto pt-2 px-2">
         BUBOFEED
     </h2>
-
+</div>
     <button class="menu-btn">
        <i class="fas fa-bars"></i>
     </button>
@@ -34,10 +39,6 @@
     <button id="menu-btn-close">
        <i class="fas fa-times"></i>
     </button>
-
-    <a href="#home-section">
-        <img src="./assets/images/bubo_logo_small.png" class="img-thumbnail" alt="..." id="bubo-btn">
-    </a>
 
   <div class="wrapper">
     <!--Sidebar nav-->
@@ -58,25 +59,37 @@
     <div class="row" id="home-container">
         <div class="col-lg-6" id="home-col-left">
             <h1 class="display-3" style="font-weight: bold;">
-                Bored with repetitive and irrelevant ads!
+                Make recommendations matter!
             </h1>
             <p>
-               BuboFeed a personal recommendation platform to connect the right message to the right user, at the right time, in the digital world.
+                No more repetitive and irrelevant suggestions. Don't let Netflix & Google decide everything you should watch and read.
             </p>
             <div id="btn-home">
-                <div class="center">
+                <!-- <div class="center">
                     <div class="outer button">
                         <button>Get Started</button>
                         <span></span>
                         <span></span>
                     </div>
-                 </div>
+                 </div> -->
+                <a href="#">
+                    <img 
+                        src="assets/images/download_section/google-play-badge-128x128.png"
+                        height="45"
+                    >
+                </a>
             </div>
         </div>
         <div class="col-lg-6" id="home-col-right" >
             <div class="owl-carousel " id="home-carousel">
-                <img class="img-fluid" src="./assets/images/home-1.jpg" alt="profile image" id="home-img">
-                <img class="img-fluid" src="./assets/images/home-section.jpg" alt="profile image" id="home-img">
+<!-- 
+                <img class="img-fluid" src="./assets/images/home_section/mixed_phones.png" alt="profile image" id="home-img">
+                <img class="img-fluid" src="./assets/images/home_section/home-section.jpg" alt="profile image" id="home-img">
+ -->            
+                <video width="100%" height="auto" autoplay muted loop>
+                    <source src="assets/videos/bubofeed.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </div>
@@ -85,17 +98,17 @@
     <div id="about-section" style="padding:30px;"></div>
     <div id="about-container">
         <div class="mx-auto" id="about-text-container">
-            <h1 class="display-5" style="font-weight: bold;">
-                A Future Marketing Platform
-            </h1>
-            <p>
-                We are a passionate start-up, based out of Singapore, with a vision to give users a memorable browsing experience while looking for recommendations. Currently, we manage personal recommendations for movies, music, books, and travel. We will soon be extending our platform to change the way you experience online advertisements too! 
-            </p>
-            <button id="btn-abt-section">
-                <a href="#about-container">
-                    Get In Touch
-                </a>
-            </button>
+            <h1 class="display-3" id="about-title">
+                    Why <span> BUBOFEED</span>!
+                </h1>
+            <div>
+                <li>
+                    Truly personalised recommendations
+                </li>
+                <li>
+                    BuboFeed gives the user true Privacy
+                </li>
+            </div>
         </div>
     </div>
     
@@ -104,23 +117,46 @@
         <div class="row" id="gallery-container">
             <div class="col-lg-6" id="gallery-col-left">
                 <h1 class="display-3" id="gallery-title">
-                    Why <span> BUBOFEED</span>!
+                    Features
                 </h1>
-                <h1 class="" id="gallery-text">
-                    Join <span id="bubo-text">BuboFeed</span> and say yes to making every recommendation matter. 
-                </h1>
-                <div id="gradient-box">
-                    <a href="#" >
-                        <h5 id="gradient-box-text">
-                            Join Us
-                        </h5>
-                    </a>
-                </div>
+
+                <div>
+                    <i class="fas fa-video fa-lg" id="feature-icon"></i>
+                    <p id="feature-icon-text">Select your favourite genres</p>
+                </div> 
+                <div>
+                    <i class="fas fa-star-half-alt fa-lg" id="feature-icon"></i>
+                    <p id="feature-icon-text">Start rating to get personalised discovery</p>
+                </div> 
+                <div>
+                    <i class="fab fa-slideshare fa-lg" id="feature-icon"></i>
+                    <p id="feature-icon-text">Ask for recommendations and give suggestions</p>
+                </div> 
+
+                <div>
+                    <i class="fas fa-robot fa-lg" id="feature-icon"></i>
+                    <p id="feature-icon-text">Get content recommendations from BuboFeed </p>
+                </div> 
+                <div>
+                    <i class="fab fa-bitbucket fa-lg" id="feature-icon"></i>
+                    <p id="feature-icon-text">Add Movies and Videos to MyList</p>
+                </div> 
+                <div>
+                    <i class="fas fa-users fa-lg" id="feature-icon"></i>
+                    <p id="feature-icon-text">Bubofeed also recommends Friends</p>
+                </div> 
+
+
+
             </div>
             <div class="col-lg-6" id="gallery-col-right" >
                 <div class="owl-carousel owl-theme" id="gallery-carousel">
-                    <img class="img-fluid" src="./assets/images/gallery-img-1.png" alt="profile image" >
-                    <img class="img-fluid" src="./assets/images/gallery-2.png" alt="profile image" >
+                    <img class="img-fluid" src="./assets/images/gallery_section/automated_feed.png" alt="profile image" >
+                    <img class="img-fluid" src="./assets/images/gallery_section/personal_feed.png" alt="profile image" >
+                    <img class="img-fluid" src="./assets/images/gallery_section/recommended.png" alt="profile image" >
+                    <img class="img-fluid" src="./assets/images/gallery_section/ask_rec.png" alt="profile image" >
+                    <img class="img-fluid" src="./assets/images/gallery_section/profile_page.png" alt="profile image" >
+                    <img class="img-fluid" src="./assets/images/gallery_section/friends.png" alt="profile image" >
                 </div>
             </div>
         </div>
@@ -128,7 +164,7 @@
 
         
     <!--FEATURE SECTION-->
-    <div style="padding:35px;" id="feature-section"></div>
+    <!-- <div style="padding:35px;" id="feature-section"></div>
     <div id="feature-container">
         <h1 class="display-3" id="feature-title">
             Features
@@ -137,7 +173,10 @@
             <div class="card mb-3 mx-auto" style="max-width: 540px; background-color: #a88989;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="./assets/images/home-1.jpg" alt="Static Site Generator" class="card-img-top" width="100%" height="100%">
+                        <img src="./assets/images/features_section/home-1.jpg"
+                            alt="Static Site Generator"
+                            class="card-img-top"
+                            width="100%" height="100%">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body" style="background-color: white;">
@@ -154,12 +193,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <!--CONTACT SECTION-->
     <div style="padding:45px;" id="contact-section"></div>
-    <div id="connect" >
+    <!-- <div id="connect" >
         <div class="mx-auto"  >
             <h1 class="display-6" id="connect-title">
                 Connect with us 
@@ -201,29 +240,66 @@
             </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-
-
-<!--DOWNLOAD SECTION-->
-    <div class="mx-auto" id="download-container">
-        <h1 class="display-4" id="download-text">
-            Download for iOS/Android.
-        </h1>
-        <div class="row">
-            <div class="col">
-                <a href="#">
-                    <img src="https://scontent.fcok2-1.fna.fbcdn.net/v/t39.8562-6/85197745_206316130499918_4546292096213975040_n.svg?_nc_cat=104&ccb=1-3&_nc_sid=6825c5&_nc_ohc=bx0cPcFffRAAX-NfF0A&_nc_ht=scontent.fcok2-1.fna&oh=ff0171f435c643224ef5c690b34399f4&oe=609B5751" class="float-end">
-                </a>
+    <div id="connect" >
+        <div class="mx-auto"  >
+            <h1 class="display-6" id="connect-title">
+                Connect with us 
+            </h1>
+            <div class="" >
+            <div class="" style="margin-top: 30px;">
+                <h6 id="info-text">370&nbspDixon&nbspRoad</h6>
+                <h6 id="info-text">Etobicoke</h6>
+                <h6 id="info-text">ON&nbspM9R1T2</h6>
+                <h6 id="info-text">Canada</h6>
+                <h6 id="info-text">www.wendorse.com</h6>
             </div>
-            <div class="col">
-                <a href="#">
-                    <img src="https://scontent.fcok2-1.fna.fbcdn.net/v/t39.8562-6/84279797_181209673129500_6131500912406953984_n.svg?_nc_cat=102&ccb=1-3&_nc_sid=6825c5&_nc_ohc=C9XcnkFZ3ZIAX-zwfeU&_nc_ht=scontent.fcok2-1.fna&oh=10c4639f0bdabce695eb4ec355cdab15&oe=609AA42E" class="float-start">
-                </a>
             </div>
         </div>
     </div>
 
+<!--DOWNLOAD SECTION Both ios and android-->
+    <!-- <div class="mx-auto" id="download-container">
+        <h1 class="display-4" id="download-text">
+            Download for iOS/Android.
+        </h1>
+        <div class="row" style="align-items: center; ">
+            <div class="col-lg-6">
+                <a href="#">
+                    <img 
+                        class="play-store-img"
+                        src="assets/images/download_section/google-play-badge-128x128.png"
+                        height="50"
+                    >
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <a href="#">
+                    <img
+                        class="apple-store-img"
+                        src="assets/images/download_section/apple_store.png"
+                        height="50"
+                    >
+                </a>
+            </div>
+        </div>
+    </div> -->
+
+<!--DOWNLOAD SECTION-->
+    <div class="mx-auto" id="download-container">
+        <h1 class="display-4" id="download-text">
+            Download for Android/iOS Soon.
+        </h1>
+        <div class="mx-auto" style="align-items: center; ">
+                <a href="#">
+                    <img 
+                        src="assets/images/download_section/google-play-badge-128x128.png"
+                        height="50"
+                    >
+                </a>
+        </div>
+    </div>
 </div>
 
     <!-- Social media icon-->
@@ -244,7 +320,7 @@
             <div class="col-lg-6" id="footer-text-left">
                 &copy; 2021 Wendorse, All rights reserved.
             </div>
-            <div class="col-lg-6" id="footer-text-right">
+            <!-- <div class="col-lg-6" id="footer-text-right">
                 <a href="footer">
                     Terms &nbsp; &nbsp;
                 </a>
@@ -254,7 +330,7 @@
                 <a href="footer">
                    FAQs 
                 </a>
-            </div>
+            </div> -->
         </div>
    </footer>
 

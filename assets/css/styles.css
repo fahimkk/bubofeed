@@ -36,12 +36,10 @@
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
-    padding-bottom: 50px;
   }
   #btn-home{
-    margin-left: 16%;
-    margin-right: 16%;
-    margin-top: 30px; 
+    align-items: center;
+    margin-bottom: 20px;
   }
 
 
@@ -65,14 +63,24 @@
   #gallery-col-left{
     padding-left: 23px;
     padding-right: 30px;
+    text-align: center;
   }
 
+  #feature-icon{
+    display: none;
+  }
 
   /*CONTACT SECTION-MOBILE*/
   #connect-title{
     padding-bottom: 20px;
   }
 
+  /*DOWNLOAD SECTION*/
+  .play-store-img{
+    margin-bottom: 15px;
+  }
+  .apple-store-img{
+  }
 
   /*FOOTER SECTION-MOBILE*/
   #footer-text-left{
@@ -120,7 +128,8 @@
   padding-left: 20px;
   }
   #btn-home{
-    margin-top: 30px; 
+    text-align: center;
+    margin-left: -100px;
   }
 
 
@@ -135,7 +144,7 @@
   #feature-col-right{
     padding-right: 100px;
   }
-  #feature-title{
+  #feature-title-old{
     padding-bottom: 70px;
   }
 
@@ -149,13 +158,20 @@
     padding-right: 150px;
   }
 
+  #feature-icon{
+    display: block;
+  background: -webkit-linear-gradient(#00ffcc, #2a7fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
   /*CONTACT SECTION-LAPTOP*/
   #connect-col-left{
     padding-left: 40px;
   }
   #info-text{
-    padding-left: 40px;
+    /* adding-left: 40px; */
   }
 
 
@@ -170,6 +186,18 @@
     font-size: 18px;
     padding-right: 50px;
   }
+
+  /*DOWNLOAD SECTION - LAPTOP*/
+  .play-store-img{
+    float: right;
+    padding-right: 10px;
+  }
+  .apple-store-img{
+    float: left;
+    padding-left: 10px;
+  }
+
+
 }
 /* ============ END LAPTOP SECTION ============= */ 
 
@@ -194,7 +222,7 @@
   z-index: 2;
   left: 20px;
   /* left: 20px; */
-  top: 16px;
+  top: 12px;
   height: 50px;
   width: 50px;
   text-align: center;
@@ -214,7 +242,7 @@
   z-index: 2;
   left: 20px;
   /* left: 20px; */
-  top: 16px;
+  top: 12px;
   height: 50px;
   width: 50px;
   text-align: center;
@@ -264,12 +292,9 @@
 }
 /*bubo button on top*/
 #bubo-btn{
-    position: absolute;
     border: none;
-    right: 8%;
-    top: 20px;
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
 }
 
 .navbar{
@@ -338,7 +363,7 @@
   padding-bottom: 20px;
   text-align: center;
 }
-#feature-title{
+#feature-title-old{
   text-align: center;
   font-weight: bold;
   font-family: Aveny T, Franklin Gothic, Helvetica Neue, Helvetica, Arial, sans-serif;;
@@ -352,16 +377,34 @@
 /*GALLERY SECTION*/
 #gallery-container{
   padding-top: 80px;
-  padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
 }
 #gallery-col-left{
-  padding-top: 30px;
   padding-bottom: 30px;
 }
+#about-title{
+  font-weight: bold;
+  font-family: Aveny T, Franklin Gothic, Helvetica Neue, Helvetica, Arial, sans-serif;;
+  padding-bottom: 30px;
+  background-size: 100%;
+  background-image: linear-gradient(45deg, #7AEBEB, #162A6F);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
 #gallery-title{
   font-weight: bold;
   font-family: Aveny T, Franklin Gothic, Helvetica Neue, Helvetica, Arial, sans-serif;;
   padding-bottom: 30px;
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
 }
 #gallery-text{
   padding-bottom: 20px;
@@ -370,20 +413,27 @@
   font-size: 30px;
   font-weight:300;
 }
+
 #bubo-text{
   color: #162A6F;
   font-weight: bold;
+}
+#feature-icon-text{
+  color: #5E574C;
+  padding: 10px;
+  font-size: 17px;
+  letter-spacing: 0.08em;
 }
 
 
 /*DOWNLOAD SECTION*/
 #download-container{
-    padding-top: 80px;
+  padding-top: 80px;
   text-align: center;
   margin-bottom: 70px;
 }
 #download-text{
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   letter-spacing: 0.05em;
 }
 
@@ -392,7 +442,8 @@
 #connect{
   text-align: center;
   background-color: #F4F9FA;
-  padding-top: 80px;
+  /* padding-top: 80px; */
+  padding-top: 70px;
   padding-bottom: 60px;
 }
 #connect-title{
@@ -453,7 +504,7 @@
   }
   .owl-prev, .owl-next{
     position: absolute;
-    top: 35%;
+    top: 36%;
   }
   .owl-prev span, .owl-next span{
     font-size: 60px;

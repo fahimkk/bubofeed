@@ -59,11 +59,13 @@ $('#home-carousel').owlCarousel({
 // Gallery section 
 $('#gallery-carousel').owlCarousel({
     autoplay: true,
+    autoplayTimeout: 1500,
     autoplayHoverPause: true,
     loop: true,
     items:1,
     nav: true,
     dots: true,
+    smartSpeed:500,
     responsive:{
     // display resolution
         0:{
