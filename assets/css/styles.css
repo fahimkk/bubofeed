@@ -22,7 +22,9 @@
     list-style: none;
     text-align: left;
   }
-
+  .wrapper ul li a{
+    font-size: 20px;
+  }
   #header-logo{
     display: flex; 
     flex-direction: row;
@@ -124,6 +126,10 @@
         list-style: none;
         text-align: left;
       }
+
+  .wrapper ul li a{
+    font-size: 30px;
+  }
 
   #header-logo{
     display: flex; 
@@ -286,7 +292,6 @@
 .wrapper ul li a{
   color: none;
   text-decoration: none;
-  font-size: 25px;
   font-weight: 500;
   padding: 5px 30px;
   color: #fff;
