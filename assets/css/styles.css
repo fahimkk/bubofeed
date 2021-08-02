@@ -179,7 +179,7 @@
   
   /*GALLERY SECTION-LAPTOP*/
   #gallery-container{
-    padding-top: 50px;
+    padding-top: 30px;
   }
   #gallery-col-left{
     padding-left: 150px;
@@ -414,7 +414,7 @@
 
 /*GALLERY SECTION*/
 #gallery-container{
-  padding-top: 80px;
+  padding-top: 30px;
   justify-content: center;
   align-items: center;
 }
