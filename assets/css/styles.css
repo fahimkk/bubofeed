@@ -23,9 +23,18 @@
     text-align: left;
   }
 
-
+  #header-logo{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    left: 30%;
+    justify-content: center;
+  }
   /*HOME SECTION-MOBILE*/
   #home-container{
+    align-items: center;
+    justify-content: center;
   }
   #home-text{
     padding-left: 12px;
@@ -34,8 +43,8 @@
   }
   #home-col-left{
     text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   #btn-home{
     align-items: center;
@@ -45,9 +54,12 @@
 
   /*ABOUT SECTION-MOBILE*/
   #about-text-container{
-    padding-left: 10%;
-    padding-right: 10%;
   }
+  #secure_circle{
+    position: relative;
+    left: 18%;
+  }
+
 
  
   /*FEATURE SECTION-MOBILE*/
@@ -113,6 +125,14 @@
         text-align: left;
       }
 
+  #header-logo{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    left: 40%;
+    justify-content: center;
+  }
 
   /*HOME SECTION-LAPTOP*/
   #home-container{
@@ -135,10 +155,12 @@
 
   /*ABOUT SECTION-LAPTOP*/
   #about-text-container{
-    padding-left: 22%;
-    padding-right: 22%;
   }
-
+  #secure_circle{
+    position: relative;
+    left: 35%;
+    top: 20%;
+  }
 
   /*FEATURE SECTION- LAPTOP*/
   #feature-col-right{
@@ -327,10 +349,22 @@
 
 /*ABOUT SECTION*/  
 #about-container{
-  background-color: #F4F9FA ;
+  /* background-color: #F4F9FA ; */
   text-align: center;
   padding-top: 80px;
   padding-bottom: 70px;
+}
+#about-col-left{
+}
+#about-col-right{
+}
+#secure_circle{
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  background-color: #162a6f;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 #about-container h1{
   letter-spacing: 0.08em;
@@ -340,7 +374,6 @@
   padding-top: 30px;
   padding-bottom: 20px;
   font-size: 20px;
-  color: #555;
 }
 #btn-abt-section{
   width: 150px;

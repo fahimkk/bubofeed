@@ -23,7 +23,7 @@
 
 
 <nav class="navbar sticky-top navbar-expand-lg navbar-light " >
-<div style="display: flex; flex-direction: row; align-items: center; position: absolute; left: 40%; justify-content: center;" >
+<div id="header-logo" >
     <a href="#home-section">
         <img src="./assets/images/logo/bubo_logo_small.png" class="img-thumbnail" alt="..." id="bubo-btn">
     </a>
@@ -44,10 +44,10 @@
     <!--Sidebar nav-->
       <ul>
         <li><a href="#home-section">Home</a></li>
-        <li><a href="#about-section">About</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#feature-section">Features</a></li>
+        <li><a href="#about-section">Why BuboFeed</a></li>
+        <li><a href="#gallery">Features</a></li>
         <li><a href="#contact-section">Contact Us</a></li>
+        <li><a href="https://bubofeed.com/blogs">Blogs</a></li>
       </ul>
     </div>
 </nav>
@@ -96,22 +96,40 @@
 
     <!--ABOUT SECTION-->
     <div id="about-section" style="padding:30px;"></div>
-    <div id="about-container">
+    <div id="about-container" >
         <div class="mx-auto" id="about-text-container">
             <h1 class="display-3" id="about-title">
                     Why <span> BUBOFEED</span>!
                 </h1>
-            <div>
-                <li>
-                    Truly personalised recommendations
-                </li>
-                <li>
-                    BuboFeed gives the user true Privacy
-                </li>
+
+            <div class="row g-0 mx-auto" >
+            <div class="col-md-6 " style="background-color: #D0E9EB; padding-top: 40px;">
+                <div>
+                    <img src="./assets/images/personal_rec.png"
+                        alt="Static Site Generator"
+                        width="250px" height="300px">
+                    <p >
+                        Truly personalised recommendations
+                    </p>
+                </div>
             </div>
+            <div class="col-md-6 mx-auto" style="background-color: #EDF8F5;">
+                <div style="padding-top:70px;">
+                    <div id="secure_circle">
+                        <i class="fas fa-lock fa-5x" style="color: white; padding-top: 70px;"></i>
+                    </div>
+                    <p >
+                        BuboFeed gives the user true Privacy
+                    </p>
+               </div> 
+            </div>
+        </div>
+
         </div>
     </div>
     
+
+
     <!--GALLERY SECTION-->
     <div class="container-fluid" id="gallery">
         <div class="row" id="gallery-container">
@@ -163,38 +181,6 @@
     </div>
 
         
-    <!--FEATURE SECTION-->
-    <!-- <div style="padding:35px;" id="feature-section"></div>
-    <div id="feature-container">
-        <h1 class="display-3" id="feature-title">
-            Features
-        </h1> 
-        <div class="owl-carousel owl-theme" id="feature-carousel">
-            <div class="card mb-3 mx-auto" style="max-width: 540px; background-color: #a88989;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="./assets/images/features_section/home-1.jpg"
-                            alt="Static Site Generator"
-                            class="card-img-top"
-                            width="100%" height="100%">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body" style="background-color: white;">
-                            <h5 class="card-title">
-                                <a href="projects/static-site-generator.html" id="feature-link">
-                                    New Feature Title Link
-                                </a>
-                            </h5>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi ipsum tempora possimus eveniet aliquam molestiae eos fugiat natus omnis commodi delectus, inventore ducimus quis dolore ad doloribus asperiores sit explicabo?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
 
     <!--CONTACT SECTION-->
     <div style="padding:45px;" id="contact-section"></div>
@@ -336,3 +322,29 @@
 
 </body>
 </html>
+
+
+<!-- <div class="owl-carousel owl-theme" id="feature-carousel">
+            <div class="card mb-3 mx-auto" style="max-width: 540px; background-color: #a88989;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./assets/images/features_section/home-1.jpg"
+                            alt="Static Site Generator"
+                            class="card-img-top"
+                            width="100%" height="100%">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body" style="background-color: white;">
+                            <h5 class="card-title">
+                                <a href="projects/static-site-generator.html" id="feature-link">
+                                    New Feature Title Link
+                                </a>
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi ipsum tempora possimus eveniet aliquam molestiae eos fugiat natus omnis commodi delectus, inventore ducimus quis dolore ad doloribus asperiores sit explicabo?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
