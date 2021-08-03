@@ -59,7 +59,7 @@ $('#home-carousel').owlCarousel({
 // Gallery section 
 $('#gallery-carousel').owlCarousel({
     autoplay: true,
-    autoplayTimeout: 1500,
+    autoplayTimeout: 2500,
     autoplayHoverPause: true,
     loop: true,
     items:1,
