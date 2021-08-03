@@ -76,7 +76,7 @@
   #feature-col-left{
     margin-left: 40px;
     margin-right: 10px;
-    padding-top: 30px;
+    padding-top: 40px;
   }
   #feature-container{
   }
@@ -536,7 +536,7 @@
   text-align: center;
   /* background-color: #F4F9FA; */
   /* padding-top: 80px; */
-  padding-bottom: 80px;
+  padding-bottom: 90px;
 }
 #connect-title{
   font-weight: bold;
