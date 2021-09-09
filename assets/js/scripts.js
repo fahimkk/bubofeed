@@ -33,6 +33,8 @@ $(".wrapper a").click(function(){
 $('#home-carousel').owlCarousel({
     autoplay: true,
     autoplayHoverPause: true,
+    autoplayTimeout: 2000,
+    smartSpeed:1500,
     loop: true,
     dots: true,
     items:1,

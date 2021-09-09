@@ -22,26 +22,26 @@
 <body>
 
 
-<nav class="navbar sticky-top navbar-expand-lg navbar-light ">
-  <div class="container-fluid" style="background-color: white;">
+<nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #152a6e;">
+  <div class="container-fluid" style="background-color: #152a6e;">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="menu_text">
       <span class="navbar-toggler-icon" id="menu_icon"></span>
     </button>
-    <a class="navbar-brand" id="bubo-nav-logo" href="#">
-        <img src="./assets/images/logo/bubo_logo_small.png" class="img-thumbnail" alt="..." id="bubo-btn">
+    <a class="navbar-brand" id="bubo-nav-logo" href="#" style="color: white;">
+        <img src="./assets/images/logo/1024.png" class="img-thumbnail" alt="..." id="bubo-btn" style="background-color: #152a6e;">
         BuboFeed
     </a>
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <!--mx auto to align it center-->
       <ul class="navbar-nav me-5 ">
         <li class="nav-item  active">
-          <a class="nav-link" aria-current="page" href="./index.html" id="nav-item-text">Home</a>
+          <a class="nav-link" aria-current="page" href="#" id="nav-item-text" style="color: white;">Home</a>
         </li>
         <li class="nav-item  active">
-          <a class="nav-link" aria-current="page" href="./explore.html" id="nav-item-text">Explore</a>
+          <a class="nav-link" aria-current="page" href="./explore.html" id="nav-item-text" style="color: white;">Explore</a>
         </li>
         <li class="nav-item  active">
-          <a class="nav-link" aria-current="page" id='nav-item-text' href="./why-us.html">Why Us</a>
+          <a class="nav-link" aria-current="page" id='nav-item-text' href="./why-us.html" style="color: white;">Why Us</a>
         </li>
       </ul>
 
@@ -51,16 +51,15 @@
 
 
 
-<div class="container-fluid" id="main-container">
 
     <!--HOME SECTION-->
-    <div style="padding:35px;" id="home-section"></div>
-    <div class="row" id="home-container">
+    <div style="padding:50px;" id="home-section"></div>
+    <div class="row g-0" id="home-container">
         <div class="col-lg-7" id="home-col-left">
-            <h1 class="display-5" style="font-weight: bold;">
+            <h1 class="display-5" id="home-title" >
                 Tried of Netflix & Google deciding what you should watch or read?
             </h1>
-            <p>
+            <p id="home-text">
                 Get real movie, book, TV & bideo suggestions from real people
             </p>
             
@@ -68,20 +67,29 @@
         <div class="col-lg-5" id="home-col-right" >
             <div class="owl-carousel " id="home-carousel">
                 <img 
-                    src="assets/images/home_section/mixed_phones.png"
-                    height="350px"
+                    src="assets/images/home_section/bubo-collash-3.png"
+                    height="310px"
+                > 
+                <img 
+                    src="assets/images/home_section/bubo-collash-2.png"
+                    height="310px"
+                > 
+                <img 
+                    src="assets/images/home_section/bubo-collash-dark.png"
+                    height="310px"
                 > 
             </div>
         </div>
     </div>
 
+
     <!--REC SECTION-->
-    <div id="about-section" style="padding:40px;"></div>
+    <div id="about-section" style="padding:50px;"></div>
     <div id="rec-container" >
         <h1 class="display-5" id="rec-title">
             No more random & repetitive recommendations
         </h1>
-        <div class="row" style="align-items: center;" >
+        <div class="row g-0" style="align-items: center;" >
             <div class="col-lg-6" id="rec-col-left">
                 <video width="100%" height="auto" autoplay muted loop>
                     <source src="assets/videos/bubofeed.mp4" type="video/mp4">
@@ -102,12 +110,11 @@
     </div>
 
     <!--PRIVACY SECTION-->
-    <div id="about-section" style="padding:40px;"></div>
     <div id="privacy-container" >
         <h1 class="display-5" id="privacy-title">
             Your privacy is a top priority
        </h1>
-        <div class="row" >
+        <div class="row g-0" >
             <div class="col-lg-7" id="privacy-col-left">
                 <p id='privacy-text'>
                     Protect your data privacy with BuboFeed. We don't expose or share your profile, device, contact or location data in our social network.
@@ -128,7 +135,7 @@
 
 
     <!--CONTENT SECTION-->
-    <div id="about-section" style="padding:40px;"></div>
+    <div id="about-section" style="padding:50px;"></div>
     <div id="content-container" >
         <h1 class="display-5" id="content-title">
             Feeding you awsome content from your inner circle
@@ -147,8 +154,8 @@
             </a>
         </div>
     </div>
-</div>
 
+    <div id="about-section" style="padding:20px;"></div>
 
 
     <!-- Social media icon-->
