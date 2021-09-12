@@ -11,137 +11,493 @@
 
 /* ============ MOBILE SECTION ========= */
 @media(max-width:992px){
-  /*sidebar popup color and width*/
-  .wrapper{
-    width: 100%;
-    background: linear-gradient(to right, rgba(0,139,139,1), rgba(0,244,244,0.7));
+  /* NAV SECTION */
+  #bubo-nav-logo{
+    display: none;
   }
-  /*sidebar menu items*/
-  .wrapper ul{
-    position: absolute;
-    top: 45%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    list-style: none;
-    text-align: left;
+  #nav-item-text{
+    color: black;
   }
-  .wrapper ul li a{
-    font-size: 20px;
-  }
-  #header-logo{
-    display: flex; 
-    flex-direction: row;
-    align-items: center;
-    position: absolute;
-    left: 30%;
-    justify-content: center;
+  #nav-item-text:hover{
+    color: #b3aeae;
   }
   /*HOME SECTION-MOBILE*/
   #home-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
     align-items: center;
-    justify-content: center;
+    background:
+        linear-gradient(#F7F4F1 , transparent),
+        linear-gradient(to top, white, transparent),
+        linear-gradient(to left , #162a6f, transparent),
+        linear-gradient(to right , white, transparent),
+        linear-gradient(to bottom, white, transparent);
+    background-blend-mode: screen;
+  }
+  #home-title{
+    font-family: 'Kaisei Tokumin';
+    font-weight: 600;
+    color: #162a6f;
   }
   #home-text{
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-bottom: 30px;
+    font-family: 'Kaisei Tokumin';
+    font-weight: lighter;
+    padding-top: 20px;
+    font-size: 20px;
   }
   #home-col-left{
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+  #home-col-right{
+    padding-top: 20px;
+    text-align: center; 
+  }
+  #home-col-right img{
+    height: 450px;
+    width: 250px;
+  }
+
+   /*REC SECTION-HOME PAGE - MOBILE*/
+  #rec-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #rec-title{
+    font-weight: 600;
+    line-height: 1.4;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    font-size: 26px;
+    font-family: 'Kaisei Tokumin';
+    color: #0e1e58;
   }
-  #btn-home{
-    align-items: center;
-    margin-bottom: 20px;
-  }
-
-
-  /*ABOUT SECTION-MOBILE*/
-  #secure_circle{
-    margin-bottom: 10px;
-    position: relative;
-    left: 18%;
-  }
-  #about-col-left{
-    padding-top: 50px;
-    padding-bottom: 20px;
-  }
-  #about-col-right{
-    padding-top: 50px;
-    padding-bottom: 20px;
-  }
-
- 
-  /*FEATURE SECTION-MOBILE*/
-  #feature-col-right{
-  }
-  #feature-col-left{
-    margin-left: 40px;
-    margin-right: 10px;
-    padding-top: 40px;
-  }
-  #feature-container{
-  }
-
-  /*GALLERY SECTION-MOBILE*/
-  #gallery-col-left{
-    padding-left: 23px;
-    padding-right:0px;
+  #rec-col-left{
     text-align: center;
   }
-
- 
-
-  /*CONTACT SECTION-MOBILE*/
-  #connect-title{
-    padding-bottom: 20px;
+  #rec-col-right{
+    padding-right: 5%;
+    padding-left: 5%;
   }
-
-  /*DOWNLOAD SECTION*/
-  .play-store-img{
+  #rec-text-container{
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 10px;
+  }
+  #rec-text{
+    text-align: justify;
+    font-family: 'Kaisei Tokumin';
+    line-height: 1.5;
+    font-size: 16px;
     margin-bottom: 15px;
   }
-  .apple-store-img{
+  #rec-col-right li{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: 'Kaisei Tokumin';
+    font-size: 15px;
+    margin-top: 8px;
+  }
+  
+  /*PRIVACY SECTION-HOME PAGE - MOBILE*/
+  #privacy-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background:
+        linear-gradient(red , transparent),
+        linear-gradient(to left , #273a7c,white,transparent),
+        linear-gradient(to right, white, transparent),
+        linear-gradient(to bottom, white, transparent),
+        linear-gradient(to top, white, transparent),
+        linear-gradient(red , transparent);
+    background-blend-mode: screen;
+  }
+  #privacy-col-left{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #privacy-title{
+    font-weight: 600;
+    font-size: 30px;
+    font-family: 'Kaisei Tokumin';
+    color: #0e1e58;
+    text-align: center;
+  }
+  #privacy-text-container{
+    padding-top: 15px;
+    padding-right: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+   #privacy-text{
+    text-align: justify;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-family: 'Kaisei Tokumin';
+  }
+  #privacy-col-left li{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 14px;
+    margin-top: 8px;
+    font-family: 'Kaisei Tokumin';
+  }
+ 
+  #privacy-col-right{
+    padding-top: 20px;
+    text-align: center;
+  }
+  #privacy-col-right img{
+    height: 450px;
+    width: 250px;
   }
 
-  /*FOOTER SECTION-MOBILE*/
-  #footer-text-left{
-    font-size: 16px;
+  /* CONTENT CONTAINER - HOME PAGE - MOBILE*/
+  #content-container{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background:
+        linear-gradient(#f6f6f6, transparent),
+        linear-gradient(to left , #F6F6F6,#FF6F51,transparent),
+        linear-gradient(to right, #F6F6F6, transparent),
+        linear-gradient(to bottom, #F6F6F6, transparent),
+        linear-gradient(to top, #F6F6F6, transparent),
+        linear-gradient(#FF6F51 , transparent);
+    background-blend-mode: screen;
+  }
+  #content-title{
+    font-weight: 600;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Kaisei Tokumin';
+    color: #0e1e58;
+  }
+  #content-container ul{
+    text-align: center;
+    list-style: none;
+    margin-left: -30px;
+  }
+  #content-container li:before{
+    font-family: 'FontAwesome';
+    content: '\f560';
+    font-size: 15px;
+    margin-right: 10px;
+    color: #FF6F51;
+  }
+  #content-container li{
+    font-size: 18px;
+    margin-top: 15px;
+    font-family: 'Kaisei Tokumin';
+  }
+  /* used to contorl space betweeen bullet and text */
+  #content-container li span{
+    position: relative;
+  }
+
+
+  /* EXPLORE PAGE */
+  /* HOME SECTION - EXPLORE PAGE - MOBILE */
+  #explore-home-container{
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background:
+        linear-gradient(#F7F4F1 , transparent),
+        linear-gradient(to top, white, transparent),
+        linear-gradient(to left , red, transparent),
+        linear-gradient(to right , white, transparent),
+        linear-gradient(to bottom, white, transparent);
+    background-blend-mode: screen;
+  }
+  #explore-home-title{
+    font-family: 'Kaisei Tokumin';
+    line-height: 1.4;
+    padding-bottom: 20px;
+    font-weight: 600;
+    color: #0e1e58;
+  }
+  #explore-home-col-left{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #explore-home-col-right{
     text-align: center;
   }
-  #footer-text-right{
-    font-size: 16px;
+  #explore-home-col-right img{
+    height: 450px;
+  }
+
+ /*PROMISE SECTION-EXPLORE PAGE - MOBILE*/
+  #promise-container{
+    padding-top: 70px;
+    padding-bottom: 30px;
+    background:
+        linear-gradient(#F6F6F6, transparent),
+        linear-gradient(to right ,white, transparent),
+        linear-gradient(to left, white, transparent),
+        linear-gradient(to bottom, white, #0e1e58, transparent),
+        linear-gradient(to top, white,#0e1e58 30%,white, transparent),
+        linear-gradient(#0e1e58 , transparent);
+    background-blend-mode: screen;
+  }
+  
+  #promise-col-left{
     text-align: center;
+    padding-left: 5%;
+  }
+  #promise-col-left img{
+    height: 450px;
+  }
+  #promise-col-right{
+    padding-left: 5%;
+    padding-right:5%;
+    padding-bottom: 30px ;
+    line-height: 1.7;
+  }
+  #promise-title{
+    color: #0e1e58;
+    font-weight: 600;
+    font-family: 'Kaisei Tokumin';
+    font-size: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+   #promise-text{
+    padding-left: 5%;
+    padding-right:5%;
+    font-family: 'Kaisei Tokumin';
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  #promise-col-right li{
+    margin-left: 20px;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+ /*EXPLORE SECTION-EXPLORE PAGE - MOBILE*/
+  #explore-content-container{
+    text-align: center;
+  }
+  #explore-content-title{
+    color: #0e1e58;
+    font-weight: 600;
+    font-family: 'Kaisei Tokumin';
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  #explore-content-text{
+    font-family: 'Kaisei Tokumin';
+    font-size: 16px;
+    line-height: 2;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+
+  /* WHY US CONTENT */
+  /* HOME-SECTION - WHY US - MOBILE */
+  #why-us-home-container{
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+  }
+  #why-us-home-title{
+    font-family: 'Kaisei Tokumin';
+    line-height: 1.5;
+    font-weight: 600;
+    color: #0e1e58;
+  }
+  #why-us-home-col-left{
+  }
+
+  #why-us-home-col-right{
+    padding-top: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  #why-us-home-col-right img{
+    height: 200px;
+    width: 100%;
+  }
+
+  /* CONTENT-SECTION - WHY US - MOBILE */
+  #why-us-content-container{
+    padding-bottom: 30px;
+    text-align: justify;
+    font-family: 'Kaisei Tokumin';
+    font-weight: 500;
+    padding-left: 10%;
+    padding-right: 10%;
+    background:
+        linear-gradient(red,  transparent),
+        linear-gradient(to right, white,transparent),
+        linear-gradient(to left, white, transparent),
+        linear-gradient(to bottom, white, transparent),
+        linear-gradient(to top, white, transparent),
+        linear-gradient(red , transparent);
+    background-blend-mode: screen;
+  }
+  #why-us-content-text{
+    font-size: 22px;
+    line-height: 1.5;
+    font-family: 'Abel';
+  }
+ /* WHY BUBOFEED-SECTION - WHY US - LAPTOP */
+  #why-bubofeed-container{
+    padding-top: 80px;
+  }
+  #why-bubofeed-title{
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Kaisei Tokumin';
+    margin-bottom: 40px;
+    color: #0e1e58;
+  }
+  #why-bubofeed-text{
+    font-family: 'Kaisei Tokumin';
+    font-weight: 600;
+    font-size: 22px;
+    text-align: justify;
+    color: #0e1e58;
+  }
+
+  #why-bubofeed-left-1{
+    text-align: center;
+    padding-bottom: 30px;
+    background:
+        linear-gradient(#F6F6F6, transparent),
+        linear-gradient(to right ,white, transparent),
+        linear-gradient(to left, white, transparent),
+        linear-gradient(to bottom, white,#0e1e58 30%, transparent),
+        linear-gradient(to top, white,red 30%, transparent),
+        linear-gradient(#0e1e58 , transparent);
+    background-blend-mode: screen;
+  }
+  #why-bubofeed-left-1 img{
+    height: 450px;
+  }
+  #why-bubofeed-right-1{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #why-bubofeed-left-2{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20px;
+    padding-top: 70px;
+  }
+  #why-bubofeed-right-2{
+    text-align: center; 
+    padding-bottom: 30px;
+    background:
+        linear-gradient(#F6F6F6, transparent),
+        linear-gradient(to right ,white, transparent),
+        linear-gradient(to left, white, transparent),
+        linear-gradient(to bottom, white,#0e1e58 30%, transparent),
+        linear-gradient(to top, white,#0e1e58 30%, transparent),
+        linear-gradient(#0e1e58 , transparent);
+    background-blend-mode: screen;
+  }
+  #why-bubofeed-right-2 img{
+    height: 450px;
+  }
+
+  #why-bubofeed-left-3{
+    text-align: center; 
+    background:
+        linear-gradient(#F6F6F6, transparent),
+        linear-gradient(to right ,white, transparent),
+        linear-gradient(to left, white, transparent),
+        linear-gradient(to bottom, white,red 30%, transparent),
+        linear-gradient(to top, white,red 30%, transparent),
+        linear-gradient(#0e1e58 , transparent);
+    background-blend-mode: screen;
+  }
+  #why-bubofeed-left-3 img{
+    height: 450px;
+  }
+  #why-bubofeed-right-3{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20px;
+    padding-top: 50px;
+  }
+
+  #why-bubofeed-left-4{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20px;
+    padding-top: 70px;
+  }
+  #why-bubofeed-right-4{
+    text-align: center; 
+    background:
+        linear-gradient(#F6F6F6, transparent),
+        linear-gradient(to right ,white, transparent),
+        linear-gradient(to left, white, transparent),
+        linear-gradient(to bottom, white,yellow 30%, transparent),
+        linear-gradient(to top, white,yellow 30%, transparent),
+        linear-gradient(yellow , transparent);
+    background-blend-mode: screen;
+  }
+  #why-bubofeed-right-4 img{
+    height: 450px;
+  }
+
+  #why-bubofeed-left-5{
+    text-align: center;
+    background:
+        linear-gradient(#F6F6F6, transparent),
+        linear-gradient(to right ,white, transparent),
+        linear-gradient(to left, white, transparent),
+        linear-gradient(to bottom, white,orange 30%, transparent),
+        linear-gradient(to top, white,orange 30%, transparent),
+        linear-gradient(red , transparent);
+    background-blend-mode: screen;
+  }
+  #why-bubofeed-left-5 img{
+    height: 450px;
+  }
+  #why-bubofeed-right-5{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20px;
+    padding-top: 70px;
   }
 }
+
 /* ============END MOBILE SECTION ========= */
 
 
 
 /* ============LAPTOP SECTION ============= */
 @media(min-width:992px){
-   
-  #header-logo{
-    display: flex; 
-    flex-direction: row;
-    align-items: center;
-    position: absolute;
-    left: 40%;
-    justify-content: center;
-  }
 
-  /*HOME SECTION-LAPTOP*/
+  /* NAV SECTION */
   #bubo-nav-logo{
     margin-left: 30px;
+    color: #162a6f;
+    font-weight: 600;
+    font-size: 19px;
   }
+  #bubo-nav-logo-mobile{
+    display: none;
+  }
+
   #nav-item-text{
     color: black;
   }
+  #nav-item-text:hover{
+    color: #b3aeae;
+  }
 
-#nav-item-text:hover{
-  color: #b3aeae;
-}
+  /*HOME SECTION-LAPTOP*/
   #home-container{
     padding-top: 50px;
     padding-bottom: 80px;
@@ -173,30 +529,13 @@
     padding-right: 10%;
     
   }
+  #home-col-right img{
+    height: 600px;
+    width: 310px;
+  }
+  
 
-  #btn-home{
-    text-align: center;
-    margin-left: -100px;
-  }
-
-  /*ABOUT SECTION-LAPTOP*/
-  #about-text-container{
-  }
-  #secure_circle{
-    margin-bottom: 50px;
-    position: relative;
-    left: 35%;
-  }
-  #about-col-left{
-    padding-top: 100px;
-    padding-bottom: 80px;
-  }
-  #about-col-right{
-    padding-top: 100px;
-    padding-bottom: 80px;
-  }
-
- /*REC SECTION-LAPTOP*/
+  /*REC SECTION-HOME PAGE - LAPTOP*/
   #rec-container{
     padding-top: 100px;
     padding-bottom: 80px;
@@ -206,40 +545,39 @@
     font-weight: 600;
     line-height: 1.4;
     text-align: center;
-    font-size: 30px;
+    font-size: 26px;
     font-family: 'Kaisei Tokumin';
     color: #0e1e58;
   }
   #rec-col-left{
     text-align: center;
-    padding-left: 10%;
-   
+    padding-left: 12%;
+    padding-right: 3%;
   }
   #rec-col-right{
-   
+    padding-right: 12%;
+    padding-left: 10%;
   }
   #rec-text-container{
-    padding-top: 20px;
-    padding-right: 20%;
-    padding-left: 20%;
+    padding-top: 10px;
   }
   #rec-text{
     text-align: justify;
     font-family: 'Kaisei Tokumin';
     line-height: 1.5;
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 16px;
+    margin-bottom: 15px;
   }
   #rec-col-right li{
     margin-left: 30px;
     margin-right: 30px;
     font-family: 'Kaisei Tokumin';
-    font-size: 16px;
-    margin-top: 10px;
+    font-size: 14px;
+    margin-top: 8px;
   }
   
 
-  /*PRIVACY SECTION-LAPTOP*/
+  /*PRIVACY SECTION-HOME PAGE - LAPTOP*/
   #privacy-container{
     padding-top: 100px;
     background:
@@ -253,38 +591,38 @@
   }
   #privacy-title{
     font-weight: 600;
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Kaisei Tokumin';
     color: #0e1e58;
   }
   #privacy-col-left{
     padding-left: 12%;
+    padding-right: 10%;
   }
   #privacy-text-container{
-    padding-top: 20px;
-    padding-right: 25%;
+    padding-top: 15px;
+    padding-right: 20%;
   }
    #privacy-text{
     text-align: justify;
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 16px;
+    margin-bottom: 15px;
     font-family: 'Kaisei Tokumin';
   }
   #privacy-col-left li{
     margin-left: 30px;
     margin-right: 30px;
-    font-size: 16px;
-    margin-top: 10px;
+    font-size: 14px;
+    margin-top: 8px;
     font-family: 'Kaisei Tokumin';
   }
  
   #privacy-col-right{
     padding-left: 5%;
     padding-right: 10%;
-     
   }
 
-/* CONTENT CONTAINER -LAPTOP*/
+/* CONTENT CONTAINER - HOME PAGE - LAPTOP*/
   #content-container{
     text-align: center;
     padding-top: 100px;
@@ -330,52 +668,85 @@
     position: relative;
   }
 
-/* EXPLORE PAGE */
+  /* EXPLORE PAGE */
+  /* HOME SECTION - EXPLORE PAGE - LAPTOP */
   #explore-home-container{
     align-items: center;
-    padding-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background:
+        linear-gradient(#F7F4F1 , transparent),
+        linear-gradient(to top, white, transparent),
+        linear-gradient(to left , red, transparent),
+        linear-gradient(to right , white, transparent),
+        linear-gradient(to bottom, white, transparent);
+    background-blend-mode: screen;
   }
   #explore-home-title{
     font-family: 'Kaisei Tokumin';
-    line-height: 1.5;
+    line-height: 1.4;
+    padding-bottom: 100px;
     font-weight: 600;
+    color: #0e1e58;
   }
   #explore-home-col-left{
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
   }
   #explore-home-col-right{
-    padding-right: 5%;
-  }
-
- /*PROMISE SECTION-LAPTOP*/
-  #promise-container{
-    background-color: #FAF3DD;
-    padding-top: 70px;
-    padding-bottom: 100px;
-  }
-  #promise-title{
-    font-weight: 600;
-    font-family: 'Nunito Sans';
-    text-align: center;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 70px;
+  }
+  #explore-home-col-right img{
+    height: 500px;
+  }
+
+ /*PROMISE SECTION-EXPLORE PAGE - LAPTOP*/
+  #promise-container{
+    padding-top: 70px;
+    padding-bottom: 100px;
+    background:
+        linear-gradient(#F6F6F6, transparent),
+        linear-gradient(to right ,white, transparent),
+        linear-gradient(to left, white, transparent),
+        linear-gradient(to bottom, white, transparent),
+        linear-gradient(to top, white, transparent),
+        linear-gradient(red , transparent);
+    background-blend-mode: screen;
+  }
+  #promise-title{
+    color: #0e1e58;
+    font-weight: 600;
+    font-family: 'Kaisei Tokumin';
+    font-size: 30px;
+    padding-bottom: 10px;
   }
   #promise-col-left{
     text-align: center;
     padding-left: 5%;
+    background:
+        linear-gradient(#F6F6F6, transparent),
+        linear-gradient(to right ,white, transparent),
+        linear-gradient(to left, white, transparent),
+        linear-gradient(to bottom, white,#0e1e58 30%, transparent),
+        linear-gradient(to top, white,#0e1e58 30%, transparent),
+        linear-gradient(#0e1e58 , transparent);
+    background-blend-mode: screen;
+  }
+  #promise-col-left img{
+    height: 550px;
   }
   #promise-col-right{
-    padding-left: 10%;
-    padding-right: 15%;
+    align-items: center;
+    padding-left: 5%;
+    padding-right:15%;
     line-height: 1.7;
   }
    #promise-text{
     font-family: 'Abel';
     text-align: justify;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.6;
+    padding-right:15%;
   }
   #promise-col-right li{
     margin-left: 20px;
@@ -383,78 +754,205 @@
     margin-top: 15px;
   }
 
+ /*EXPLORE SECTION-EXPLORE PAGE - LAPTOP*/
   #explore-content-container{
     text-align: center;
     padding-bottom: 50px;
+    background:
+        linear-gradient(#f6f6f6, transparent),
+        linear-gradient(to left , #F6F6F6,transparent),
+        linear-gradient(to right, #F6F6F6, transparent),
+        linear-gradient(to bottom, #F6F6F6, transparent),
+        linear-gradient(to top, #F6F6F6, transparent),
+        linear-gradient(#FF6F51 , transparent);
+    background-blend-mode: screen;
   }
   #explore-content-title{
+    color: #0e1e58;
     font-weight: 600;
-    font-family: 'Nunito Sans';
-    padding-left: 20%;
-    padding-right: 20%;
+    font-family: 'Kaisei Tokumin';
+    font-size: 35px;
     padding-bottom: 20px;
     text-align: center;
   }
   #explore-content-text{
-    font-family: 'Abel';
-    font-family: 'Nunito Sans';
-    font-size: 21px;
-    line-height: 2;
+    font-family: 'Kaisei Tokumin';
+    font-size: 20px;
+    line-height: 2.3;
   }
 
+
 /* WHY US CONTENT */
+/* HOME-SECTION - WHY US - LAPTOP */
   #why-us-home-container{
     align-items: center;
-    padding-bottom: 40px;
+    padding-top: 40px;
   }
   #why-us-home-title{
     font-family: 'Kaisei Tokumin';
-    line-height: 1.8;
+    line-height: 1.5;
     font-weight: 600;
+    color: #0e1e58;
   }
   #why-us-home-col-left{
     padding-left: 7%;
     padding-right: 4%;
   }
   #why-us-home-col-right{
-    padding-right: 1%;
-    padding-left: 3%;
+  }
+  #why-us-home-col-right img{
+    height: 400px;
+    width: 115%;
   }
 
+  /* CONTENT-SECTION - WHY US - LAPTOP */
   #why-us-content-container{
+    padding-bottom: 50px;
     text-align: justify;
+    font-family: 'Kaisei Tokumin';
+    font-weight: 500;
     padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 20%;
-    padding-right: 20%;
-    background-color: #D0E9EB;
+    padding-left: 25%;
+    padding-right: 25%;
+    /* background:
+        linear-gradient(white,  transparent),
+        linear-gradient(to right, white,transparent),
+        linear-gradient(to left, white, transparent),
+        linear-gradient(to bottom, white,red, transparent),
+        linear-gradient(to top,white, red, transparent),
+        linear-gradient(white , transparent);
+    background-blend-mode: screen; */
   }
   #why-us-content-text{
     font-size: 22px;
     line-height: 2;
     font-family: 'Abel';
   }
-  #btn-google-play{
-    margin-top: 30px;
+
+  /* WHY BUBOFEED-SECTION - WHY US - LAPTOP */
+  #why-bubofeed-container{
+    padding-top: 80px;
   }
-  #content-title-why-us{
-    font-weight: bold;
-    padding-bottom: 30px;
-    padding-top: 50px;
-    padding-left: 15%;
-    padding-right: 15%;
+  #why-bubofeed-title{
+    font-weight: 600;
     text-align: center;
-  }
- 
-  /* GRID-CONTAINER */
-  #grid-container{
+    font-family: 'Kaisei Tokumin';
+    margin-bottom: 50px;
+    color: #0e1e58;
+    padding-bottom: 50px;
   }
   #why-bubofeed-text{
+    font-family: 'Kaisei Tokumin';
     font-weight: 600;
-    font-family: 'Nunito Sans';
-    text-align: center;
-    margin-bottom: 50px;
+    font-size: 22px;
+    color: #0e1e58;
   }
+
+  #why-bubofeed-left-1{
+    display: flex;
+    justify-content: center;
+    background:
+        linear-gradient(#F6F6F6, transparent),
+        linear-gradient(to right ,white, transparent),
+        linear-gradient(to left, white, transparent),
+        linear-gradient(to bottom, white,#0e1e58 30%, transparent),
+        linear-gradient(to top, white,red 30%, transparent),
+        linear-gradient(#0e1e58 , transparent);
+    background-blend-mode: screen;
+  }
+  #why-bubofeed-left-1 img{
+    height: 550px;
+  }
+  #why-bubofeed-right-1{
+    padding-right: 40%;
+  }
+
+  #why-bubofeed-left-2{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 40%;
+  }
+  #why-bubofeed-right-2{
+    display: flex;
+    justify-content: center;
+    background:
+        linear-gradient(#F6F6F6, transparent),
+        linear-gradient(to right ,white, transparent),
+        linear-gradient(to left, white, transparent),
+        linear-gradient(to bottom, white,#0e1e58 30%, transparent),
+        linear-gradient(to top, white,#0e1e58 30%, transparent),
+        linear-gradient(#0e1e58 , transparent);
+    background-blend-mode: screen;
+  }
+  #why-bubofeed-right-2 img{
+    height: 550px;
+  }
+
+  #why-bubofeed-left-3{
+    display: flex;
+    justify-content: center;
+    background:
+        linear-gradient(#F6F6F6, transparent),
+        linear-gradient(to right ,white, transparent),
+        linear-gradient(to left, white, transparent),
+        linear-gradient(to bottom, white,red 30%, transparent),
+        linear-gradient(to top, white,red 30%, transparent),
+        linear-gradient(#0e1e58 , transparent);
+    background-blend-mode: screen;
+  }
+  #why-bubofeed-left-3 img{
+    height: 550px;
+  }
+  #why-bubofeed-right-3{
+    padding-right: 35%;
+  }
+
+  #why-bubofeed-left-4{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 35%;
+  }
+  #why-bubofeed-right-4{
+    display: flex;
+    justify-content: center;
+    background:
+        linear-gradient(#F6F6F6, transparent),
+        linear-gradient(to right ,white, transparent),
+        linear-gradient(to left, white, transparent),
+        linear-gradient(to bottom, white,yellow 30%, transparent),
+        linear-gradient(to top, white,yellow 30%, transparent),
+        linear-gradient(yellow , transparent);
+    background-blend-mode: screen;
+  }
+  #why-bubofeed-right-4 img{
+    height: 550px;
+  }
+
+  #why-bubofeed-left-5{
+    display: flex;
+    justify-content: center;
+    background:
+        linear-gradient(#F6F6F6, transparent),
+        linear-gradient(to right ,white, transparent),
+        linear-gradient(to left, white, transparent),
+        linear-gradient(to bottom, white,orange 30%, transparent),
+        linear-gradient(to top, white,orange 30%, transparent),
+        linear-gradient(red , transparent);
+    background-blend-mode: screen;
+  }
+  #why-bubofeed-left-5 img{
+    height: 550px;
+  }
+  #why-bubofeed-right-5{
+    padding-right: 35%;
+  }
+
+  /* GRID CONTENT-SECTION - WHY US - LAPTOP */
+  #grid-container{
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+  
   #grid-item-box{
     border-color: red;
     border: #162a6f 0px solid;
@@ -465,9 +963,17 @@
   }
   #grid-item-text{
     text-align: center;
-    font-family: 'Nunito Sans';
+    font-family: 'Kaisei Tokumin';
     color: white;
   }
+
+  /* BULLET CONTENT-SECTION - WHY US - LAPTOP */
+  #btn-google-play{
+    margin-top: 30px;
+  }
+
+
+
  /*FOOTER SECTION-LAPTOP*/
   #footer-text-left{
     text-align: left;
@@ -504,11 +1010,6 @@ height: 10;
     opacity: 0.93;
 }
 
-#bubo-nav-logo{
-  color: #162a6f;
-  font-weight: 600;
-  font-size: 19px;
-}
 
 
 
