@@ -1,34 +1,3 @@
-$(".menu-btn").click(function(){
-    $(".menu-btn").hide();
-    $("#menu-btn-close").show();
-    $(".wrapper").show();
-    $('html, body').css({
-        overflow: 'hidden',
-        height: '100%'
-    });
-});
-
-$("#menu-btn-close").click(function(){
-    $("#menu-btn-close").hide();
-    $(".menu-btn").show();
-    $(".wrapper").hide();
-    $('html, body').css({
-        overflow: 'auto',
-        height: '100%'
-    });
-});
-
-$(".wrapper a").click(function(){
-    $("#menu-btn-close").hide();
-    $(".menu-btn").show();
-    $(".wrapper").hide()
-    $('html, body').css({
-        overflow: 'auto',
-        height: '100%'
-    })
-});
-
-
 // Home Section 
 $('#home-carousel').owlCarousel({
     autoplay: true,
@@ -116,4 +85,20 @@ $('#feature-carousel').owlCarousel({
             items: 2,
         }
     }
+});
+
+var scroll = window.requestAnimationFrame ||
+            function(callback){ window.setTimeout(callback, 1000/60)};
+
+const callback = function(entries) {
+  entries.forEach(entry => {
+    entry.target.classList.toggle("is-visible");
+  });
+};
+
+const observer = new IntersectionObserver(callback);
+
+const targets = document.querySelectorAll(".show-on-scroll");
+targets.forEach(function(target) {
+  observer.observe(target);
 });

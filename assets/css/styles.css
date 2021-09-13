@@ -6,7 +6,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+}
+body{
+  font-family: 'sans-serif', 'Poppins';
+  color: #777;
 }
 
 /* ============ MOBILE SECTION ========= */
@@ -101,7 +104,7 @@
   /*PRIVACY SECTION-HOME PAGE - MOBILE*/
   #privacy-container{
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 80px;
     background:
         linear-gradient(red , transparent),
         linear-gradient(to left , #273a7c,white,transparent),
@@ -124,7 +127,6 @@
   }
   #privacy-text-container{
     padding-top: 15px;
-    padding-right: 20%;
     padding-left: 5%;
     padding-right: 5%;
   }
@@ -143,7 +145,6 @@
   }
  
   #privacy-col-right{
-    padding-top: 20px;
     text-align: center;
   }
   #privacy-col-right img{
@@ -532,7 +533,7 @@
     height: 600px;
     width: 310px;
   }
-  
+
 
   /*REC SECTION-HOME PAGE - LAPTOP*/
   #rec-container{
@@ -587,6 +588,7 @@
         linear-gradient(to top, white, transparent),
         linear-gradient(red , transparent);
     background-blend-mode: screen;
+
   }
   #privacy-title{
     font-weight: 600;
@@ -595,12 +597,12 @@
     color: #0e1e58;
   }
   #privacy-col-left{
-    padding-left: 12%;
-    padding-right: 10%;
+    padding-left: 18%;
+    padding-right: 5%;
   }
   #privacy-text-container{
     padding-top: 15px;
-    padding-right: 20%;
+    padding-right: 18%;
   }
    #privacy-text{
     text-align: justify;
@@ -617,8 +619,7 @@
   }
  
   #privacy-col-right{
-    padding-left: 5%;
-    padding-right: 10%;
+    padding-left: 10%;
   }
 
 /* CONTENT CONTAINER - HOME PAGE - LAPTOP*/
@@ -696,21 +697,14 @@
     padding-right: 10%;
   }
   #explore-home-col-right img{
-    height: 500px;
+    height: 580px;
+    width: 310px;
   }
 
  /*PROMISE SECTION-EXPLORE PAGE - LAPTOP*/
   #promise-container{
     padding-top: 70px;
     padding-bottom: 100px;
-    background:
-        linear-gradient(#F6F6F6, transparent),
-        linear-gradient(to right ,white, transparent),
-        linear-gradient(to left, white, transparent),
-        linear-gradient(to bottom, white, transparent),
-        linear-gradient(to top, white, transparent),
-        linear-gradient(red , transparent);
-    background-blend-mode: screen;
   }
   #promise-title{
     color: #0e1e58;
@@ -1039,4 +1033,40 @@ height: 10;
 #footer-text-right a{
   text-decoration: none;
   color: #787878;
+}
+
+  #home-col-right img{
+    animation: vibrate-home-img-1;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+  }
+  
+
+#explore-home-col-right img{
+    animation: vibrate-home-img-1;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+  }
+  @keyframes vibrate-home-img-1 {
+    0% {
+      opacity: 0;
+      transform: rotate(10deg);
+    }
+
+    100%{
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+  }
+
+  .phone-img {
+    opacity: 1;
+    transform: translateY(3em) rotateZ(-2deg);
+    transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+                opacity .3s .25s ease-out;
+  }
+
+  .phone-img.is-visible {
+  opacity: 0;
+  transform: rotateZ(1deg);
 }
