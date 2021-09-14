@@ -120,3 +120,20 @@ $( window ).on( "load", function() {
         }
 	}
      });
+
+
+const controller = new ScrollMagic.Controller();
+
+var tl = TweenMax.to('#privacy-img', 0.5, {
+        rotation: 5,
+        ease: Power4.easeInOut
+    });
+
+const scene = new ScrollMagic.Scene({
+  triggerElement: ".privacy",
+            triggerHook: 0.7,
+            duration: '100%'
+}).setTween(tl)
+.addTo(controller);
+
+
