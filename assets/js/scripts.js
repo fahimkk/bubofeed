@@ -102,3 +102,21 @@ const targets = document.querySelectorAll(".show-on-scroll");
 targets.forEach(function(target) {
   observer.observe(target);
 });
+
+$( window ).on( "load", function() {
+    mainNav();
+    $(window).scroll(function() {
+        mainNav();
+    });
+    function mainNav() {
+        var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+        if (top > 40) {
+            $('.navbar').css('background-color', '#44D7F5')
+            $('.nav-link').css('color', 'white')
+        }
+        else {
+            $('.navbar').css('background-color', '')
+            $('.nav-link').css('color', 'white')
+        }
+	}
+     });

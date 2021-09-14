@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaisei Tokumin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -43,7 +44,7 @@ body{
     color: #162a6f;
   }
   #home-text{
-    font-family: 'Kaisei Tokumin';
+    font-family: 'Roboto';
     font-weight: lighter;
     padding-top: 20px;
     font-size: 20px;
@@ -470,6 +471,9 @@ body{
     padding-bottom: 20px;
     padding-top: 70px;
   }
+  #mobile-space{
+    padding: 10px;
+  }
 }
 
 /* ============END MOBILE SECTION ========= */
@@ -483,7 +487,7 @@ body{
   #bubo-nav-logo{
     margin-left: 30px;
     color: #162a6f;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 19px;
   }
   #bubo-nav-logo-mobile{
@@ -492,6 +496,10 @@ body{
 
   #nav-item-text{
     color: black;
+    font-size: 17px;
+    letter-spacing: .1em;
+    font-weight: 400;
+    margin-left: 20px;
   }
   #nav-item-text:hover{
     color: #b3aeae;
@@ -537,8 +545,8 @@ body{
 
   /*REC SECTION-HOME PAGE - LAPTOP*/
   #rec-container{
-    padding-top: 100px;
     padding-bottom: 80px;
+    margin-top: 80px;
     
   }
   #rec-title{
@@ -667,7 +675,28 @@ body{
   #content-container li span{
     position: relative;
   }
-
+  #new-content-container ul{
+    text-align: center;
+    list-style: none;
+    margin-left: -30px;
+  }
+  #new-content-container li:before{
+    font-family: 'FontAwesome';
+    content: '\f560';
+    font-size: 15px;
+    margin-right: 10px;
+    color: #c05c48;
+  }
+  #new-content-container li{
+    font-size: 20px;
+    margin-top: 15px;
+    font-family: 'Kaisei Tokumin';
+    font-weight: lighter;
+  }
+  /* used to contorl space betweeen bullet and text */
+  #new-content-container li span{
+    position: relative;
+  }
   /* EXPLORE PAGE */
   /* HOME SECTION - EXPLORE PAGE - LAPTOP */
   #explore-home-container{
@@ -993,14 +1022,14 @@ height: 10;
 /*bubo button on top*/
 #bubo-btn{
     border: none;
-    height: 45px;
-    width: 45px;
+    height: 35px;
+    width: 35px;
     border-radius: 50%;
+    background-color: #95EFEF;
 }
 
 .navbar{
-    background-color: white;
-    opacity: 0.93;
+    opacity: 0.9;
 }
 
 
@@ -1050,7 +1079,7 @@ height: 10;
   @keyframes vibrate-home-img-1 {
     0% {
       opacity: 0;
-      transform: rotate(10deg);
+      transform: rotate(5deg);
     }
 
     100%{
@@ -1061,12 +1090,94 @@ height: 10;
 
   .phone-img {
     opacity: 1;
-    transform: translateY(3em) rotateZ(-2deg);
+    transform: translateY(2em) rotateZ(-1deg);
     transition: transform 4s .25s cubic-bezier(0,1,.3,1),
                 opacity .3s .25s ease-out;
   }
 
   .phone-img.is-visible {
-  opacity: 0;
+  opacity: 1;
   transform: rotateZ(1deg);
 }
+
+.vibrate-image{
+  animation: vibrateImage;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+}
+@keyframes vibrateImage{
+  0%{
+    transform: translateY(0em) rotateZ(0deg);
+  }
+  25%{
+    transform: translateY(2em) rotateZ(-2deg);
+  }
+  50%{
+    transform: translateY(0em) rotateZ(0deg);
+  }
+  75%{
+    transform: translateY(-2em) rotateZ(2deg);
+  }
+  100%{
+    transform: translateY(0em) rotateZ(0deg);
+  }
+}
+
+#header-image{
+    animation: image-swip-up;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+  }
+  @keyframes image-swip-up {
+    0% {
+      opacity: 0;
+      transform: translateY(3em);
+    }
+
+    100%{
+      opacity: 1;
+      transform: translateY(0em);
+    }
+  }
+
+#header-main-title{
+    animation: title-fade-animation;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+  }
+  @keyframes title-fade-animation {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+
+    80% {
+      transform: translateX(10px);
+    }
+
+    100%{
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+#header-sub-title{
+    animation: sub-title-fade-animation;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+  }
+  @keyframes sub-title-fade-animation {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+
+    80% {
+      transform: translateX(-10px);
+    }
+
+    100%{
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }

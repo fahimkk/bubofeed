@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuboFeed</title>
+
+    <!--Custom style sheet-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!--Bootstrap 5 - css-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!--Carousel - horizontal stack base slider - css-->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <!--Carousel icon theme-->
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+
+</head>
+
+
+<body>
+
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-light" >
+  <div class="container-fluid" style="background-color: white;">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="menu_text">
+      <span class="navbar-toggler-icon" id="menu_icon"></span>
+    </button>
+    <a class="navbar-brand" id="bubo-nav-logo" href="#" >
+        <img src="./assets/images/logo/1024.png" class="img-thumbnail" alt="..." id="bubo-btn">
+        BuboFeed
+    </a>
+    <a class="navbar-brand" id="bubo-nav-logo-mobile" href="#" >
+        <img src="./assets/images/logo/1024.png" class="img-thumbnail" alt="..." id="bubo-btn">
+    </a>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <!--mx auto to align it center-->
+      <ul class="navbar-nav me-5 ">
+        <li class="nav-item  active">
+          <a class="nav-link" aria-current="page" href="#" id="nav-item-text" >Home</a>
+        </li>
+        <li class="nav-item  active">
+          <a class="nav-link" aria-current="page" href="./explore.html" id="nav-item-text" >Explore</a>
+        </li>
+        <li class="nav-item  active">
+          <a class="nav-link" aria-current="page" id='nav-item-text' href="./why-us.html" >Why Us</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+
+    <!--HOME SECTION-->
+    <div class="row g-0" id="home-container">
+        <div class="col-lg-7" id="home-col-left">
+            <h1 class="display-5" id="home-title" >
+                Tried of Netflix & Google deciding what you should watch or read?
+            </h1>
+            <p id="home-text">
+                Get real movie, book, TV & bideo suggestions from real people
+            </p>
+            
+        </div>
+        <div class="col-lg-5" id="home-col-right" >
+            <img 
+                src="assets/images/home_section/ask-rec.png"
+            >
+        </div>
+    </div>
+
+
+    <!--REC SECTION-->
+    <div id="rec-container" >
+        <div class="row g-0 flex-column-reverse flex-lg-row" style="align-items: center;" >
+            <div class="col-lg-6" id="rec-col-left">
+                <video width="100%" height="auto" autoplay muted loop>
+                    <source src="assets/videos/bubofeed.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="col-lg-6" id="rec-col-right">
+                <h1 class="" id="rec-title">
+                    No more random & repetitive recommendations
+                </h1>
+                <div id="rec-text-container">
+                    <p id="rec-text">
+                        Break free with BuboFeed. We get your inner circle to recommend greate movies, trusted news, binge-worthy TV shows & viral videos.
+                    </p>
+                    <ul>
+                        <li>See what movie, news, TV & video</li>
+                        <li>Put an end to bottomless scrolling centralize all recommendations</li>
+                        <li>Find hidden gems based on interests of people you trust</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--PRIVACY SECTION-->
+    <div id="privacy-container" >
+        
+        <div class="row g-0 " style="align-items: center;">
+            <div class="col-lg-7" id="privacy-col-left">
+                <h1 class="" id="privacy-title">
+                    Your privacy is a top priority
+                </h1>
+                <div id="privacy-text-container">
+                    <p id='privacy-text'>
+                        Protect your data privacy with BuboFeed. We don't expose or share your profile, device, contact or location data in our social network.
+                    </p>
+                    <ul>
+                        <li>Prevent user account hacing or hijacking</li>
+                        <li>Stay clear of unnecessary sales and marketing promos</li>
+                        <li>Avoid feeeling stalked by yet another social network</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-5" id="privacy-col-right">
+                <div id="mobile-space"></div>
+                <img 
+                src="assets/images/home_section/person-profile.png"
+                height="600"
+                width="320"
+            >
+            </div>
+        </div>
+    </div>
+
+
+    <!--CONTENT SECTION-->
+    <div id="content-container" >
+        <h1 class="" id="content-title">
+            Feeding you awsome content from your inner circle
+        </h1>
+        <ul>
+            <li><span>Social network for recommendations </li>
+            <li>A community based on trust</li>
+            <li>Daily updated content</li>
+        </ul>
+        <div id="btn-google-play">
+            <a href="#">
+                <img 
+                    src="assets/images/download_section/google-play-badge-128x128.png"
+                    height="35"
+                >
+            </a>
+        </div>
+    </div>
+
+
+
+    <!-- Social media icon-->
+    <script src="https://kit.fontawesome.com/e1342e9a0c.js" crossorigin="anonymous"></script>
+    <script scr="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/um/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap 5 action-->
+    <script src=" ./assets/js/bootstrap.min.js"></script>
+    <!-- owl cursor action-->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <!--Custom Scripts-->
+    <script src="./assets/js/scripts.js"></script>
+    <!--Page content-->
+
+
+    <footer id="footer">
+        <div class="container-fluid row">
+            <div class="col-lg-6" id="footer-text-left">
+                &copy; 2021 Wendorse, All rights reserved.
+            </div>
+            <div class="col-lg-6" id="footer-text-right">
+                <a href="terms_of_service.html">
+                    Terms &nbsp; &nbsp;
+                </a>
+                <a href="privacy_policy.html">
+                    Privacy Policy &nbsp; &nbsp;
+                </a>
+                <!-- <a href="footer">
+                   FAQs 
+                </a> -->
+            </div>
+        </div>
+   </footer>
+
+</body>
+</html>
+
