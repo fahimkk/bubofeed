@@ -481,7 +481,7 @@ body{
 
 
 /* ============LAPTOP SECTION ============= */
-@media(min-width:992px){
+@media(max-width:1366px){
 
   /* NAV SECTION */
   #bubo-nav-logo{
@@ -504,7 +504,9 @@ body{
   #nav-item-text:hover{
     color: #b3aeae;
   }
-
+  .home-header{
+    margin-top: -70px;
+  }
   /*HOME SECTION-LAPTOP*/
   #home-container{
     padding-top: 50px;
@@ -1181,3 +1183,32 @@ height: 10;
       transform: translateX(0);
     }
   }
+
+.home-header{
+  height: 100vh;
+  background: url('../images/bg.png'); 
+  background-size: cover;
+  position: relative;
+}
+
+.home-main-title{
+  color: #222222;
+  font-weight: 600;
+  font-family: 'Kaisei Tokumin';
+  font-size: 45px;
+  margin: 25% 10% 0% 15%;
+}
+.home-sub-title{
+  color: #777;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  line-height: 1.625em;
+  margin: 30px 10% 0 15%;
+}
+
+@media(min-width:1366px){
+  .home-header{
+    margin-top: -70px;
+  }
+}

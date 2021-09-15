@@ -52,55 +52,27 @@
 </nav>
 
 
-    <header
-        style="
-        margin-top: -100px;
-        height: 100vh;
-        background: url(./assets/images/bg.png); 
-        background-size: cover;
-        position: relative;
-        "
-    >
+    <header class="home-header">
         <div class="row g-0 d-flex justify-content-between" >
             <div class="col-lg-6 col-md-6">
-                <h1 class="display-5" style="
-                    margin-left: 15%;
-                    margin-top: 30%;
-                    margin-right: 10%;
-                    color: #222222;
-                    font-weight: 600;
-                    font-family: 'Kaisei Tokumin';
-
-                "
+                <h1 class="home-main-title" 
                 id="header-main-title"
                 >
                     Tried of Netflix & Google deciding what you should watch or read?
                 </h1>
-                <p  style="
-                    margin-left: 15%;
-                    margin-right: 10%;
-                    color: #777;
-                    font-size: 20px;
-                    font-weight: 300;
-                    letter-spacing: 0.08em;
-                    line-height: 1.625em;
-                    margin-top: 30px;
-                "
-                id="header-sub-title"
-                >
+                <p class="home-sub-title" id="header-sub-title">
                     Get real movie, book, TV & bideo suggestions from real people
                 </p>
-                
             </div>
             <div class="col-lg-6 col-md-6" style="
+            text-align: center;
             " >
                 <img 
-                    src="assets/images/home_section/ask-rec.png"
-                    height="80%"
+                    src="assets/images/home_section/give-sugg.png"
+                    height="500"
                     style="
-                    position: absolute;
-                    bottom: 1%;
-                    right: 20%;
+                    padding-right: 25%;
+                    margin-top: 120px;
                     "
                     id="header-image"
                 >
@@ -149,8 +121,7 @@
         align-items: center;
         height: 100vh;
         " >
-            <div class="col-lg-5" style="
-            ">
+            <div class="col-lg-5" >
                 <div style="
                     height: 80vh;
                     position: relative;
@@ -246,7 +217,8 @@
     <!--PRIVACY SECTION-->
     <div style="
         height: 100vh;
-        margin-top: 50px;
+        display: flex;
+        justify-content: center;
     " 
         class="privacy"
     >
@@ -373,30 +345,34 @@
                 <img 
                 src="assets/images/home_section/person-profile.png"
                 height="700"
-                style="
-                "
                 id="privacy-img"
             >
             </div>
         </div>
     </div>
 
-
+    <div style="margin: 100px;"></div>
     <!--CONTENT SECTION-->
     <div style="
-    margin-top: 120px;
         height: 100vh;
         background-image: 
             linear-gradient(to right bottom, rgb(42,51,56, 0.9), rgb(42,51,56,0.9)),
             url(./assets/images/home_section/mixed_phones.png);
         background-size: cover;
         text-align: center;
+        position: relative;
     " id="new-content-container">
+    <div style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    ">
         <h1 class="" style="
             color: white;
             text-align: center;
             font-weight: 400;
-            padding: 8% 35% 3% 35%;
+            padding: 0% 15% 3% 15%;
             font-family: 'Kaisei Tokumin';
         ">
             Feeding you awsome content from your inner circle
@@ -417,6 +393,7 @@
                 >
             </a>
         </div>
+    </div>
     </div>
 
     <!-- Scroll magic -->
