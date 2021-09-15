@@ -130,7 +130,7 @@ var tl = TweenMax.to('#privacy-img', 0.5, {
     });
 
 const scene = new ScrollMagic.Scene({
-  triggerElement: ".privacy",
+  triggerElement: ".privacy-section",
             triggerHook: 0.7,
             duration: '100%'
 }).setTween(tl)

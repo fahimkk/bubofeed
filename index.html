@@ -108,30 +108,9 @@
 
 
     <!--REC SECTION-->
-    <div id="video-container" 
-    >
-        <div class="row g-0 flex-column-reverse flex-lg-row" style="
-        align-items: center;
-        height: 100vh;
-        " >
-            <div class="col-lg-5" >
-                <div style="
-                    height: 80vh;
-                    position: relative;
-                    background-image: 
-                    linear-gradient(to right bottom, rgb(42,51,56, 0.3), rgb(42,51,56,0.3)),
-                    url(./assets/images/home_section/bubo-collash.png);
-        background-size: cover;
-                    z-index: -1;
-                ">
-                    <div style="
-                        padding-left: 10%;
-                        position: absolute;
-                        right: 0;
-                        top: 50%;
-                        transform: translate(15%, -50%);
-                        z-index: 1;
-                    ">
+    <section class="row g-0 flex-column-reverse flex-lg-row video-section">
+            <div class="col-lg-5 video-bg-container">
+                <div class="video-container">
                     <video width="100%" height="auto" autoplay muted 
                     style="
                         box-shadow: 3px 3px 5px #777;
@@ -142,238 +121,110 @@
                     </video>
                 </div>
                 </div>
-                </div>
-            <div class="col-lg-7" style="
-            padding-left: 15%;
-            padding-right: 5%;
-
-            ">
-                <h1 style="font-weight: 200; font-size: 40px;">
+            <div class="col-lg-7" id="video-text-container">
+                <h1>
                     No more random & repetitive 
                     <span style="font-weight: 400;">
                      recommendations
                     </span>
                 </h1>
-                <div style="margin-top: 20px;">
-                    <p style="
-                        color:#777;
-                        line-height: 1.6;
-                        letter-spacing: .08em;
-                        margin-bottom: 30px;
-                        font-size: 16px;
-                        font-weight: 300;
-                    ">
-                        Break free with BuboFeed. We get your inner circle to recommend greate movies, trusted news, binge-worthy TV shows & viral videos.
-                    </p>
-                        <div style="
-                            background-color: #F4F4F4;
-                            padding: 20px 40px;
-                            margin: 3px 0px;
-                        ">
-                            <span style="
-                                vertical-align: middle;
-                                color: #9e9e9e;
-                                font-size: 15px;
-                            ">See what movie, news, TV & video</span>
-                        </div>
-                        <div style="
-                            background-color: #F4F4F4;
-                            padding: 20px 40px;
-                            margin: 3px 0px;
-                        ">
-                            <span style="
-                                vertical-align: middle;
-                                color: #9e9e9e;
-                                font-size: 15px;
-                            ">
+                <p>
+                     Break free with BuboFeed. We get your inner circle to recommend greate movies, trusted news, binge-worthy TV shows & viral videos.
+                </p>
+                <div>
+                    <div class="grey-text-box">
+                        <span>
+                            See what movie, news, TV & video
+                        </span>
+                    </div>
+                    <div class="grey-text-box">
+                        <span>
                             Put an end to bottomless scrolling centralize all recommendations
-                            </span>
-                        </div>
-                        <div style="
-                            background-color: #F4F4F4;
-                            padding: 20px 40px;
-                            margin: 3px 0px;
-                        ">
-                            <span style="
-                                vertical-align: middle;
-                                color: #9e9e9e;
-                                font-size: 15px;
-                            ">
+                        </span>
+                    </div>
+                    <div class="grey-text-box">
+                        <span>
                             Find hidden gems based on interests of people you trust
-                            </span>
-                        </div>
+                        </span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+    </section>
+
 
     <!--PRIVACY SECTION-->
-    <div style="
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-    " 
-        class="privacy"
-    >
+    <section class="privacy-section">
         
         <div class="row g-0 " style="align-items: center;">
-            <div class="col-lg-6" style="
-                padding-left: 10%;
-                padding-right: 5%;
-            ">
-                <h1 class="" style="
-                    font-size: 35px;
-                    font-weight: 400;
-                ">
+            <div class="col-lg-6" id="privacy-text-container">
+                <h1>
                     Your privacy is a top priority
                 </h1>
+                <p>
+                    Protect your data privacy with 
+                    <span style="
+                        color: #152a6e;
+                        font-weight: 500;
+                        font-size: 20px;
+                        margin-left: 3px;
+                    ">
+                        BuboFeed
+                    </span>
+                    . We don't expose or share your profile, device, contact or location data in our social network.
+                </p>
+                <hr/>
                 <div style="
                     padding-right: 10%;
-                    margin-top: 30px;
                 ">
-                    <p style="
-                        color: #616161;
-                        font-weight: 300;
-                        line-height: 1.8;
-                        letter-spacing: 0.08em;
-                    ">
-                        Protect your data privacy with 
-                        <span style="
-                            color: #152a6e;
-                            font-weight: 500;
-                            font-size: 20px;
-                            margin-left: 3px;
-                        ">
-                            BuboFeed
-                        </span>
-                        . We don't expose or share your profile, device, contact or location data in our social network.
-                    </p>
-                    <hr style="
-                        margin: 35px 0px 30px 0px;
-                        color: #9e9e9e;
-                    "/>
-                    <div style="
-                        margin-right: 10%;
-                        margin-bottom: 10px;
-                        display: flex;
-                        align-items: center;
-                    ">
-                        <i class="fas fa-user-lock" style="
-                            color: #7D1EFE;
-                            background-color: #F3F2FF;
-                            padding: 20px;
-                            border-radius: 15px;
-                        "></i>
-                        <div style="
-                            margin-left: 25px;
-                        ">
-                        <span style="
-                            font-weight: 300; 
-                        ">
-                            Prevent user account hacing or hijacking
-                        </span>
+                    <div class="privacy-point-container">
+                        <i class="fas fa-user-lock"></i>
+                        <div>
+                            <span>
+                                Prevent user account hacing or hijacking
+                            </span>
                         </div>
                     </div>
 
-                    <div style="
-                        margin-right: 10%;
-                        margin-bottom: 10px;
-                        display: flex;
-                        align-items: center;
-                    ">
-                        <i class="fas fa-bullhorn" style="
-                            color: #7D1EFE;
-                            background-color: #F3F2FF;
-                            padding: 20px;
-                            border-radius: 15px;
-                        "></i>
-                        <div style="
-                            margin-left: 25px;
-                        ">
-                        <span style="
-                            font-weight: 300; 
-                            overflow: scroll;
-                        ">
-                            Stay clear of unnecessary sales and marketing promos
-                        </span>
+                    <div class="privacy-point-container">
+                        <i class="fas fa-bullhorn"></i>
+                        <div>
+                            <span>
+                                Stay clear of unnecessary sales and marketing promos
+                            </span>
                         </div>
                     </div>
 
-                    <div style="
-                        margin-right: 10%;
-                        margin-bottom: 10px;
-                        display: flex;
-                        align-items: center;
-                    ">
-                        <i class="fas fa-users" style="
-                            color: #7D1EFE;
-                            background-color: #F3F2FF;
-                            padding: 20px;
-                            border-radius: 15px;
-                        "></i>
-                        <div style="
-                            margin-left: 25px;
-                        ">
-                        <span style="
-                            font-weight: 300; 
-                        ">
-                            Avoid feeeling stalked by yet another social network
-                        </span>
+                    <div class="privacy-point-container">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <span>
+                                Avoid feeeling stalked by yet another social network
+                            </span>
                         </div>
                     </div>
 
                 </div>
             </div>
-            <div class="col-lg-6" style=" 
-            text-align: center;
-                background:
-        linear-gradient(#F6F6F6, transparent),
-        linear-gradient(to right ,white, transparent),
-        linear-gradient(to left, white, transparent),
-        linear-gradient(to bottom, white, #0e1e58 , transparent),
-        linear-gradient(to top, white,#0e1e58 , transparent),
-        linear-gradient(#0e1e58 , transparent);
-    background-blend-mode: screen;
-            ">
+            <div class="col-lg-6 privacy-image-container">
                 <img 
                 src="assets/images/home_section/person-profile.png"
-                height="700"
-                id="privacy-img"
-            >
+                >
+                <img 
+                src="assets/images/home_section/person-profile.png"
+                id="privacy-img-mobile"
+                >
+
             </div>
         </div>
-    </div>
+    </section>
 
-    <div style="margin: 100px;"></div>
     <!--CONTENT SECTION-->
-    <div style="
-        height: 100vh;
-        background-image: 
-            linear-gradient(to right bottom, rgb(42,51,56, 0.9), rgb(42,51,56,0.9)),
-            url(./assets/images/home_section/mixed_phones.png);
-        background-size: cover;
-        text-align: center;
-        position: relative;
-    " id="new-content-container">
-    <div style="
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    ">
-        <h1 class="" style="
-            color: white;
-            text-align: center;
-            font-weight: 400;
-            padding: 0% 15% 3% 15%;
-            font-family: 'Kaisei Tokumin';
-        ">
+    <section class="content-section" >
+    <div class="content-text-container">
+        <h1>
             Feeding you awsome content from your inner circle
         </h1>
-        <ul style="
-            color: white;
-            margin-bottom: 40px;
-        ">
+        <ul>
             <li><span>Social network for recommendations </li>
             <li>A community based on trust</li>
             <li>Daily updated content</li>
@@ -387,7 +238,9 @@
             </a>
         </div>
     </div>
-    </div>
+    </section>
+
+
 
     <!-- Scroll magic -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>

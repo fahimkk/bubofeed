@@ -25,7 +25,212 @@ body{
   #nav-item-text:hover{
     color: #b3aeae;
   }
+
   /*HOME SECTION-MOBILE*/
+ 
+  .home-header{
+    margin-top: -70px;
+    background: url('../images/bg.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+  }
+
+  .home-header h1{
+    color: #222222;
+    font-weight: 600;
+    font-family: 'Kaisei Tokumin';
+    font-size: 45px;
+    margin: 15% 10% 0% 10%;
+  }
+  .home-header p{
+    color: #777;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    line-height: 1.625em;
+    margin: 30px 10% 0 10%;
+  }
+  .home-header img{
+    margin-top: 20px;
+    height: 500px;
+  }
+
+  /* VIDEO SECTION */
+  .video-section{
+    align-items: center;
+  }
+  .video-bg-container{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+    position: relative;
+  }
+ .video-bg-container::before {
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: 800px;
+    top: -20;
+    left: -20%;
+    z-index: -1;
+    background-image: 
+        linear-gradient(to right bottom, rgb(42,51,56, 0.3), rgb(42,51,56,0.3)),
+        url('../images/home_section/bubo-collash.png') ;
+    transform: rotate(90deg);
+  }
+  .video-container{
+    padding: 10%;
+    z-index: 1;
+  }
+  #video-text-container{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 30px;
+  }
+  #video-text-container h1{
+    font-weight: 200; 
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  #video-text-container p{
+    color:#777;
+    line-height: 1.6;
+    letter-spacing: .08em;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .grey-text-box{
+    background-color: #F4F4F4;
+    padding: 20px 40px;
+    margin: 3px 0px;
+  }
+  .grey-text-box span{
+    vertical-align: middle;
+    color: #9e9e9e;
+    font-size: 15px;
+  }
+
+  /* PRIVACY SECTION */
+  .privacy-section{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-left: 10%;
+  }
+  
+  #privacy-text-container{
+  }
+  #privacy-text-container h1{
+    font-size: 35px;
+    font-weight: 400;
+  }
+  #privacy-text-container p{
+    margin-top: 20px;
+    padding-right: 5%;
+    color: #616161;
+    font-weight: 300;
+    line-height: 1.8;
+    letter-spacing: 0.08em;
+  }
+  #privacy-text-container hr{
+    margin: 35px 80px 30px 0px;
+    color: #9e9e9e;
+  }
+  .privacy-point-container{
+    margin-right: 10%;
+    margin-bottom: 25px;
+    display: inline-block;
+    align-items: center;
+  }
+  .privacy-point-container i{
+    color: #7D1EFE;
+    background-color: #F3F2FF;
+    padding: 23px;
+    border-radius: 15px;
+  }
+  .privacy-point-container div{
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 35%;
+  }
+  .privacy-point-container span{
+    font-size: 15px;
+    overflow: scroll;
+    font-family: 'Poppins';
+  }
+  .privacy-image-container{
+    text-align: center;
+    background:
+        linear-gradient(#F6F6F6, transparent),
+        linear-gradient(to right ,white, transparent),
+        linear-gradient(to left, white, transparent),
+        linear-gradient(to bottom, white, #0e1e58 , transparent),
+        linear-gradient(to top, white,#0e1e58 , transparent),
+        linear-gradient(#0e1e58 , transparent);
+    background-blend-mode: screen;
+  }
+  #privacy-img{
+    display: none;
+  }
+  .privacy-image-container img{
+    height: 500px;
+    margin-top: 30px;
+  }
+
+  /* CONTENT SECTION */
+  .content-section{
+    height: 100vh;
+    background-image: 
+      linear-gradient(to right bottom, rgb(42,51,56, 0.9), rgb(42,51,56,0.9)),
+      url('../images/home_section/mixed_phones.png');
+    background-size: cover;
+    text-align: center;
+    position: relative;
+  }
+  .content-text-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .content-text-container h1{
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    padding-bottom: 3%;
+    font-family: 'Kaisei Tokumin';
+  }
+  .content-text-container ul{
+      color: white;
+      margin-bottom: 40px;
+      text-align: center;
+      list-style: none;
+      margin-left: -30px;
+    }
+  .content-text-container li:before{
+      font-family: 'FontAwesome';
+      content: '\f560';
+      font-size: 15px;
+      margin-right: 10px;
+      color: #c05c48;
+    }
+  .content-text-container li{
+      font-size: 18px;
+      margin-top: 15px;
+      font-family: 'Kaisei Tokumin';
+      font-weight: lighter;
+    }
+    /* used to contorl space betweeen bullet and text */
+  .content-text-container li span{
+      position: relative;
+    }
+
+
+
   #home-container{
     padding-top: 30px;
     padding-bottom: 30px;
@@ -62,6 +267,7 @@ body{
   }
 
    /*REC SECTION-HOME PAGE - MOBILE*/
+ 
   #rec-container{
     padding-top: 30px;
     padding-bottom: 30px;
@@ -481,7 +687,7 @@ body{
 
 
 /* ============LAPTOP SECTION ============= */
-@media(max-width:1366px){
+@media(min-width:992px){
 
   /* NAV SECTION */
   #bubo-nav-logo{
@@ -504,9 +710,7 @@ body{
   #nav-item-text:hover{
     color: #b3aeae;
   }
-  .home-header{
-    margin-top: -70px;
-  }
+  
   /*HOME SECTION-LAPTOP*/
   #home-container{
     padding-top: 50px;
@@ -677,28 +881,7 @@ body{
   #content-container li span{
     position: relative;
   }
-  #new-content-container ul{
-    text-align: center;
-    list-style: none;
-    margin-left: -30px;
-  }
-  #new-content-container li:before{
-    font-family: 'FontAwesome';
-    content: '\f560';
-    font-size: 15px;
-    margin-right: 10px;
-    color: #c05c48;
-  }
-  #new-content-container li{
-    font-size: 20px;
-    margin-top: 15px;
-    font-family: 'Kaisei Tokumin';
-    font-weight: lighter;
-  }
-  /* used to contorl space betweeen bullet and text */
-  #new-content-container li span{
-    position: relative;
-  }
+  
   /* EXPLORE PAGE */
   /* HOME SECTION - EXPLORE PAGE - LAPTOP */
   #explore-home-container{
@@ -1007,6 +1190,202 @@ body{
     text-align: right;
     font-size: 16px;
   }
+
+
+
+  .home-header{
+    margin-top: -70px;
+    height: 100vh;
+    background: url('../images/bg.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+  }
+
+  .home-header h1{
+    color: #222222;
+    font-weight: 600;
+    font-family: 'Kaisei Tokumin';
+    font-size: 45px;
+    margin: 25% 10% 0% 15%;
+  }
+  .home-header p{
+    color: #777;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    line-height: 1.625em;
+    margin: 30px 10% 0 15%;
+  }
+  .home-header img{
+    margin-top: 120px;
+    height: 500px;
+    margin-left: 10%;
+  }
+
+  /* VIDEO SECTION */
+  .video-section{
+    align-items: center;
+    height: 100vh;
+  }
+  .video-bg-container{
+    height: 80vh;
+    position: relative;
+    background-image: 
+      linear-gradient(to right bottom, rgb(42,51,56, 0.3), rgb(42,51,56,0.3)),
+      url('../images/home_section/bubo-collash.png');
+    background-size: cover;
+    z-index: -1;
+  }
+  .video-container{
+    padding-left: 10%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(15%, -50%);
+    z-index: 1;
+  }
+  #video-text-container{
+    padding-left: 15%;
+    padding-right: 5%;
+  }
+  #video-text-container h1{
+    font-weight: 200; 
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  #video-text-container p{
+    color:#777;
+    line-height: 1.6;
+    letter-spacing: .08em;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .grey-text-box{
+    background-color: #F4F4F4;
+    padding: 20px 40px;
+    margin: 3px 0px;
+  }
+  .grey-text-box span{
+    vertical-align: middle;
+    color: #9e9e9e;
+    font-size: 15px;
+  }
+
+  /* PRIVACY SECTION */
+  .privacy-section{
+    margin-bottom: 10%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  #privacy-img-mobile{
+    display: none;
+  }
+  #privacy-text-container{
+    padding-left: 15%;
+    padding-right: 0%;
+  }
+  #privacy-text-container h1{
+    font-size: 35px;
+    font-weight: 400;
+  }
+  #privacy-text-container p{
+    margin-top: 30px;
+    padding-right: 10%;
+    color: #616161;
+    font-weight: 300;
+    line-height: 1.8;
+    letter-spacing: 0.08em;
+  }
+  #privacy-text-container hr{
+    margin: 35px 10px 30px 0px;
+    color: #9e9e9e;
+  }
+  .privacy-point-container{
+    margin-right: 10%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .privacy-point-container i{
+    color: #7D1EFE;
+    background-color: #F3F2FF;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  .privacy-point-container div{
+    margin-left: 25px;
+  }
+  .privacy-point-container span{
+    overflow: scroll;
+    font-family: 'Poppins';
+  }
+  .privacy-image-container{
+    background:
+        linear-gradient(#F6F6F6, transparent),
+        linear-gradient(to right ,white, transparent),
+        linear-gradient(to left, white, transparent),
+        linear-gradient(to bottom, white, #0e1e58 , transparent),
+        linear-gradient(to top, white,#0e1e58 , transparent),
+        linear-gradient(#0e1e58 , transparent);
+    background-blend-mode: screen;
+  }
+  .privacy-image-container img{
+    height: 700px;
+    padding-left: 15%;
+  }
+
+  /* CONTENT SECTION */
+  .content-section{
+    height: 100vh;
+    background-image: 
+      linear-gradient(to right bottom, rgb(42,51,56, 0.9), rgb(42,51,56,0.9)),
+      url('../images/home_section/mixed_phones.png');
+    background-size: cover;
+    text-align: center;
+    position: relative;
+  }
+  .content-text-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .content-text-container h1{
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    padding: 0% 15% 3% 15%;
+    font-family: 'Kaisei Tokumin';
+  }
+  .content-text-container ul{
+      color: white;
+      margin-bottom: 40px;
+      text-align: center;
+      list-style: none;
+      margin-left: -30px;
+    }
+  .content-text-container li:before{
+      font-family: 'FontAwesome';
+      content: '\f560';
+      font-size: 15px;
+      margin-right: 10px;
+      color: #c05c48;
+    }
+  .content-text-container li{
+      font-size: 20px;
+      margin-top: 15px;
+      font-family: 'Kaisei Tokumin';
+      font-weight: lighter;
+    }
+    /* used to contorl space betweeen bullet and text */
+  .content-text-container li span{
+      position: relative;
+    }
+
 }
 /* ============ END LAPTOP SECTION ============= */ 
 
@@ -1184,54 +1563,208 @@ height: 10;
     }
   }
 
-.home-header{
-  height: 100vh;
-  background: url('../images/bg.png'); 
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
 
-.home-header h1{
-  color: #222222;
-  font-weight: 600;
-  font-family: 'Kaisei Tokumin';
-  font-size: 45px;
-  margin: 25% 10% 0% 15%;
-}
-.home-header p{
-  color: #777;
-  font-size: 20px;
-  font-weight: 300;
-  letter-spacing: 0.08em;
-  line-height: 1.625em;
-  margin: 30px 10% 0 15%;
-}
-.home-header img{
-  margin-top: 120px;
-  height: 500px;
-  margin-right: 15%;
-}
 
-@media(min-width:1466px){
+
+@media(min-width:1600px){
   #bubo-nav-logo-mobile{
     display: none;
   }
+  
+
   .home-header{
     margin-top: -70px;
     height: 92vh;
+    background: url('../images/bg.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
   }
+
   .home-header h1{
+    color: #222222;
+    font-weight: 600;
+    font-family: 'Kaisei Tokumin';
     font-size: 60px;
-    margin: 30% 10% 5% 20%;
+    margin: 33% 10% 5% 20%;
+    line-height: 1.2;
   }
   .home-header p{
+    color: #777;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    line-height: 1.625em;
     font-size: 25px;
     margin: 50px 10% 0 20%;
   }
   .home-header img{
     margin-top: 25%;
     height: 680px;
-    margin-left: 10%;
+    margin-left: 20%;
   }
+
+  /* VIDEO SECTION */
+  .video-section{
+    align-items: center;
+    height: 100vh;
+  }
+  .video-bg-container{
+    height: 80vh;
+    position: relative;
+    background-image: 
+      linear-gradient(to right bottom, rgb(42,51,56, 0.3), rgb(42,51,56,0.3)),
+      url('../images/home_section/bubo-collash.png');
+    background-size: cover;
+    z-index: -1;
+  }
+  .video-container{
+    padding-left: 10%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(15%, -50%);
+    z-index: 1;
+  }
+  #video-text-container{
+    padding-left: 15%;
+    padding-right: 5%;
+  }
+  #video-text-container h1{
+    font-weight: 200; 
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+  #video-text-container p{
+    color:#777;
+    line-height: 1.6;
+    letter-spacing: .08em;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .grey-text-box{
+    background-color: #F4F4F4;
+    padding: 25px 45px;
+    margin: 10px 0px;
+  }
+  .grey-text-box span{
+    vertical-align: middle;
+    color: #9e9e9e;
+    font-size: 17px;
+  }
+
+  /* PRIVACY SECTION */
+  .privacy-section{
+    display: flex;
+    justify-content: center;
+    margin-top: -8%;
+    margin-bottom: -1%;
+  }
+
+  #privacy-text-container{
+    padding-left: 15%;
+    padding-right: 5%;
+  }
+  #privacy-text-container h1{
+    font-size: 60px;
+    font-weight: 400;
+  }
+  #privacy-text-container p{
+    margin-top: 30px;
+    padding-right: 10%;
+    color: #616161;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 1.8;
+    letter-spacing: 0.08em;
+  }
+  #privacy-text-container hr{
+    margin: 35px 10px 30px 0px;
+    color: #9e9e9e;
+  }
+  .privacy-point-container{
+    margin-right: 10%;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+  }
+  .privacy-point-container i{
+    color: #7D1EFE;
+    background-color: #F3F2FF;
+    padding: 25px;
+    border-radius: 15px;
+  }
+  .privacy-point-container div{
+    margin-left: 25px;
+  }
+  .privacy-point-container span{
+    font-family: 'Poppins';
+    overflow: scroll;
+  }
+  .privacy-image-container{
+    background:
+        linear-gradient(#F6F6F6, transparent),
+        linear-gradient(to right ,white, transparent),
+        linear-gradient(to left, white, transparent),
+        linear-gradient(to bottom, white, #0e1e58 , transparent),
+        linear-gradient(to top, white,#0e1e58 , transparent),
+        linear-gradient(#0e1e58 , transparent);
+    background-blend-mode: screen;
+  }
+  #privacy-img-mobile{
+    display: none;
+  }
+  .privacy-image-container img{
+    padding-right: 30%;
+    height: 700px;
+  }
+
+  /* CONTENT SECTION */
+  .content-section{
+    height: 100vh;
+    background-image: 
+      linear-gradient(to right bottom, rgb(42,51,56, 0.9), rgb(42,51,56,0.9)),
+      url('../images/home_section/mixed_phones.png');
+    background-size: cover;
+    text-align: center;
+    position: relative;
+  }
+  .content-text-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .content-text-container h1{
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    padding: 0% 15% 3% 15%;
+    font-family: 'Kaisei Tokumin';
+  }
+  .content-text-container ul{
+      color: white;
+      margin-bottom: 40px;
+      text-align: center;
+      list-style: none;
+      margin-left: -30px;
+    }
+  .content-text-container li:before{
+      font-family: 'FontAwesome';
+      content: '\f560';
+      font-size: 15px;
+      margin-right: 10px;
+      color: #c05c48;
+    }
+  .content-text-container li{
+      font-size: 20px;
+      margin-top: 15px;
+      font-family: 'Kaisei Tokumin';
+      font-weight: lighter;
+    }
+    /* used to contorl space betweeen bullet and text */
+  .content-text-container li span{
+      position: relative;
+    }
 }
