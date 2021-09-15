@@ -28,28 +28,18 @@ body{
 
   /*HOME SECTION-MOBILE*/
  
-  .home-header{
-    margin-top: -70px;
-    background: url('../images/bg.png'); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
+  footer{
+    text-align: center;
+    font-size: 14px;
   }
 
   .home-header h1{
-    color: #222222;
     font-weight: 500;
-    font-family: 'Kaisei Tokumin';
     font-size: 35px;
     margin: 20% 10% 0% 10%;
   }
   .home-header p{
-    color: #777;
     font-size: 18px;
-    font-weight: 300;
-    letter-spacing: 0.08em;
-    line-height: 1.625em;
     margin: 30px 10% 0 10%;
   }
   .home-header img{
@@ -117,7 +107,7 @@ body{
     display: flex;
     justify-content: center;
     padding-top: 50px;
-    padding-left: 10%;
+    padding-left: 5%;
     margin-bottom: 10%;
   }
   
@@ -186,19 +176,16 @@ body{
       url('../images/home_section/mixed_phones.png');
     background-size: cover;
     text-align: center;
-    position: relative;
+    display: flex;
+    align-items: center;
   }
   .content-text-container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
   .content-text-container h1{
     color: white;
     text-align: center;
     font-weight: 400;
-    padding-bottom: 3%;
+    padding: 0 10% 3% 10%;
     font-family: 'Kaisei Tokumin';
   }
   .content-text-container ul{
@@ -1191,28 +1178,16 @@ body{
 
 
   .home-header{
-    margin-top: -70px;
     height: 100vh;
-    background: url('../images/bg.png'); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
   }
 
   .home-header h1{
-    color: #222222;
     font-weight: 600;
-    font-family: 'Kaisei Tokumin';
     font-size: 45px;
     margin: 25% 10% 0% 15%;
   }
   .home-header p{
-    color: #777;
     font-size: 20px;
-    font-weight: 300;
-    letter-spacing: 0.08em;
-    line-height: 1.625em;
     margin: 30px 10% 0 15%;
   }
   .home-header img{
@@ -1570,28 +1545,16 @@ height: 10;
   
 
   .home-header{
-    margin-top: -70px;
     height: 92vh;
-    background: url('../images/bg.png'); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
   }
 
   .home-header h1{
-    color: #222222;
     font-weight: 600;
-    font-family: 'Kaisei Tokumin';
     font-size: 60px;
     margin: 33% 10% 5% 20%;
     line-height: 1.2;
   }
   .home-header p{
-    color: #777;
-    font-weight: 300;
-    letter-spacing: 0.08em;
-    line-height: 1.625em;
     font-size: 25px;
     margin: 50px 10% 0 20%;
   }
@@ -1765,3 +1728,26 @@ height: 10;
       position: relative;
     }
 }
+
+
+
+
+.home-header{
+    margin-top: -70px;
+    background: url('../images/bg.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+  }
+.home-header h1{
+    color: #222222;
+    font-family: 'Kaisei Tokumin';
+}
+.home-header p{
+  color: #777;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  line-height: 1.625em;
+}
+
