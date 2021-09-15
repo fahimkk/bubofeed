@@ -39,10 +39,10 @@ body{
 
   .home-header h1{
     color: #222222;
-    font-weight: 600;
+    font-weight: 500;
     font-family: 'Kaisei Tokumin';
-    font-size: 45px;
-    margin: 15% 10% 0% 10%;
+    font-size: 35px;
+    margin: 20% 10% 0% 10%;
   }
   .home-header p{
     color: #777;
@@ -72,9 +72,7 @@ body{
     content: "";
     position: absolute;
     width: 65%;
-    height: 800px;
-    top: -20;
-    left: -20%;
+    height: 100%;
     z-index: -1;
     background-image: 
         linear-gradient(to right bottom, rgb(42,51,56, 0.3), rgb(42,51,56,0.3)),
@@ -120,6 +118,7 @@ body{
     justify-content: center;
     padding-top: 50px;
     padding-left: 10%;
+    margin-bottom: 10%;
   }
   
   #privacy-text-container{
@@ -155,7 +154,7 @@ body{
   .privacy-point-container div{
     margin-left: 5px;
     margin-top: 5px;
-    margin-right: 35%;
+    margin-right: 10%;
   }
   .privacy-point-container span{
     font-size: 15px;
@@ -173,9 +172,7 @@ body{
         linear-gradient(#0e1e58 , transparent);
     background-blend-mode: screen;
   }
-  #privacy-img{
-    display: none;
-  }
+
   .privacy-image-container img{
     height: 500px;
     margin-top: 30px;
