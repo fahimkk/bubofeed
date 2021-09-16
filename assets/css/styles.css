@@ -87,6 +87,7 @@ body{
 
   /* PRIVACY SECTION-MOBILE*/
   .privacy-section{
+    display: inline-block;
     padding-top: 50px;
     padding-left: 5%;
     margin-bottom: 10%;
@@ -119,12 +120,29 @@ body{
   .privacy-point-container span{
     font-size: 15px;
   }
-  .privacy-image-container{
-    text-align: center;
+  #privacy-image-container{
+    padding: 7% 10% 0 8%;
+    margin-bottom: 400px;
+    transition: transform 0.3s;
   }
-  .privacy-image-container img{
-    height: 500px;
-    margin-top: 30px;
+  #privacy-image-container:hover{
+    transform: translateY(-10px);
+  }
+  .image-container img{
+    height: 300px;
+  }
+  .image-container img:first-of-type{
+    /* first img */
+    top: 40px;
+  }
+  .image-container img:nth-child(2){
+    /* last img */
+    top: 80px;
+    left: 150px;
+  }
+  .image-container img:last-of-type{
+    /* center img */
+    left: 50px;
   }
 
   /* CONTENT SECTION-MOBILE*/
@@ -355,12 +373,11 @@ body{
 
   /* PRIVACY SECTION */
   .privacy-section{
-    margin-bottom: 10%;
+    margin: 4% 0;
     height: 100vh;
   }
   #privacy-text-container{
-    padding-left: 15%;
-    padding-right: 0%;
+    padding: 5% 3% 0 5%;
   }
   #privacy-text-container h1{
     font-size: 35px;
@@ -372,7 +389,7 @@ body{
     font-weight: 300;
   }
   #privacy-text-container hr{
-    margin: 35px 10px 30px 0px;
+    margin: 35px 50px 30px 0px;
   }
   .privacy-point-container{
     margin-bottom: 20px;
@@ -384,9 +401,28 @@ body{
   .privacy-point-container div{
     margin-left: 25px;
   }
-  .privacy-image-container img{
-    height: 700px;
-    padding-left: 15%;
+  #privacy-image-container{
+    padding-left: 3%;
+    transition: transform 0.3s;
+  }
+  #privacy-image-container:hover{
+    transform: translateY(-10px) scale(1.03);
+  }
+  .image-container img{
+    height: 500px;
+  }
+  .image-container img:first-of-type{
+    /* first img */
+    top: 50px;
+  }
+  .image-container img:nth-child(2){
+    /* last img */
+    top: 100px;
+    left: 250px;
+  }
+  .image-container img:last-of-type{
+    /* center img */
+    left: 80px;
   }
 
   /* CONTENT SECTION */
@@ -623,13 +659,11 @@ body{
 
   /* PRIVACY SECTION */
   .privacy-section{
-    margin-top: -8%;
-    margin-bottom: -1%;
+    margin-bottom: -5%;
   }
 
   #privacy-text-container{
-    padding-left: 15%;
-    padding-right: 5%;
+    padding: 5% 5% 0 0%;
   }
   #privacy-text-container h1{
     font-size: 60px;
@@ -654,13 +688,30 @@ body{
   .privacy-point-container div{
     margin-left: 25px;
   }
-  #privacy-img-mobile{
-    display: none;
+  #privacy-image-container{
+    padding-left: 5%;
+    transition: transform 0.3s;
   }
-  .privacy-image-container img{
-    padding-right: 30%;
-    height: 700px;
+  #privacy-image-container:hover{
+    transform: translateY(-10px) scale(1.05);
   }
+  .image-container img{
+    height: 650px;
+  }
+  .image-container img:first-of-type{
+    /* first img */
+    top: 70px;
+  }
+  .image-container img:nth-child(2){
+    /* last img */
+    top: 140px;
+    left: 300px;
+  }
+  .image-container img:last-of-type{
+    /* center img */
+    left: 100px;
+  }
+ 
 
   /* CONTENT SECTION */
   .content-section{
@@ -1113,7 +1164,7 @@ footer a:hover{
   content: '\f560';
   font-size: 15px;
   margin-right: 10px;
-  color: #c05c48;
+  color: #CD9F6A;
 }
 .content-text-container li{
   margin-top: 15px;
@@ -1287,4 +1338,26 @@ color: transparent;
 }
 .feature-box_text{
 color: black;
+}
+
+.image-container{
+  position: relative;
+}
+.image-container img{
+  position: absolute;
+}
+.image-container img:first-of-type{
+  /* first img */
+  box-shadow: 0px 0px 1px;
+  z-index: -1;
+}
+.image-container img:nth-child(2){
+  /* last img */
+  z-index: 1;
+  box-shadow: 0px 0px 1px;
+}
+.image-container img:last-of-type{
+  z-index: 5;
+  /* center img */
+  box-shadow: 2px 4px 15px;
 }
