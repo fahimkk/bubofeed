@@ -111,12 +111,14 @@ $( window ).on( "load", function() {
     function mainNav() {
         var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
         if (top < 40 && $(window).width()>992)  {
-            $('.navbar').css('background-color', '')
+            $('.navbar').css('background-image', '')
             $('.nav-link').css('color', 'white')
+            $('#bubo-nav-logo span').css('color', '#162a6f')
         }
         else {
-            $('.navbar').css('background-color', '#44D7F5')
+            $('.navbar').css('background-image', 'linear-gradient(to right bottom, #85ECED, #235DE0)')
             $('.nav-link').css('color', 'white')
+            $('#bubo-nav-logo span').css('color', 'white')
         }
 	}
      });
