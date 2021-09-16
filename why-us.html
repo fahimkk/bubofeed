@@ -8,6 +8,7 @@
     <title>BuboFeed-Why Us</title>
 
     <!--Custom style sheet-->
+    <link rel="stylesheet" href="./assets/css/icon-font.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <!--Bootstrap 5 - css-->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
@@ -22,11 +23,11 @@
 <body>
 
 <nav class="navbar sticky-top navbar-expand-lg navbar-light ">
-  <div class="container-fluid" style="background-color: white;">
+  <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="menu_text">
       <span class="navbar-toggler-icon" id="menu_icon"></span>
     </button>
-    <a class="navbar-brand" id="bubo-nav-logo" href="#">
+    <a class="navbar-brand" id="bubo-nav-logo" href="#" style="margin-left: 10%; " >
         <img src="./assets/images/logo/bubo_logo_small.png" class="img-thumbnail" alt="..." id="bubo-btn">
         BuboFeed
     </a>
@@ -52,189 +53,129 @@
 </nav>
 
 
-
-
-    <!--HOME SECTION-->
-    <div class="row g-0" id="why-us-home-container">
-        <div class="col-lg-6" id="why-us-home-col-left">
-            <h1 class="display-6" id="why-us-home-title">
+<header class="why-us-header">
+    <div class="row g-0 d-flex justify-content-between" >
+        <div class="col-lg-6 col-md-6">
+            <h1 id="header-main-title">
                 Trust your inner circle ?
-                <br/>
-                You'll love BuboFeed.
             </h1>
+            <h2 id="header-sub-title">
+                You'll love 
+                <span>
+                    BuboFeed.
+                </span>
+            </h2>
+                
         </div>
-        <div class="col-lg-5" id="why-us-home-col-right" >
-                <img 
-                    src="assets/images/home_section/bubo-collash.png"
-                >
+        <div class="col-lg-6 col-md-6" style="
+        text-align: center;
+        " >
+            <img 
+                src="assets/images/home_section/give-sugg.png"
+                id="header-image"
+            >
         </div>
-
     </div>
+</header>
+
+
+<div class="why-us-bg-container">
 
     <!--CONTENT SECTION-->
-    <div id="about-section" style="padding:50px;"></div>
-    <div id="why-us-content-container" >
-        <p id="why-us-content-text">
+    <section class="why-us-content-section">
+        <p >
           BuboFeed was built on a vision to create a community that took content personalization and data
 privacy seriously. It was also created because of the frustrations we all felt about receiving terrible
 recommendations while having our data exposed or misused. Have you felt these too? Join the
 secure BuboFeed community and get recommendations that truly matter. 
         </p> 
-    </div>
+    </section>
 
-    <div>
-        <h1>Why BuboFeed ?</h1>
-        <div class="row g-0" style="height: 80vh; align-items: stretch;">
-            <div class="col-lg-4" style="border: 1px red solid; position: relative;">
-                <div style="
-                position: absolute; top: 10%; right: 10%; transform: translate(-50%, -50%);"
-                >
-                    <p>one</p>
-                </div>
-                <div style="
-                    position: absolute; top: 50%; right: 10%; transform: translate(-50%, -50%);"
-                >
-                    <p>three</p>
-                </div>
-                <div style="
-                    position: absolute; top: 90%; right: 10%; transform: translate(-50%, -50%);"
-                >
-                    <p>four</p>
-                </div>
-            </div>
-            <div class="col-lg-4" style="border: 1px red solid; 
-            text-align: center;
-            ">
-                <img 
-                    src="assets/images/why-us/ask-for.png"
-                    height="500"
-                >
-            </div>
-            <div class="col-lg-4" style="border: 1px red solid;">
-                <p>one</p>
-                <p>two</p>
-                <p>three</p>
-            </div>
-        </div>
-    </div>
 
-    <!-- WHY-BUBOFEED -->
-    <div id="why-bubofeed-container">
-        <h1 class="display-5" id="why-bubofeed-title">
+
+    <section class="feature-section-container">
+        <h1>
             Why Bubofeed ?
         </h1>
-
-        <div class="row g-0 flex-column-reverse flex-lg-row" style="align-items: center; ">
-            <div class="col-lg-5" id="why-bubofeed-left-1">
-                <img 
-                    src="assets/images/why-us/ask-for.png"
-                    class="phone-img show-on-scroll"
-                > 
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="feature-box_icon icon-basic-video"></i>
+                    <p class="feature-box_text">
+                        Get real movie, book, TV & video suggestions from real people.
+                    </p>
+                </div>
             </div>
-            <div class="col-lg-7 " id="why-bubofeed-right-1">
-                <p id="why-bubofeed-text">
-                    Get real movie, book, TV & video suggestions from real people.
-                </p>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="feature-box_icon icon-basic-picture-multiple"></i>
+                    <p class="feature-box_text">
+                        Explore tons of genres & categories you love
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="feature-box_icon icon-basic-cards-hearts"></i>
+                    <p class="feature-box_text">
+                        Create a movie or video watchlist for anytime viewing experience
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="feature-box_icon icon-basic-lock"></i>
+                    <p class="feature-box_text">
+                        Keep your device, profile, device, contact or location data 100% safe
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="feature-box_icon icon-basic-share"></i>
+                    <p class="feature-box_text">
+                        Take control over who can recommend content &amp; add new friends
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="feature-box_icon icon-basic-world"></i>
+                    <p class="feature-box_text">
+                        Discover exclusively curated lists &amp; wide your tastes
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+
+
+    <!--CONTENT SECTION-->
+    <section class="content-section" >
+        <div class="content-text-container">
+            <h1>
+                Let your friends recommends content. We'll protect your data.
+            </h1>
+            <ul>
+                <li><span>Social network for recommendations </li>
+                <li>A community based on trust</li>
+                <li>Daily updated content</li>
+            </ul>
+            <div id="btn-google-play">
+                <a href="#">
+                    <img 
+                        src="assets/images/download_section/google-play-badge-128x128.png"
+                        height="35"
+                    >
+                </a>
             </div>
         </div>
-
-        <div class="row g-0" style="align-items: center; ">
-            <div class="col-lg-7 " id="why-bubofeed-left-2">
-                <p id="why-bubofeed-text">
-                    Explore tons of genres & categories you love
-                </p>
-            </div>
-
-            <div class="col-lg-5" id="why-bubofeed-right-2">
-                <img 
-                    src="assets/images/why-us/sortig.png"
-                    class="phone-img show-on-scroll"
-                > 
-            </div>
-        </div>
-
-        <div class="row g-0 flex-column-reverse flex-lg-row" style="align-items: center; ">
-            <div class="col-lg-5" id="why-bubofeed-left-3">
-                <img 
-                    src="assets/images/why-us/mylist.png"
-                    class="phone-img show-on-scroll"
-                > 
-            </div>
-            <div class="col-lg-7 " id="why-bubofeed-right-3">
-                <p id="why-bubofeed-text">
-                    Create a movie or video watchlist for anytime viewing experience
-                </p>
-            </div>
-        </div>
-
-        <div class="row g-0" style="align-items: center; ">
-            <div class="col-lg-7 " id="why-bubofeed-left-4">
-                <p id="why-bubofeed-text">
-                    Keep your device, profile, device, contact or location data 100% safe
-                </p>
-            </div>
-
-            <div class="col-lg-5" id="why-bubofeed-right-4">
-                <img 
-                    src="assets/images/home_section/person-profile.png"
-                    class="phone-img show-on-scroll"
-                > 
-            </div>
-        </div>
-
-        <div class="row g-0 flex-column-reverse flex-lg-row" style="align-items: center; ">
-            <div class="col-lg-5" id="why-bubofeed-left-5">
-                <img 
-                    src="assets/images/why-us/recommend.png"
-                    class="phone-img show-on-scroll"
-                > 
-            </div>
-            <div class="col-lg-7 " id="why-bubofeed-right-5">
-                <p id="why-bubofeed-text">
-                    Take control over who can recommend content &amp; add new friends
-                </p>
-            </div>
-        </div>
-
-        <div class="row g-0" style="align-items: center; ">
-            <div class="col-lg-7 " id="why-bubofeed-left-2">
-                <p id="why-bubofeed-text">
-                    Discover exclusively curated lists &amp; wide your tastes
-                </p>
-            </div>
-
-            <div class="col-lg-5" id="why-bubofeed-right-2">
-                <img 
-                    src="assets/images/why-us/automated-feed.png"
-                    class="phone-img show-on-scroll"
-                > 
-            </div>
-        </div>
-    </div>
-
-
-<div id="mobile-space"></div>
-    <div id="content-container" >
-        <h1 class="" id="content-title">
-
-            Let your friends recommends content. We'll protect your data.
-        </h1>
-        <ul>
-            <li><span>social network for recommendations </li>
-            <li>A community based on trust</li>
-            <li>Daily updated content</li>
-        </ul>
-        <div id="btn-google-play">
-            <a href="#">
-                <img 
-                    src="assets/images/download_section/google-play-badge-128x128.png"
-                    height="35"
-                >
-            </a>
-        </div>
-    </div>
-
-
+        </section>
+    
 
     <!-- Social media icon-->
     <script src="https://kit.fontawesome.com/e1342e9a0c.js" crossorigin="anonymous"></script>
@@ -249,7 +190,11 @@ secure BuboFeed community and get recommendations that truly matter.
     <!--Page content-->
 
 
-    <footer id="footer">
+    <footer  style="
+        background-color: #20272B;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    ">
         <div class="container-fluid row">
             <div class="col-lg-6" id="footer-text-left">
                 &copy; 2021 Wendorse, All rights reserved.

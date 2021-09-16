@@ -22,12 +22,12 @@
 <body>
 
 
-<nav class="navbar sticky-top navbar-expand-lg navbar-light ">
-  <div class="container-fluid" style="background-color: white;">
+<nav class="navbar sticky-top navbar-expand-lg navbar-light" >
+  <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="menu_text">
       <span class="navbar-toggler-icon" id="menu_icon"></span>
     </button>
-    <a class="navbar-brand" id="bubo-nav-logo" href="#">
+    <a class="navbar-brand" id="bubo-nav-logo" href="#" style="margin-left: 10%; ">
         <img src="./assets/images/logo/1024.png" class="img-thumbnail" alt="..." id="bubo-btn">
         BuboFeed
     </a>
@@ -38,13 +38,13 @@
         <!--mx auto to align it center-->
       <ul class="navbar-nav me-5 ">
         <li class="nav-item  active">
-          <a class="nav-link" aria-current="page" href="./index.html" id="nav-item-text">Home</a>
+          <a class="nav-link" aria-current="page" href="./index.html" id="nav-item-text" style="color:white" >Home</a>
         </li>
         <li class="nav-item  active">
-          <a class="nav-link" aria-current="page" href="#" id="nav-item-text">Explore</a>
+          <a class="nav-link" aria-current="page" href="#" id="nav-item-text" style="color:white" >Explore</a>
         </li>
         <li class="nav-item  active">
-          <a class="nav-link" aria-current="page" id='nav-item-text' href="./why-us.html">Why Us</a>
+          <a class="nav-link" aria-current="page" id='nav-item-text' href="./why-us.html" style="color:white" >Why Us</a>
         </li>
       </ul>
 
@@ -53,91 +53,101 @@
 </nav>
 
 
-<!-- <nav class="navbar sticky-top navbar-expand-lg navbar-light " >
-<div id="header-logo" >
-    <a href="#home-section">
-        <img src="./assets/images/logo/bubo_logo_small.png" class="img-thumbnail" alt="..." id="bubo-btn">
-    </a>
 
-    <h2 class="mx-auto pt-2 px-2">
-        BUBOFEED
-    </h2>
-</div>
-    <button class="menu-btn">
-       <i class="fas fa-bars"></i>
-    </button>
-
-    <button id="menu-btn-close">
-       <i class="fas fa-times"></i>
-    </button>
-
-  <div class="wrapper">
-      <ul>
-        <li><a href="#home-section">Home</a></li>
-        <li><a href="#about-section">Why BuboFeed</a></li>
-        <li><a href="#feature-section">Features</a></li>
-        <li><a href="#contact-section">Contact Us</a></li>
-        <li><a href="https://bubofeed.com/blogs">Blogs</a></li>
-      </ul>
-    </div>
-</nav> -->
-
-
-    <!--HOME SECTION-->
-    <div class="row g-0" id="explore-home-container">
-        <div class="col-lg-7" id="explore-home-col-left">
-            <h1 class="display-5" id="explore-home-title">
-                Your one-stop social network for personalized content
-            </h1>
+    <header class="explore-header">
+        <div class="row g-0 d-flex justify-content-between" >
+            <div class="col-lg-6 col-md-6">
+                <h1 id="header-main-title" class="explore-main-heading">
+                    Your one-stop social network for personalized content
+                </h1>
+            </div>
+            <div class="col-lg-6 col-md-6" style="
+            text-align: center;
+            " >
+            </div>
         </div>
-        <div class="col-lg-5" id="explore-home-col-right" >
-                <img 
-                    src="assets/images/explore/profile.png"
-                > 
-        </div>
-    </div>
+    </header>
+
 
 
     <!--PROMISE SECTION-->
-    <div id="promise-container">
-        <div class="row g-0 flex-column-reverse flex-lg-row" style="align-items: center; ">
-            <div class="col-lg-6" id="promise-col-left">
+    <section class="promise-section">
+        <div class="row g-0" >
+            <div class="col-lg-6 promise-image-container">
                 <img 
                     src="assets/images/explore/personal-feed.png"
-                    class="vibrate-image"
+                    class="moveToRight show-on-scroll"
                 > 
             </div>
-            <div class="col-lg-6 " id="promise-col-right">
-                <h1 class="" id="promise-title">
+            <div class="col-lg-6" id="promise-text-container">
+                <i class="fas fa-hands-helping"></i>
+                <h1>
                     The BuboFeed promise
                 </h1>
-                <p id="promise-text">
+                <p >
                     People are more reliable than data science for content recommendations - especially if you know and trust them. That's what BuboFeed can do for you. We feed you content from your inner circle and let you control who can get in or out.
                 </p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!--CONTENT SECTION-->
-    <div id="about-section" style="padding:40px;"></div>
-    <div id="explore-content-container" >
-        <h1 class="" id="explore-content-title">
-            Explore what you can do
+    <section class="explore-content-section">
+        <h1 class="explore-content-heading">
+                &nbsp; Why BuboFeed ! &nbsp;  
         </h1>
-        <p id="explore-content-text">
-            Ask for movie, news, TV or video recommendations & give suggestions.
-            <br/>
-            Select your favorite genres & discover what others are watching/reading.
-            <br/>
-            Use MyList to add movies & videos to watch anytime - anyplace.
-            <br/>
-            Get exclusive content recommendations from BuboFeed.
-            <br/>
-            Discover recommendations for friends based on common interests.
-        </p> 
-    </div>
+        <div class="row g-0 d-flex align-content-center" >
+            <div class="col-lg-4"id="explore-content-col-left">
+                <div class="explore-content-item-container">
+                    <i class="fab fa-slideshare fa-lg icon-round"></i>
+                    <span>
+                        Ask for movie, news, TV or video recommendations & give suggestions.
+                    </span>
+                </div>
+                <div class="explore-content-item-container">
+                    <i class="fas fa-video fa-lg icon-round"></i>
+                    <span>
+                        Select your favorite genres & discover what others are watching/reading.
+                    </span>
+                </div>
+                <div class="explore-content-item-container">
+                    <i class="fab fa-bitbucket fa-lg icon-round"></i>
+                    <span>
+                        Use MyList to add movies & videos to watch anytime - anyplace.
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-4" style=" 
+            text-align: center;
+            ">
+                <img 
+                    src="assets/images/explore/white-video.png"
+                    height="600"
+                >
+            </div>
 
-    <div  style="padding:20px;"></div>
+            <div class="col-lg-4"id="explore-content-col-right">
+                <div class="explore-content-item-container">
+                    <i class="fas fa-robot fa-lg icon-round"></i>
+                    <span>
+                        Get exclusive content recommendations from BuboFeed.
+                    </span>
+                </div>
+                <div class="explore-content-item-container">
+                    <i class="fas fa-star-half-alt fa-lg icon-round"></i>
+                    <span>
+                        Discover recommendations for friends based on common interests.
+                    </span>
+                </div>
+                <div class="explore-content-item-container">
+                    <i class="fas fa-users fa-lg icon-round"></i>
+                    <span>
+                        Feeding you awsome content from your inner circle
+                    </span>
+                </div>
+            </div>
+            
+        </div>
+    </section>
 
 
     <!-- Social media icon-->
@@ -153,7 +163,11 @@
     <!--Page content-->
 
 
-    <footer id="footer">
+    <footer  style="
+        background-color: #03233b;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    ">
         <div class="container-fluid row">
             <div class="col-lg-6" id="footer-text-left">
                 &copy; 2021 Wendorse, All rights reserved.

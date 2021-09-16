@@ -25,6 +25,9 @@ body{
   #nav-item-text:hover{
     color: #b3aeae;
   }
+  .navbar{
+    background-color: '#44D7F5';
+  }
 
   /*HOME SECTION-MOBILE*/
  
@@ -48,15 +51,10 @@ body{
   }
 
   /* VIDEO SECTION */
-  .video-section{
-    align-items: center;
-  }
   .video-bg-container{
     padding-top: 50px;
     display: flex;
     align-items: center;
-    z-index: -1;
-    position: relative;
   }
  .video-bg-container::before {
     content: "";
@@ -71,7 +69,6 @@ body{
   }
   .video-container{
     padding: 10%;
-    z-index: 1;
   }
   #video-text-container{
     padding-left: 10%;
@@ -84,35 +81,24 @@ body{
     margin-bottom: 20px;
   }
   #video-text-container p{
-    color:#777;
-    line-height: 1.6;
-    letter-spacing: .08em;
-    margin-bottom: 30px;
     font-size: 16px;
     font-weight: 300;
   }
   .grey-text-box{
-    background-color: #F4F4F4;
     padding: 20px 40px;
     margin: 3px 0px;
   }
   .grey-text-box span{
-    vertical-align: middle;
-    color: #9e9e9e;
     font-size: 15px;
   }
 
   /* PRIVACY SECTION */
   .privacy-section{
-    display: flex;
-    justify-content: center;
     padding-top: 50px;
     padding-left: 5%;
     margin-bottom: 10%;
   }
   
-  #privacy-text-container{
-  }
   #privacy-text-container h1{
     font-size: 35px;
     font-weight: 400;
@@ -120,26 +106,17 @@ body{
   #privacy-text-container p{
     margin-top: 20px;
     padding-right: 5%;
-    color: #616161;
     font-weight: 300;
-    line-height: 1.8;
-    letter-spacing: 0.08em;
   }
   #privacy-text-container hr{
     margin: 35px 80px 30px 0px;
-    color: #9e9e9e;
   }
   .privacy-point-container{
-    margin-right: 10%;
     margin-bottom: 25px;
     display: inline-block;
-    align-items: center;
   }
   .privacy-point-container i{
-    color: #7D1EFE;
-    background-color: #F3F2FF;
     padding: 23px;
-    border-radius: 15px;
   }
   .privacy-point-container div{
     margin-left: 5px;
@@ -148,21 +125,10 @@ body{
   }
   .privacy-point-container span{
     font-size: 15px;
-    overflow: scroll;
-    font-family: 'Poppins';
   }
   .privacy-image-container{
     text-align: center;
-    background:
-        linear-gradient(#F6F6F6, transparent),
-        linear-gradient(to right ,white, transparent),
-        linear-gradient(to left, white, transparent),
-        linear-gradient(to bottom, white, #0e1e58 , transparent),
-        linear-gradient(to top, white,#0e1e58 , transparent),
-        linear-gradient(#0e1e58 , transparent);
-    background-blend-mode: screen;
   }
-
   .privacy-image-container img{
     height: 500px;
     margin-top: 30px;
@@ -170,499 +136,125 @@ body{
 
   /* CONTENT SECTION */
   .content-section{
-    height: 100vh;
-    background-image: 
-      linear-gradient(to right bottom, rgb(42,51,56, 0.9), rgb(42,51,56,0.9)),
-      url('../images/home_section/mixed_phones.png');
-    background-size: cover;
-    text-align: center;
     display: flex;
     align-items: center;
   }
-  .content-text-container{
-  }
   .content-text-container h1{
-    color: white;
-    text-align: center;
-    font-weight: 400;
     padding: 0 10% 3% 10%;
-    font-family: 'Kaisei Tokumin';
   }
-  .content-text-container ul{
-      color: white;
-      margin-bottom: 40px;
-      text-align: center;
-      list-style: none;
-      margin-left: -30px;
-    }
-  .content-text-container li:before{
-      font-family: 'FontAwesome';
-      content: '\f560';
-      font-size: 15px;
-      margin-right: 10px;
-      color: #c05c48;
-    }
   .content-text-container li{
-      font-size: 18px;
-      margin-top: 15px;
-      font-family: 'Kaisei Tokumin';
-      font-weight: lighter;
-    }
-    /* used to contorl space betweeen bullet and text */
-  .content-text-container li span{
-      position: relative;
-    }
-
-
-
-  #home-container{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    align-items: center;
-    background:
-        linear-gradient(#F7F4F1 , transparent),
-        linear-gradient(to top, white, transparent),
-        linear-gradient(to left , #162a6f, transparent),
-        linear-gradient(to right , white, transparent),
-        linear-gradient(to bottom, white, transparent);
-    background-blend-mode: screen;
-  }
-  #home-title{
-    font-family: 'Kaisei Tokumin';
-    font-weight: 600;
-    color: #162a6f;
-  }
-  #home-text{
-    font-family: 'Roboto';
-    font-weight: lighter;
-    padding-top: 20px;
-    font-size: 20px;
-  }
-  #home-col-left{
-    padding-left: 10%;
-    padding-right: 5%;
-  }
-  #home-col-right{
-    padding-top: 20px;
-    text-align: center; 
-  }
-  #home-col-right img{
-    height: 450px;
-  }
-
-   /*REC SECTION-HOME PAGE - MOBILE*/
- 
-  #rec-container{
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  #rec-title{
-    font-weight: 600;
-    line-height: 1.4;
-    text-align: center;
-    font-size: 26px;
-    font-family: 'Kaisei Tokumin';
-    color: #0e1e58;
-  }
-  #rec-col-left{
-    text-align: center;
-  }
-  #rec-col-right{
-    padding-right: 5%;
-    padding-left: 5%;
-    padding-bottom: 20px;
-  }
-  #rec-text-container{
-    padding-right: 5%;
-    padding-left: 5%;
-    padding-top: 10px;
-  }
-  #rec-text{
-    text-align: justify;
-    font-family: 'Kaisei Tokumin';
-    line-height: 1.5;
-    font-size: 16px;
-    margin-bottom: 15px;
-  }
-  #rec-col-right li{
-    margin-left: 30px;
-    margin-right: 30px;
-    font-family: 'Kaisei Tokumin';
-    font-size: 15px;
-    margin-top: 8px;
-  }
-  
-  /*PRIVACY SECTION-HOME PAGE - MOBILE*/
-  #privacy-container{
-    padding-top: 30px;
-    padding-bottom: 80px;
-    background:
-        linear-gradient(red , transparent),
-        linear-gradient(to left , #273a7c,white,transparent),
-        linear-gradient(to right, white, transparent),
-        linear-gradient(to bottom, white, transparent),
-        linear-gradient(to top, white, transparent),
-        linear-gradient(red , transparent);
-    background-blend-mode: screen;
-  }
-  #privacy-col-left{
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  #privacy-title{
-    font-weight: 600;
-    font-size: 30px;
-    font-family: 'Kaisei Tokumin';
-    color: #0e1e58;
-    text-align: center;
-  }
-  #privacy-text-container{
-    padding-top: 15px;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-   #privacy-text{
-    text-align: justify;
-    font-size: 16px;
-    margin-bottom: 15px;
-    font-family: 'Kaisei Tokumin';
-  }
-  #privacy-col-left li{
-    margin-left: 30px;
-    margin-right: 30px;
-    font-size: 14px;
-    margin-top: 8px;
-    font-family: 'Kaisei Tokumin';
-  }
- 
-  #privacy-col-right{
-    text-align: center;
-  }
-  #privacy-col-right img{
-    height: 450px;
-    width: 240px;
-  }
-
-  /* CONTENT CONTAINER - HOME PAGE - MOBILE*/
-  #content-container{
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    background:
-        linear-gradient(#f6f6f6, transparent),
-        linear-gradient(to left , #F6F6F6,#FF6F51,transparent),
-        linear-gradient(to right, #F6F6F6, transparent),
-        linear-gradient(to bottom, #F6F6F6, transparent),
-        linear-gradient(to top, #F6F6F6, transparent),
-        linear-gradient(#FF6F51 , transparent);
-    background-blend-mode: screen;
-  }
-  #content-title{
-    font-weight: 600;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 20px;
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Kaisei Tokumin';
-    color: #0e1e58;
-  }
-  #content-container ul{
-    text-align: center;
-    list-style: none;
-    margin-left: -30px;
-  }
-  #content-container li:before{
-    font-family: 'FontAwesome';
-    content: '\f560';
-    font-size: 15px;
-    margin-right: 10px;
-    color: #FF6F51;
-  }
-  #content-container li{
     font-size: 18px;
-    margin-top: 15px;
-    font-family: 'Kaisei Tokumin';
-  }
-  /* used to contorl space betweeen bullet and text */
-  #content-container li span{
-    position: relative;
   }
 
+  /* EXPLORE PAGE - MOBILE */
+  .explore-header h1{
+      font-size: 45px;
+      margin: 20% 10% 8% 10%;
+  }
 
-  /* EXPLORE PAGE */
-  /* HOME SECTION - EXPLORE PAGE - MOBILE */
-  #explore-home-container{
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background:
-        linear-gradient(#F7F4F1 , transparent),
-        linear-gradient(to top, white, transparent),
-        linear-gradient(to left , red, transparent),
-        linear-gradient(to right , white, transparent),
-        linear-gradient(to bottom, white, transparent);
-    background-blend-mode: screen;
+  .promise-section img{
+    height: 500px;
+    margin-bottom: 10%;
   }
-  #explore-home-title{
-    font-family: 'Kaisei Tokumin';
-    line-height: 1.4;
-    padding-bottom: 20px;
-    font-weight: 600;
-    color: #0e1e58;
-  }
-  #explore-home-col-left{
-    padding-left: 10%;
+
+  #promise-text-container{
+    padding-left:10%;
     padding-right: 10%;
-  }
-  #explore-home-col-right{
     text-align: center;
   }
-  #explore-home-col-right img{
-    height: 450px;
-  }
-
- /*PROMISE SECTION-EXPLORE PAGE - MOBILE*/
-  #promise-container{
-    padding-top: 70px;
-    padding-bottom: 30px;
-    background:
-        linear-gradient(#F6F6F6, transparent),
-        linear-gradient(to right ,white, transparent),
-        linear-gradient(to left, white, transparent),
-        linear-gradient(to bottom, white, #0e1e58, transparent),
-        linear-gradient(to top, white,#0e1e58 30%,white, transparent),
-        linear-gradient(#0e1e58 , transparent);
-    background-blend-mode: screen;
-  }
-  
-  #promise-col-left{
-    text-align: center;
-  }
-  #promise-col-left img{
-    height: 450px;
-  }
-  #promise-col-right{
-    padding-left: 5%;
-    padding-right:5%;
-    padding-bottom: 30px ;
-    line-height: 1.7;
-  }
-  #promise-title{
-    color: #0e1e58;
-    font-weight: 600;
-    font-family: 'Kaisei Tokumin';
-    font-size: 30px;
-    padding-bottom: 10px;
-    text-align: center;
-  }
-   #promise-text{
-    padding-left: 5%;
-    padding-right:5%;
-    font-family: 'Kaisei Tokumin';
-    text-align: justify;
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  #promise-col-right li{
-    margin-left: 20px;
-    font-size: 18px;
-    margin-top: 15px;
-  }
-
- /*EXPLORE SECTION-EXPLORE PAGE - MOBILE*/
-  #explore-content-container{
-    text-align: center;
-  }
-  #explore-content-title{
-    color: #0e1e58;
-    font-weight: 600;
-    font-family: 'Kaisei Tokumin';
-    font-size: 30px;
-    padding-bottom: 20px;
-  }
-  #explore-content-text{
-    font-family: 'Kaisei Tokumin';
-    font-size: 16px;
-    line-height: 2;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
-
-  /* WHY US CONTENT */
-  /* HOME-SECTION - WHY US - MOBILE */
-  #why-us-home-container{
-    align-items: center;
-    text-align: center;
-    padding-top: 40px;
-  }
-  #why-us-home-title{
-    font-family: 'Kaisei Tokumin';
-    line-height: 1.5;
-    font-weight: 600;
-    color: #0e1e58;
-  }
-  #why-us-home-col-left{
-  }
-
-  #why-us-home-col-right{
-    padding-top: 20px;
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-  #why-us-home-col-right img{
-    height: 200px;
-    width: 100%;
-  }
-
-  /* CONTENT-SECTION - WHY US - MOBILE */
-  #why-us-content-container{
-    padding-bottom: 30px;
-    text-align: justify;
-    font-family: 'Kaisei Tokumin';
+  #promise-text-container h1{
+    margin-bottom: 20px;
     font-weight: 500;
-    padding-left: 10%;
-    padding-right: 10%;
-    background:
-        linear-gradient(red,  transparent),
-        linear-gradient(to right, white,transparent),
-        linear-gradient(to left, white, transparent),
-        linear-gradient(to bottom, white, transparent),
-        linear-gradient(to top, white, transparent),
-        linear-gradient(red , transparent);
-    background-blend-mode: screen;
+    font-size: 40px;
   }
-  #why-us-content-text{
-    font-size: 22px;
+  #promise-text-container p{
+    font-size: 17px;
+    font-weight: 100;
     line-height: 1.5;
-    font-family: 'Abel';
+    letter-spacing: 0.09em
   }
- /* WHY BUBOFEED-SECTION - WHY US - LAPTOP */
-  #why-bubofeed-container{
-    padding-top: 80px;
+  #promise-text-container i{
+    display: none;
   }
-  #why-bubofeed-title{
-    font-weight: 600;
-    text-align: center;
-    font-family: 'Kaisei Tokumin';
-    margin-bottom: 40px;
-    color: #0e1e58;
+
+  .explore-content-section{
+    margin-top: 40px;
+    padding: 8% 0px;
   }
-  #why-bubofeed-text{
-    font-family: 'Kaisei Tokumin';
-    font-weight: 600;
+  .explore-content-section img{
+    display: none;
+  }
+  .explore-content-heading{
+    margin: 5% 10% 5% 10%;
+  }
+  #explore-content-col-left{
+    padding: 0 10%;
+  }
+  #explore-content-col-right{
+    padding: 0 10%;
+  }
+  .explore-content-item-container{
+    padding: 7% 0%;
+  }
+  .explore-content-item-container span{
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  /* WHY US PAGE - MOBILE*/
+  
+  .why-us-header h1{
+      font-weight: 300;
+      font-size: 45px;
+      margin: 25% 10% 0% 10%;
+  }
+  .why-us-header h2{
+      font-weight: 100;
+      font-size: 45px;
+      margin: 3% 10% 0% 10%;
+  }
+  .why-us-header span{
+      font-weight: 500;
+  }
+  .why-us-header img{
+    height: 500px;
+    margin-top: 30px;
+  }
+  .why-us-bg-container{
+    padding: 300px 0 50px 0; 
+    margin-top: 200px;
+  }
+  .why-us-content-section{
+    top: -150px;
+    padding: 30px 30px;
+    margin: 0 5%;
+  }
+  .why-us-content-section p{
     font-size: 22px;
-    text-align: justify;
-    color: #0e1e58;
+    line-height: 1.8;
   }
 
-  #why-bubofeed-left-1{
+  .feature-section-container{
+    padding: 0 10% 0 10%;
     text-align: center;
-    padding-bottom: 30px;
-    background:
-        linear-gradient(#F6F6F6, transparent),
-        linear-gradient(to right ,white, transparent),
-        linear-gradient(to left, white, transparent),
-        linear-gradient(to bottom, white,#0e1e58 30%, transparent),
-        linear-gradient(to top, white,red 30%, transparent),
-        linear-gradient(#0e1e58 , transparent);
-    background-blend-mode: screen;
   }
-  #why-bubofeed-left-1 img{
-    height: 450px;
+  .feature-section-container h1{
+    margin: 80px 0 50px 0;
+    font-size: 45px;
   }
-  #why-bubofeed-right-1{
-    padding-left: 10%;
-    padding-right: 10%;
+  .feature-box{
+    font-size: 15px;
+    padding: 40px 30px;
+    margin-bottom: 50px;
+    border-radius: 3px;
   }
-
-  #why-bubofeed-left-2{
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 20px;
-    padding-top: 70px;
+  .feature-box_icon{
+    font-size: 60px;
+    margin-bottom: 15px;
   }
-  #why-bubofeed-right-2{
-    text-align: center; 
-    padding-bottom: 30px;
-    background:
-        linear-gradient(#F6F6F6, transparent),
-        linear-gradient(to right ,white, transparent),
-        linear-gradient(to left, white, transparent),
-        linear-gradient(to bottom, white,#0e1e58 30%, transparent),
-        linear-gradient(to top, white,#0e1e58 30%, transparent),
-        linear-gradient(#0e1e58 , transparent);
-    background-blend-mode: screen;
-  }
-  #why-bubofeed-right-2 img{
-    height: 450px;
-  }
-
-  #why-bubofeed-left-3{
-    text-align: center; 
-    background:
-        linear-gradient(#F6F6F6, transparent),
-        linear-gradient(to right ,white, transparent),
-        linear-gradient(to left, white, transparent),
-        linear-gradient(to bottom, white,red 30%, transparent),
-        linear-gradient(to top, white,red 30%, transparent),
-        linear-gradient(#0e1e58 , transparent);
-    background-blend-mode: screen;
-  }
-  #why-bubofeed-left-3 img{
-    height: 450px;
-  }
-  #why-bubofeed-right-3{
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 20px;
-    padding-top: 50px;
-  }
-
-  #why-bubofeed-left-4{
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 20px;
-    padding-top: 70px;
-  }
-  #why-bubofeed-right-4{
-    text-align: center; 
-    background:
-        linear-gradient(#F6F6F6, transparent),
-        linear-gradient(to right ,white, transparent),
-        linear-gradient(to left, white, transparent),
-        linear-gradient(to bottom, white,yellow 30%, transparent),
-        linear-gradient(to top, white,yellow 30%, transparent),
-        linear-gradient(yellow , transparent);
-    background-blend-mode: screen;
-  }
-  #why-bubofeed-right-4 img{
-    height: 450px;
-  }
-
-  #why-bubofeed-left-5{
-    text-align: center;
-    background:
-        linear-gradient(#F6F6F6, transparent),
-        linear-gradient(to right ,white, transparent),
-        linear-gradient(to left, white, transparent),
-        linear-gradient(to bottom, white,orange 30%, transparent),
-        linear-gradient(to top, white,orange 30%, transparent),
-        linear-gradient(red , transparent);
-    background-blend-mode: screen;
-  }
-  #why-bubofeed-left-5 img{
-    height: 450px;
-  }
-  #why-bubofeed-right-5{
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 20px;
-    padding-top: 70px;
-  }
-  #mobile-space{
-    padding: 10px;
+  .feature-box_text{
+    font-size: 18px;
+    font-weight: 100;
   }
 }
 
@@ -683,7 +275,6 @@ body{
   #bubo-nav-logo-mobile{
     display: none;
   }
-
   #nav-item-text{
     color: black;
     font-size: 17px;
@@ -694,477 +285,11 @@ body{
   #nav-item-text:hover{
     color: #b3aeae;
   }
-  
-  /*HOME SECTION-LAPTOP*/
-  #home-container{
-    padding-top: 50px;
-    padding-bottom: 80px;
-    align-items: center;
-    background:
-        linear-gradient(#F7F4F1 , transparent),
-        linear-gradient(to top, white, transparent),
-        linear-gradient(to left , #162a6f, transparent),
-        linear-gradient(to right , white, transparent),
-        linear-gradient(to bottom, white, transparent);
-    background-blend-mode: screen;
-  }
-  #home-title{
-    font-family: 'Kaisei Tokumin';
-    font-weight: 600;
-    color: #162a6f;
-  }
-  #home-text{
-    font-family: 'Kaisei Tokumin';
-    font-weight: lighter;
-    padding-top: 20px;
-    font-size: 20px;
-  }
-  #home-col-left{
-    padding-left: 10%;
-  }
-  #home-col-right{
-    padding-left: 7%;
-    padding-right: 10%;
-    
-  }
-  #home-col-right img{
-    height: 600px;
-    width: 310px;
-  }
-
-
-  /*REC SECTION-HOME PAGE - LAPTOP*/
-  #rec-container{
-    padding-bottom: 80px;
-    margin-top: 80px;
-    
-  }
-  #rec-title{
-    font-weight: 600;
-    line-height: 1.4;
-    text-align: center;
-    font-size: 26px;
-    font-family: 'Kaisei Tokumin';
-    color: #0e1e58;
-  }
-  #rec-col-left{
-    text-align: center;
-    padding-left: 12%;
-    padding-right: 3%;
-  }
-  #rec-col-right{
-    padding-right: 12%;
-    padding-left: 10%;
-  }
-  #rec-text-container{
-    padding-top: 10px;
-  }
-  #rec-text{
-    text-align: justify;
-    font-family: 'Kaisei Tokumin';
-    line-height: 1.5;
-    font-size: 16px;
-    margin-bottom: 15px;
-  }
-  #rec-col-right li{
-    margin-left: 30px;
-    margin-right: 30px;
-    font-family: 'Kaisei Tokumin';
-    font-size: 14px;
-    margin-top: 8px;
-  }
-  
-
-  /*PRIVACY SECTION-HOME PAGE - LAPTOP*/
-  #privacy-container{
-    padding-top: 100px;
-    background:
-        linear-gradient(red , transparent),
-        linear-gradient(to left , #273a7c,white,transparent),
-        linear-gradient(to right, white, transparent),
-        linear-gradient(to bottom, white, transparent),
-        linear-gradient(to top, white, transparent),
-        linear-gradient(red , transparent);
-    background-blend-mode: screen;
-
-  }
-  #privacy-title{
-    font-weight: 600;
-    font-size: 30px;
-    font-family: 'Kaisei Tokumin';
-    color: #0e1e58;
-  }
-  #privacy-col-left{
-    padding-left: 18%;
-    padding-right: 5%;
-  }
-  #privacy-text-container{
-    padding-top: 15px;
-    padding-right: 18%;
-  }
-   #privacy-text{
-    text-align: justify;
-    font-size: 16px;
-    margin-bottom: 15px;
-    font-family: 'Kaisei Tokumin';
-  }
-  #privacy-col-left li{
-    margin-left: 30px;
-    margin-right: 30px;
-    font-size: 14px;
-    margin-top: 8px;
-    font-family: 'Kaisei Tokumin';
-  }
- 
-  #privacy-col-right{
-    padding-left: 10%;
-  }
-
-/* CONTENT CONTAINER - HOME PAGE - LAPTOP*/
-  #content-container{
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 50px;
-    background:
-        linear-gradient(#f6f6f6, transparent),
-        linear-gradient(to left , #F6F6F6,#FF6F51,transparent),
-        linear-gradient(to right, #F6F6F6, transparent),
-        linear-gradient(to bottom, #F6F6F6, transparent),
-        linear-gradient(to top, #F6F6F6, transparent),
-        linear-gradient(#FF6F51 , transparent);
-    background-blend-mode: screen;
-  }
-  #content-title{
-    font-weight: 600;
-    padding-left: 30%;
-    padding-right: 30%;
-    padding-bottom: 20px;
-    text-align: center;
-    font-size: 35px;
-    font-family: 'Kaisei Tokumin';
-    color: #0e1e58;
-  }
-  #content-container ul{
-    text-align: center;
-    list-style: none;
-    margin-left: -30px;
-  }
-  #content-container li:before{
-    font-family: 'FontAwesome';
-    content: '\f560';
-    font-size: 15px;
-    margin-right: 10px;
-    color: #FF6F51;
-  }
-  #content-container li{
-    font-size: 20px;
-    margin-top: 15px;
-    font-family: 'Kaisei Tokumin';
-  }
-  /* used to contorl space betweeen bullet and text */
-  #content-container li span{
-    position: relative;
-  }
-  
-  /* EXPLORE PAGE */
-  /* HOME SECTION - EXPLORE PAGE - LAPTOP */
-  #explore-home-container{
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 80px;
-    background:
-        linear-gradient(#F7F4F1 , transparent),
-        linear-gradient(to top, white, transparent),
-        linear-gradient(to left , red, transparent),
-        linear-gradient(to right , white, transparent),
-        linear-gradient(to bottom, white, transparent);
-    background-blend-mode: screen;
-  }
-  #explore-home-title{
-    font-family: 'Kaisei Tokumin';
-    line-height: 1.4;
-    padding-bottom: 100px;
-    font-weight: 600;
-    color: #0e1e58;
-  }
-  #explore-home-col-left{
-    padding-left: 10%;
-  }
-  #explore-home-col-right{
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  #explore-home-col-right img{
-    height: 580px;
-    width: 310px;
-  }
-
- /*PROMISE SECTION-EXPLORE PAGE - LAPTOP*/
-  #promise-container{
-    padding-top: 70px;
-    padding-bottom: 100px;
-  }
-  #promise-title{
-    color: #0e1e58;
-    font-weight: 600;
-    font-family: 'Kaisei Tokumin';
-    font-size: 30px;
-    padding-bottom: 10px;
-  }
-  #promise-col-left{
-    text-align: center;
-    padding-left: 5%;
-    background:
-        linear-gradient(#F6F6F6, transparent),
-        linear-gradient(to right ,white, transparent),
-        linear-gradient(to left, white, transparent),
-        linear-gradient(to bottom, white,#0e1e58 30%, transparent),
-        linear-gradient(to top, white,#0e1e58 30%, transparent),
-        linear-gradient(#0e1e58 , transparent);
-    background-blend-mode: screen;
-  }
-  #promise-col-left img{
-    height: 550px;
-  }
-  #promise-col-right{
-    align-items: center;
-    padding-left: 5%;
-    padding-right:15%;
-    line-height: 1.7;
-  }
-   #promise-text{
-    font-family: 'Abel';
-    text-align: justify;
-    font-size: 18px;
-    line-height: 1.6;
-    padding-right:15%;
-  }
-  #promise-col-right li{
-    margin-left: 20px;
-    font-size: 18px;
-    margin-top: 15px;
-  }
-
- /*EXPLORE SECTION-EXPLORE PAGE - LAPTOP*/
-  #explore-content-container{
-    text-align: center;
-    padding-bottom: 50px;
-    background:
-        linear-gradient(#f6f6f6, transparent),
-        linear-gradient(to left , #F6F6F6,transparent),
-        linear-gradient(to right, #F6F6F6, transparent),
-        linear-gradient(to bottom, #F6F6F6, transparent),
-        linear-gradient(to top, #F6F6F6, transparent),
-        linear-gradient(#FF6F51 , transparent);
-    background-blend-mode: screen;
-  }
-  #explore-content-title{
-    color: #0e1e58;
-    font-weight: 600;
-    font-family: 'Kaisei Tokumin';
-    font-size: 35px;
-    padding-bottom: 20px;
-    text-align: center;
-  }
-  #explore-content-text{
-    font-family: 'Kaisei Tokumin';
-    font-size: 20px;
-    line-height: 2.3;
-  }
-
-
-/* WHY US CONTENT */
-/* HOME-SECTION - WHY US - LAPTOP */
-  #why-us-home-container{
-    align-items: center;
-    padding-top: 40px;
-  }
-  #why-us-home-title{
-    font-family: 'Kaisei Tokumin';
-    line-height: 1.5;
-    font-weight: 600;
-    color: #0e1e58;
-  }
-  #why-us-home-col-left{
-    padding-left: 7%;
-    padding-right: 4%;
-  }
-  #why-us-home-col-right{
-  }
-  #why-us-home-col-right img{
-    height: 400px;
-    width: 115%;
-  }
-
-  /* CONTENT-SECTION - WHY US - LAPTOP */
-  #why-us-content-container{
-    padding-bottom: 50px;
-    text-align: justify;
-    font-family: 'Kaisei Tokumin';
-    font-weight: 500;
-    padding-top: 100px;
-    padding-left: 25%;
-    padding-right: 25%;
-    /* background:
-        linear-gradient(white,  transparent),
-        linear-gradient(to right, white,transparent),
-        linear-gradient(to left, white, transparent),
-        linear-gradient(to bottom, white,red, transparent),
-        linear-gradient(to top,white, red, transparent),
-        linear-gradient(white , transparent);
-    background-blend-mode: screen; */
-  }
-  #why-us-content-text{
-    font-size: 22px;
-    line-height: 2;
-    font-family: 'Abel';
-  }
-
-  /* WHY BUBOFEED-SECTION - WHY US - LAPTOP */
-  #why-bubofeed-container{
-    padding-top: 80px;
-  }
-  #why-bubofeed-title{
-    font-weight: 600;
-    text-align: center;
-    font-family: 'Kaisei Tokumin';
-    margin-bottom: 50px;
-    color: #0e1e58;
-    padding-bottom: 50px;
-  }
-  #why-bubofeed-text{
-    font-family: 'Kaisei Tokumin';
-    font-weight: 600;
-    font-size: 22px;
-    color: #0e1e58;
-  }
-
-  #why-bubofeed-left-1{
-    display: flex;
-    justify-content: center;
-    background:
-        linear-gradient(#F6F6F6, transparent),
-        linear-gradient(to right ,white, transparent),
-        linear-gradient(to left, white, transparent),
-        linear-gradient(to bottom, white,#0e1e58 30%, transparent),
-        linear-gradient(to top, white,red 30%, transparent),
-        linear-gradient(#0e1e58 , transparent);
-    background-blend-mode: screen;
-  }
-  #why-bubofeed-left-1 img{
-    height: 550px;
-  }
-  #why-bubofeed-right-1{
-    padding-right: 40%;
-  }
-
-  #why-bubofeed-left-2{
-    display: flex;
-    justify-content: flex-end;
-    padding-left: 40%;
-  }
-  #why-bubofeed-right-2{
-    display: flex;
-    justify-content: center;
-    background:
-        linear-gradient(#F6F6F6, transparent),
-        linear-gradient(to right ,white, transparent),
-        linear-gradient(to left, white, transparent),
-        linear-gradient(to bottom, white,#0e1e58 30%, transparent),
-        linear-gradient(to top, white,#0e1e58 30%, transparent),
-        linear-gradient(#0e1e58 , transparent);
-    background-blend-mode: screen;
-  }
-  #why-bubofeed-right-2 img{
-    height: 550px;
-  }
-
-  #why-bubofeed-left-3{
-    display: flex;
-    justify-content: center;
-    background:
-        linear-gradient(#F6F6F6, transparent),
-        linear-gradient(to right ,white, transparent),
-        linear-gradient(to left, white, transparent),
-        linear-gradient(to bottom, white,red 30%, transparent),
-        linear-gradient(to top, white,red 30%, transparent),
-        linear-gradient(#0e1e58 , transparent);
-    background-blend-mode: screen;
-  }
-  #why-bubofeed-left-3 img{
-    height: 550px;
-  }
-  #why-bubofeed-right-3{
-    padding-right: 35%;
-  }
-
-  #why-bubofeed-left-4{
-    display: flex;
-    justify-content: flex-end;
-    padding-left: 35%;
-  }
-  #why-bubofeed-right-4{
-    display: flex;
-    justify-content: center;
-    background:
-        linear-gradient(#F6F6F6, transparent),
-        linear-gradient(to right ,white, transparent),
-        linear-gradient(to left, white, transparent),
-        linear-gradient(to bottom, white,yellow 30%, transparent),
-        linear-gradient(to top, white,yellow 30%, transparent),
-        linear-gradient(yellow , transparent);
-    background-blend-mode: screen;
-  }
-  #why-bubofeed-right-4 img{
-    height: 550px;
-  }
-
-  #why-bubofeed-left-5{
-    display: flex;
-    justify-content: center;
-    background:
-        linear-gradient(#F6F6F6, transparent),
-        linear-gradient(to right ,white, transparent),
-        linear-gradient(to left, white, transparent),
-        linear-gradient(to bottom, white,orange 30%, transparent),
-        linear-gradient(to top, white,orange 30%, transparent),
-        linear-gradient(red , transparent);
-    background-blend-mode: screen;
-  }
-  #why-bubofeed-left-5 img{
-    height: 550px;
-  }
-  #why-bubofeed-right-5{
-    padding-right: 35%;
-  }
-
-  /* GRID CONTENT-SECTION - WHY US - LAPTOP */
-  #grid-container{
-    padding-top: 80px;
-    padding-bottom: 50px;
-  }
-  
-  #grid-item-box{
-    border-color: red;
-    border: #162a6f 0px solid;
-    padding: 3%;
-    display: flex;
-    align-items: center;
-    margin: 10px;
-  }
-  #grid-item-text{
-    text-align: center;
-    font-family: 'Kaisei Tokumin';
-    color: white;
-  }
 
   /* BULLET CONTENT-SECTION - WHY US - LAPTOP */
   #btn-google-play{
     margin-top: 30px;
   }
-
-
-
  /*FOOTER SECTION-LAPTOP*/
   #footer-text-left{
     text-align: left;
@@ -1198,17 +323,14 @@ body{
 
   /* VIDEO SECTION */
   .video-section{
-    align-items: center;
     height: 100vh;
   }
   .video-bg-container{
     height: 80vh;
-    position: relative;
     background-image: 
       linear-gradient(to right bottom, rgb(42,51,56, 0.3), rgb(42,51,56,0.3)),
       url('../images/home_section/bubo-collash.png');
     background-size: cover;
-    z-index: -1;
   }
   .video-container{
     padding-left: 10%;
@@ -1216,7 +338,6 @@ body{
     right: 0;
     top: 50%;
     transform: translate(15%, -50%);
-    z-index: 1;
   }
   #video-text-container{
     padding-left: 15%;
@@ -1228,21 +349,14 @@ body{
     margin-bottom: 20px;
   }
   #video-text-container p{
-    color:#777;
-    line-height: 1.6;
-    letter-spacing: .08em;
-    margin-bottom: 30px;
     font-size: 16px;
     font-weight: 300;
   }
   .grey-text-box{
-    background-color: #F4F4F4;
     padding: 20px 40px;
     margin: 3px 0px;
   }
   .grey-text-box span{
-    vertical-align: middle;
-    color: #9e9e9e;
     font-size: 15px;
   }
 
@@ -1250,11 +364,6 @@ body{
   .privacy-section{
     margin-bottom: 10%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-  }
-  #privacy-img-mobile{
-    display: none;
   }
   #privacy-text-container{
     padding-left: 15%;
@@ -1267,43 +376,20 @@ body{
   #privacy-text-container p{
     margin-top: 30px;
     padding-right: 10%;
-    color: #616161;
     font-weight: 300;
-    line-height: 1.8;
-    letter-spacing: 0.08em;
   }
   #privacy-text-container hr{
     margin: 35px 10px 30px 0px;
-    color: #9e9e9e;
   }
   .privacy-point-container{
-    margin-right: 10%;
     margin-bottom: 20px;
     display: flex;
-    align-items: center;
   }
   .privacy-point-container i{
-    color: #7D1EFE;
-    background-color: #F3F2FF;
     padding: 20px;
-    border-radius: 15px;
   }
   .privacy-point-container div{
     margin-left: 25px;
-  }
-  .privacy-point-container span{
-    overflow: scroll;
-    font-family: 'Poppins';
-  }
-  .privacy-image-container{
-    background:
-        linear-gradient(#F6F6F6, transparent),
-        linear-gradient(to right ,white, transparent),
-        linear-gradient(to left, white, transparent),
-        linear-gradient(to bottom, white, #0e1e58 , transparent),
-        linear-gradient(to top, white,#0e1e58 , transparent),
-        linear-gradient(#0e1e58 , transparent);
-    background-blend-mode: screen;
   }
   .privacy-image-container img{
     height: 700px;
@@ -1312,12 +398,6 @@ body{
 
   /* CONTENT SECTION */
   .content-section{
-    height: 100vh;
-    background-image: 
-      linear-gradient(to right bottom, rgb(42,51,56, 0.9), rgb(42,51,56,0.9)),
-      url('../images/home_section/mixed_phones.png');
-    background-size: cover;
-    text-align: center;
     position: relative;
   }
   .content-text-container{
@@ -1327,41 +407,378 @@ body{
     transform: translate(-50%, -50%);
   }
   .content-text-container h1{
-    color: white;
-    text-align: center;
-    font-weight: 400;
     padding: 0% 15% 3% 15%;
-    font-family: 'Kaisei Tokumin';
   }
-  .content-text-container ul{
-      color: white;
-      margin-bottom: 40px;
-      text-align: center;
-      list-style: none;
-      margin-left: -30px;
-    }
-  .content-text-container li:before{
-      font-family: 'FontAwesome';
-      content: '\f560';
-      font-size: 15px;
-      margin-right: 10px;
-      color: #c05c48;
-    }
   .content-text-container li{
       font-size: 20px;
-      margin-top: 15px;
-      font-family: 'Kaisei Tokumin';
-      font-weight: lighter;
-    }
-    /* used to contorl space betweeen bullet and text */
-  .content-text-container li span{
-      position: relative;
     }
 
+  .explore-header{
+    height: 100vh;
+  }
+  .explore-header h1{
+      font-size: 60px;
+      margin: 25% 0 0 25%;
+  }
+
+  .promise-section img{
+    height: 700px;
+  }
+
+  #promise-text-container{
+    margin-top: 10%;
+  }
+  #promise-text-container h1{
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 40px;
+  }
+  #promise-text-container p{
+    padding-right: 35%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.6;
+    letter-spacing: 0.09em
+  }
+  #promise-text-container i{
+    margin-bottom: 25px;
+  }
+
+  .explore-content-section{
+    margin-top: 80px;
+    padding: 8% 0px;
+  }
+  .explore-content-section img{
+    height: 600px;
+  }
+  .explore-content-heading{
+    margin: 0 30% 5% 30%;
+  }
+  #explore-content-col-left{
+    padding: 2% 0 0 5%;
+  }
+  #explore-content-col-right{
+    padding: 2% 5% 0 0;
+  }
+  .explore-content-item-container{
+    padding: 12% 0%;
+  }
+  .explore-content-item-container span{
+    font-size: 17px;
+    font-weight: 300;
+  }
+
+  /* WHY US PAGE - LAPTOP*/
+  .why-us-header{
+      height: 100vh;
+  }
+  .why-us-header h1{
+      font-weight: 400;
+      font-size: 65px;
+      margin: 25% 10% 0% 15%;
+  }
+  .why-us-header h2{
+      font-weight: 100;
+      font-size: 55px;
+      margin: 3% 0% 0% 15%;
+  } 
+  .why-us-header span{
+      font-weight: 500;
+  }
+  .why-us-header img{
+    height: 500px;
+    margin-top: 120px;
+    padding-left: 10%;
+  }
+  .why-us-bg-container{
+    padding: 200px 0 50px 0; 
+    margin-top: 170px;
+  }
+  .why-us-content-section{
+    top: -150px;
+    padding: 70px 80px;
+    margin: 0 17%;
+  }
+  .why-us-content-section p{
+    font-size: 22px;
+    line-height: 1.8;
+  }
+
+  .feature-section-container{
+    padding: 0 14% 0 17%;
+    text-align: center;
+  }
+  .feature-section-container h1{
+    margin: 60px 0 60px 0;
+    font-size: 50px;
+  }
+  .feature-box{
+    font-size: 15px;
+    padding: 40px 30px;
+    margin-bottom: 50px;
+    border-radius: 3px;
+    height: 300px;
+    width: 250px;
+  }
+  .feature-box_icon{
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  .feature-box_text{
+    font-size: 18px;
+    font-weight: 100;
+  }
 }
 /* ============ END LAPTOP SECTION ============= */ 
 
 
+/* ============ LARGE DISPLAY SECTION ============= */ 
+@media(min-width:1600px){
+  #bubo-nav-logo-mobile{
+    display: none;
+  }
+  
+
+  .home-header{
+    height: 92vh;
+  }
+  .home-header h1{
+    font-weight: 600;
+    font-size: 60px;
+    margin: 33% 10% 5% 20%;
+    line-height: 1.2;
+  }
+  .home-header p{
+    font-size: 25px;
+    margin: 50px 10% 0 20%;
+  }
+  .home-header img{
+    margin-top: 25%;
+    height: 680px;
+    margin-left: 20%;
+  }
+
+  /* VIDEO SECTION */
+  .video-section{
+    height: 100vh;
+  }
+  .video-bg-container{
+    height: 80vh;
+    background-image: 
+      linear-gradient(to right bottom, rgb(42,51,56, 0.3), rgb(42,51,56,0.3)),
+      url('../images/home_section/bubo-collash.png');
+    background-size: cover;
+  }
+  .video-container{
+    padding-left: 10%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(15%, -50%);
+  }
+  #video-text-container{
+    padding-left: 15%;
+    padding-right: 5%;
+  }
+  #video-text-container h1{
+    font-weight: 200; 
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+  #video-text-container p{
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .grey-text-box{
+    padding: 25px 45px;
+    margin: 10px 0px;
+  }
+  .grey-text-box span{
+    font-size: 17px;
+  }
+
+  /* PRIVACY SECTION */
+  .privacy-section{
+    margin-top: -8%;
+    margin-bottom: -1%;
+  }
+
+  #privacy-text-container{
+    padding-left: 15%;
+    padding-right: 5%;
+  }
+  #privacy-text-container h1{
+    font-size: 60px;
+    font-weight: 400;
+  }
+  #privacy-text-container p{
+    margin-top: 30px;
+    padding-right: 10%;
+    font-weight: 200;
+    font-size: 20px;
+  }
+  #privacy-text-container hr{
+    margin: 35px 10px 30px 0px;
+  }
+  .privacy-point-container{
+    margin-bottom: 25px;
+    display: flex;
+  }
+  .privacy-point-container i{
+    padding: 25px;
+  }
+  .privacy-point-container div{
+    margin-left: 25px;
+  }
+  #privacy-img-mobile{
+    display: none;
+  }
+  .privacy-image-container img{
+    padding-right: 30%;
+    height: 700px;
+  }
+
+  /* CONTENT SECTION */
+  .content-section{
+    position: relative;
+  }
+  .content-text-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .content-text-container h1{
+    padding: 0% 15% 3% 15%;
+  }
+  .content-text-container li{
+      font-size: 20px;
+    }
+
+    /* EXPLORE PAGE - LARGE DISPLAY*/
+  
+  .explore-header h1{
+      font-size: 80px;
+      margin: 35% 0 0 25%;
+  }
+
+  .promise-section img{
+    height: 700px;
+    margin-bottom: 10%;
+  }
+
+  #promise-text-container{
+    margin-top: 5%;
+  }
+  #promise-text-container h1{
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 55px;
+  }
+  #promise-text-container p{
+    padding-right: 38%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.8;
+    letter-spacing: 0.1em
+  }
+  #promise-text-container i{
+    margin-bottom: 50px;
+  }
+
+  .explore-content-section{
+    margin-top: 80px;
+    padding: 8% 0px;
+  }
+  .explore-content-section img{
+    height: 700px;
+  }
+  .explore-content-heading{
+    margin: 0 30% 5% 30%;
+    font-size: 60px;
+  }
+  #explore-content-col-left{
+    padding: 3% 0 0 8%;
+  }
+  #explore-content-col-right{
+    padding: 3% 10% 0 0;
+  }
+  .explore-content-item-container{
+    padding: 10% 0%;
+  }
+  .explore-content-item-container span{
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  /* WHY US PAGE LARGE DISPLAY*/
+  .why-us-header{
+      height: 100vh;
+  }
+  .why-us-header h1{
+      font-weight: 400;
+      font-size: 75px;
+      line-height: 1.5;
+      margin: 35% 10% 0% 20%;
+  }
+  .why-us-header h2{
+      font-weight: 100;
+      font-size: 65px;
+      margin: 3% 10% 0% 20%;
+  }
+  .why-us-header span{
+      font-weight: 500;
+  }
+  .why-us-header img{
+    height: 680px;
+    margin-top: 25%;
+    padding-left: 20%;
+  }
+  .why-us-bg-container{
+    padding: 200px 0 50px 0; 
+    margin-top: 170px;
+  }
+  .why-us-content-section{
+    top: -150px;
+    padding: 80px 150px;
+    margin: 0 22% 0 17%;
+  }
+  .why-us-content-section p{
+    font-size: 22px;
+    line-height: 2;
+  }
+
+  .feature-section-container{
+    padding: 3% 17% 3% 22%;
+    text-align: center;
+  }
+  .feature-section-container h1{
+    margin: 60px 0 80px -5%;
+    font-size: 50px;
+  }
+  .feature-box{
+    font-size: 15px;
+    padding: 40px 30px;
+    margin-bottom: 70px;
+    border-radius: 3px;
+    height: 310px;
+    width: 260px;
+  }
+  .feature-box_icon{
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  .feature-box_text{
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+
+}
+
+/* ============ END OF LARGE DISPLAY SECTION ============= */ 
 
 #menu_icon{
 width:10;
@@ -1384,9 +801,6 @@ height: 10;
 .navbar{
     opacity: 0.9;
 }
-
-
-
 
 #secure_circle{
   width: 250px;
@@ -1452,6 +866,31 @@ height: 10;
   opacity: 1;
   transform: rotateZ(1deg);
 }
+
+.moveToRight {
+    opacity: 1;
+    transform: translateX(-3em);
+    transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+                opacity .3s .25s ease-in-out;
+  }
+
+.moveToRight.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.moveToLeft {
+    opacity: 1;
+    transform: translateX(3em);
+    transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+                opacity .3s .25s ease-in-out;
+  }
+
+.moveToLeft.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 
 .vibrate-image{
   animation: vibrateImage;
@@ -1538,203 +977,12 @@ height: 10;
 
 
 
-@media(min-width:1600px){
-  #bubo-nav-logo-mobile{
-    display: none;
-  }
-  
-
-  .home-header{
-    height: 92vh;
-  }
-
-  .home-header h1{
-    font-weight: 600;
-    font-size: 60px;
-    margin: 33% 10% 5% 20%;
-    line-height: 1.2;
-  }
-  .home-header p{
-    font-size: 25px;
-    margin: 50px 10% 0 20%;
-  }
-  .home-header img{
-    margin-top: 25%;
-    height: 680px;
-    margin-left: 20%;
-  }
-
-  /* VIDEO SECTION */
-  .video-section{
-    align-items: center;
-    height: 100vh;
-  }
-  .video-bg-container{
-    height: 80vh;
-    position: relative;
-    background-image: 
-      linear-gradient(to right bottom, rgb(42,51,56, 0.3), rgb(42,51,56,0.3)),
-      url('../images/home_section/bubo-collash.png');
-    background-size: cover;
-    z-index: -1;
-  }
-  .video-container{
-    padding-left: 10%;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translate(15%, -50%);
-    z-index: 1;
-  }
-  #video-text-container{
-    padding-left: 15%;
-    padding-right: 5%;
-  }
-  #video-text-container h1{
-    font-weight: 200; 
-    font-size: 60px;
-    margin-bottom: 40px;
-  }
-  #video-text-container p{
-    color:#777;
-    line-height: 1.6;
-    letter-spacing: .08em;
-    margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: 200;
-  }
-  .grey-text-box{
-    background-color: #F4F4F4;
-    padding: 25px 45px;
-    margin: 10px 0px;
-  }
-  .grey-text-box span{
-    vertical-align: middle;
-    color: #9e9e9e;
-    font-size: 17px;
-  }
-
-  /* PRIVACY SECTION */
-  .privacy-section{
-    display: flex;
-    justify-content: center;
-    margin-top: -8%;
-    margin-bottom: -1%;
-  }
-
-  #privacy-text-container{
-    padding-left: 15%;
-    padding-right: 5%;
-  }
-  #privacy-text-container h1{
-    font-size: 60px;
-    font-weight: 400;
-  }
-  #privacy-text-container p{
-    margin-top: 30px;
-    padding-right: 10%;
-    color: #616161;
-    font-weight: 200;
-    font-size: 20px;
-    line-height: 1.8;
-    letter-spacing: 0.08em;
-  }
-  #privacy-text-container hr{
-    margin: 35px 10px 30px 0px;
-    color: #9e9e9e;
-  }
-  .privacy-point-container{
-    margin-right: 10%;
-    margin-bottom: 25px;
-    display: flex;
-    align-items: center;
-  }
-  .privacy-point-container i{
-    color: #7D1EFE;
-    background-color: #F3F2FF;
-    padding: 25px;
-    border-radius: 15px;
-  }
-  .privacy-point-container div{
-    margin-left: 25px;
-  }
-  .privacy-point-container span{
-    font-family: 'Poppins';
-    overflow: scroll;
-  }
-  .privacy-image-container{
-    background:
-        linear-gradient(#F6F6F6, transparent),
-        linear-gradient(to right ,white, transparent),
-        linear-gradient(to left, white, transparent),
-        linear-gradient(to bottom, white, #0e1e58 , transparent),
-        linear-gradient(to top, white,#0e1e58 , transparent),
-        linear-gradient(#0e1e58 , transparent);
-    background-blend-mode: screen;
-  }
-  #privacy-img-mobile{
-    display: none;
-  }
-  .privacy-image-container img{
-    padding-right: 30%;
-    height: 700px;
-  }
-
-  /* CONTENT SECTION */
-  .content-section{
-    height: 100vh;
-    background-image: 
-      linear-gradient(to right bottom, rgb(42,51,56, 0.9), rgb(42,51,56,0.9)),
-      url('../images/home_section/mixed_phones.png');
-    background-size: cover;
-    text-align: center;
-    position: relative;
-  }
-  .content-text-container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .content-text-container h1{
-    color: white;
-    text-align: center;
-    font-weight: 400;
-    padding: 0% 15% 3% 15%;
-    font-family: 'Kaisei Tokumin';
-  }
-  .content-text-container ul{
-      color: white;
-      margin-bottom: 40px;
-      text-align: center;
-      list-style: none;
-      margin-left: -30px;
-    }
-  .content-text-container li:before{
-      font-family: 'FontAwesome';
-      content: '\f560';
-      font-size: 15px;
-      margin-right: 10px;
-      color: #c05c48;
-    }
-  .content-text-container li{
-      font-size: 20px;
-      margin-top: 15px;
-      font-family: 'Kaisei Tokumin';
-      font-weight: lighter;
-    }
-    /* used to contorl space betweeen bullet and text */
-  .content-text-container li span{
-      position: relative;
-    }
-}
-
 
 
 
 .home-header{
-    margin-top: -70px;
     background: url('../images/bg.png'); 
+    margin-top: -70px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1751,3 +999,271 @@ height: 10;
   line-height: 1.625em;
 }
 
+ /* VIDEO SECTION */
+.video-section{
+  align-items: center;
+}
+.video-bg-container{
+  position: relative;
+  z-index: -1;
+}
+.video-container{
+  z-index: 1;
+}
+#video-text-container p{
+  color:#777;
+  line-height: 1.6;
+  letter-spacing: .08em;
+  margin-bottom: 30px;
+}
+.grey-text-box{
+  background-color: #F4F4F4;
+}
+.grey-text-box:hover{
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+.grey-text-box span{
+  vertical-align: middle;
+  color: #9e9e9e;
+}
+
+/* PRIVACY SECTION */
+.privacy-section{
+  display: flex;
+  justify-content: center;
+}
+#privacy-text-container h1{
+  font-weight: 400;
+}
+#privacy-text-container p{
+  color: #616161;
+  line-height: 1.8;
+  letter-spacing: 0.08em;
+}
+#privacy-text-container hr{
+  color: #9e9e9e;
+}
+.privacy-point-container{
+  margin-right: 10%;
+  display: flex;
+  align-items: center;
+}
+.privacy-point-container i{
+  color: #7D1EFE;
+  background-color: #F3F2FF;
+  border-radius: 15px;
+}
+.privacy-point-container i:hover{
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+.privacy-point-container span{
+  overflow: scroll;
+  font-family: 'Poppins';
+}
+.privacy-image-container{
+  background:
+    linear-gradient(#F6F6F6, transparent),
+    linear-gradient(to right ,white, transparent),
+    linear-gradient(to left, white, transparent),
+    linear-gradient(to bottom, white, #0e1e58 , transparent),
+    linear-gradient(to top, white,#0e1e58 , transparent),
+    linear-gradient(#0e1e58 , transparent);
+  background-blend-mode: screen;
+}
+
+/* CONTENT SECTION */
+.content-section{
+  height: 100vh;
+  background-image: 
+    linear-gradient(to right bottom, rgb(42,51,56, 0.9), rgb(42,51,56,0.9)),
+      url('../images/home_section/mixed_phones.png');
+  background-size: cover;
+  text-align: center;
+}
+.content-text-container h1{
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  font-family: 'Kaisei Tokumin';
+}
+.content-text-container ul{
+  color: white;
+  margin-bottom: 40px;
+  text-align: center;
+  list-style: none;
+  margin-left: -30px;
+}
+.content-text-container li:before{
+  font-family: 'FontAwesome';
+  content: '\f560';
+  font-size: 15px;
+  margin-right: 10px;
+  color: #c05c48;
+}
+.content-text-container li{
+  margin-top: 15px;
+  font-family: 'Kaisei Tokumin';
+  font-weight: lighter;
+}
+/* used to contorl space betweeen bullet and text */
+.content-text-container li span{
+  position: relative;
+}
+
+/* EXPLORE PAGE */
+
+
+.explore-header{
+  background: url('../images/bg3.png'); 
+  margin-top: -70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.explore-header h1{
+    color: #222222;
+    font-weight: lighter;
+}
+
+.promise-section{
+  display: flex;
+  justify-content: center;
+}
+.promise-image-container{
+  background:
+    linear-gradient(#F6F6F6, transparent),
+    linear-gradient(to right ,white, transparent),
+    linear-gradient(to left, white, transparent),
+    linear-gradient(to bottom, white, #0e1e58 , transparent),
+    linear-gradient(to top, white,#0e1e58 , transparent),
+    linear-gradient(#0e1e58 , transparent);
+  background-blend-mode: screen;
+  text-align: center;
+}
+
+#promise-text-container p{
+  font-family: 'Poppins';
+  color: #616161;
+}
+#promise-text-container i{
+  padding: 30px;
+  background-color: #F3F2FF;
+  border-radius: 15px;
+  color: #7D1EFE;
+}
+#promise-text-container i:hover{
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+.explore-content-section{
+  background-image: linear-gradient(to right bottom, #44d7f5, #2a78e9);
+}
+.explore-content-heading{
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+.explore-content-heading:before,
+.explore-content-heading:after
+{
+content: "";
+    flex: 1 1;
+    border-bottom: 2px solid white;
+    margin: auto;
+}
+#explore-content-col-left{
+  position: relative;
+  text-align: end;
+  position: relative;
+}
+#explore-content-col-right{
+  position: relative;
+  text-align: end;
+  position: relative;
+}
+.explore-content-item-container{
+  display: flex;
+  align-items: flex-start;
+}
+.icon-round{
+  padding: 30px;
+  background-color: #F3F2FF;
+  border-radius: 100px;
+  color: #7D1EFE;
+}
+#explore-content-col-left .icon-round{
+  box-shadow: 2px 2px 2px #37A8EF;
+}
+#explore-content-col-right .icon-round{
+  box-shadow: 2px 2px 2px #308FEC;
+}
+.icon-round:hover{
+  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+  color: #F3F2FF;
+}
+
+.explore-content-item-container span{
+  text-align: left;
+  margin-left: 20px;
+  color: white;
+  font-family: 'Poppins';
+  font-weight: 300;
+  line-height: 1.8;
+  letter-spacing: 0.07em;
+}
+
+/* WHY US PAGE */
+.why-us-header{
+  background: url('../images/bg.png'); 
+  margin-top: -70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.why-us-header h1{
+  color: #222222;
+}
+
+.why-us-header span{
+  color: #162a6f;
+}
+
+.why-us-bg-container{
+background-color: #F2F1F8;
+position: relative;
+}
+.why-us-content-section{
+position: absolute;
+text-align: justify;
+background-color: white;
+box-shadow: 0 1px 1px;
+}
+.why-us-content-section p{
+font-family: 'Abel';
+}
+
+.feature-section-container h1{
+display: inline-block;
+background-image: linear-gradient(to right bottom, #44d7f5, #2a78e9);
+-webkit-background-clip: text;
+color: transparent;
+}
+.feature-box{
+background-color: white;
+border-radius: 3px;
+box-shadow: 0 1px 1px;
+transition: transform 0.3s;
+}
+.feature-box:hover{
+transform: translateY(-15px) scale(1.03);
+}
+.feature-box_icon{
+display: inline-block;
+background-image: linear-gradient(to right bottom, #44d7f5, #2a78e9);
+-webkit-background-clip: text;
+color: transparent;
+}
+.feature-box_text{
+color: black;
+}

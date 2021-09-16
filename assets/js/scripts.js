@@ -110,12 +110,12 @@ $( window ).on( "load", function() {
     });
     function mainNav() {
         var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-        if (top > 40) {
-            $('.navbar').css('background-color', '#44D7F5')
+        if (top < 40 && $(window).width()>992)  {
+            $('.navbar').css('background-color', '')
             $('.nav-link').css('color', 'white')
         }
         else {
-            $('.navbar').css('background-color', '')
+            $('.navbar').css('background-color', '#44D7F5')
             $('.nav-link').css('color', 'white')
         }
 	}
