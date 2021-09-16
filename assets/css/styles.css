@@ -19,14 +19,12 @@ body{
   #bubo-nav-logo{
     display: none;
   }
-  #nav-item-text{
-    color: black;
-  }
-  #nav-item-text:hover{
-    color: #b3aeae;
-  }
+  
   .navbar{
     background-color: '#44D7F5';
+  }
+  #bubo-btn{
+    height: 35px;
   }
 
   /*HOME SECTION-MOBILE*/
@@ -39,7 +37,7 @@ body{
   .home-header h1{
     font-weight: 500;
     font-size: 35px;
-    margin: 20% 10% 0% 10%;
+    margin: 25% 10% 0% 10%;
   }
   .home-header p{
     font-size: 18px;
@@ -149,7 +147,7 @@ body{
   /* EXPLORE PAGE - MOBILE */
   .explore-header h1{
       font-size: 45px;
-      margin: 20% 10% 8% 10%;
+      margin: 25% 10% 8% 10%;
   }
 
   .promise-section img{
@@ -269,24 +267,27 @@ body{
 @media(min-width:992px){
 
   /* NAV SECTION */
-  #bubo-nav-logo{
-    margin-left: 30px;
+  #bubo-nav-logo {
+    display: flex;
+    justify-content: center;
+  }
+  #bubo-nav-logo span{
     color: #162a6f;
     font-weight: 500;
-    font-size: 19px;
+    font-size: 28px;
+    margin-left: 10%;
+  }
+  #bubo-btn{
+    height:50px;
   }
   #bubo-nav-logo-mobile{
     display: none;
   }
   #nav-item-text{
-    color: black;
     font-size: 17px;
     letter-spacing: .1em;
     font-weight: 400;
     margin-left: 20px;
-  }
-  #nav-item-text:hover{
-    color: #b3aeae;
   }
 
   /* BULLET CONTENT-SECTION - WHY US - LAPTOP */
@@ -304,11 +305,9 @@ body{
   }
 
 
-
   .home-header{
     height: 100vh;
   }
-
   .home-header h1{
     font-weight: 600;
     font-size: 45px;
@@ -538,10 +537,43 @@ body{
 
 /* ============ LARGE DISPLAY SECTION ============= */ 
 @media(min-width:1600px){
+  /* NAV SECTION */
+  #bubo-nav-logo {
+    display: flex;
+    justify-content: center;
+  }
+  #bubo-nav-logo span{
+    color: #162a6f;
+    font-weight: 500;
+    font-size: 28px;
+    margin-left: 10%;
+  }
+  #bubo-btn{
+    height:50px;
+  }
   #bubo-nav-logo-mobile{
     display: none;
   }
-  
+  #nav-item-text{
+    font-size: 17px;
+    letter-spacing: .1em;
+    font-weight: 400;
+    margin-left: 20px;
+  }
+
+  /* BULLET CONTENT-SECTION - WHY US - LAPTOP */
+  #btn-google-play{
+    margin-top: 30px;
+  }
+ /*FOOTER SECTION-LAPTOP*/
+  #footer-text-left{
+    text-align: left;
+    font-size: 16px;
+  }
+  #footer-text-right{
+    text-align: right;
+    font-size: 16px;
+  }
 
   .home-header{
     height: 92vh;
@@ -795,16 +827,18 @@ height: 10;
 /*bubo button on top*/
 #bubo-btn{
     border: none;
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
+    border-radius: 100%;
     background-color: #95EFEF;
 }
-
 .navbar{
     opacity: 0.9;
 }
-
+#nav-item-text{
+  color: black;
+}
+#nav-item-text:hover{
+  color: #b3aeae;
+}
 #secure_circle{
   width: 250px;
   height: 250px;
@@ -977,15 +1011,9 @@ height: 10;
     }
   }
 
-
-
-
-
-
-
 .home-header{
     background: url('../images/bg.png'); 
-    margin-top: -70px;
+    margin-top: -80px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1118,7 +1146,7 @@ height: 10;
 
 .explore-header{
   background: url('../images/bg3.png'); 
-  margin-top: -70px;
+  margin-top: -80px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1218,7 +1246,7 @@ content: "";
 /* WHY US PAGE */
 .why-us-header{
   background: url('../images/bg.png'); 
-  margin-top: -70px;
+  margin-top: -80px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

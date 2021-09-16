@@ -136,4 +136,33 @@ const scene = new ScrollMagic.Scene({
 }).setTween(tl)
 .addTo(controller);
 
+$(".menu-btn").click(function(){
+    $(".menu-btn").hide();
+    $("#menu-btn-close").show();
+    $(".wrapper").show();
+    $('html, body').css({
+        overflow: 'hidden',
+        height: '100%'
+    });
+});
+
+$("#menu-btn-close").click(function(){
+    $("#menu-btn-close").hide();
+    $(".menu-btn").show();
+    $(".wrapper").hide();
+    $('html, body').css({
+        overflow: 'auto',
+        height: '100%'
+    });
+});
+
+$(".wrapper a").click(function(){
+    $("#menu-btn-close").hide();
+    $(".menu-btn").show();
+    $(".wrapper").hide()
+    $('html, body').css({
+        overflow: 'auto',
+        height: '100%'
+    })
+});
 
