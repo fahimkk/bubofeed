@@ -134,6 +134,7 @@ body{
 
   /* CONTENT SECTION */
   .content-section{
+    height: 80vh;
     display: flex;
     align-items: center;
   }
@@ -394,6 +395,7 @@ body{
 
   /* CONTENT SECTION */
   .content-section{
+    height: 90vh;
     position: relative;
   }
   .content-text-container{
@@ -664,6 +666,7 @@ body{
 
   /* CONTENT SECTION */
   .content-section{
+    height: 90vh;
     position: relative;
   }
   .content-text-container{
@@ -892,7 +895,7 @@ height: 10;
 
 .moveToRight {
     opacity: 1;
-    transform: translateX(-5em);
+    transform: translateX(-4em);
     transition: transform 4s .25s cubic-bezier(0,1,.3,1),
                 opacity .3s .25s ease-in-out;
   }
@@ -911,7 +914,7 @@ height: 10;
 
 .moveToLeft.is-visible {
   opacity: 1;
-  transform: translateX(5em);
+  transform: translateX(4em);
 }
 
 
@@ -1090,7 +1093,6 @@ height: 10;
 
 /* CONTENT SECTION */
 .content-section{
-  height: 100vh;
   background-image: 
     linear-gradient(to right bottom, rgb(133,236,237,0.9), rgb(35,93,224,0.9)),
       url('../images/home_section/mixed_phones.png');
