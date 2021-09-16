@@ -19,21 +19,17 @@ body{
   #bubo-nav-logo{
     display: none;
   }
-  
   .navbar{
     background-color: '#44D7F5';
   }
   #bubo-btn{
     height: 35px;
   }
-
-  /*HOME SECTION-MOBILE*/
- 
   footer{
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
   }
-
+  /*HOME SECTION-MOBILE*/
   .home-header h1{
     font-weight: 500;
     font-size: 35px;
@@ -47,8 +43,7 @@ body{
     margin-top: 20px;
     height: 500px;
   }
-
-  /* VIDEO SECTION */
+  /* VIDEO SECTION-MOBILE */
   .video-bg-container{
     padding-top: 50px;
     display: flex;
@@ -90,7 +85,7 @@ body{
     font-size: 15px;
   }
 
-  /* PRIVACY SECTION */
+  /* PRIVACY SECTION-MOBILE*/
   .privacy-section{
     padding-top: 50px;
     padding-left: 5%;
@@ -132,9 +127,9 @@ body{
     margin-top: 30px;
   }
 
-  /* CONTENT SECTION */
+  /* CONTENT SECTION-MOBILE*/
   .content-section{
-    height: 80vh;
+    height: 85vh;
     display: flex;
     align-items: center;
   }
@@ -290,16 +285,17 @@ body{
     margin-top: 30px;
   }
  /*FOOTER SECTION-LAPTOP*/
+  footer{
+    font-size: 16px;
+  }
   #footer-text-left{
     text-align: left;
-    font-size: 16px;
   }
   #footer-text-right{
     text-align: right;
-    font-size: 16px;
   }
 
-
+  /* HOME-PAGE-LAPTOP*/
   .home-header{
     height: 100vh;
   }
@@ -551,20 +547,22 @@ body{
     margin-left: 20px;
   }
 
-  /* BULLET CONTENT-SECTION - WHY US - LAPTOP */
+  /* BULLET CONTENT-SECTION - WHY US - LARGE DISPLAY */
   #btn-google-play{
     margin-top: 30px;
   }
- /*FOOTER SECTION-LAPTOP*/
+  /*FOOTER SECTION-LARGE DISPLAY*/
+  footer{
+    font-size: 16px;
+  }
   #footer-text-left{
     text-align: left;
-    font-size: 16px;
   }
   #footer-text-right{
     text-align: right;
-    font-size: 16px;
   }
 
+  /*HOME PAGE - LARGE DISPLAY*/
   .home-header{
     height: 92vh;
   }
@@ -838,32 +836,30 @@ height: 10;
 }
 
 /*FOOTER SECTION*/
-#footer{
-  margin-top: 25px;
-}
-#footer{
+footer{
+  background-color: #03233b;
   text-align: center;
-  font-size: small;
   font-family: Arial, Helvetica, sans-serif;
   padding-bottom: 20px;
+  padding-top: 30px;
+}
+footer a{
+  text-decoration: none;
+  color: #787878;
+}
+footer a:hover{
+  color: #a8a6a6;
 }
 #footer-text-left{
   color: #787878;
 }
-#footer-text-right{
-}
-#footer-text-right a{
-  text-decoration: none;
-  color: #787878;
-}
 
-  #home-col-right img{
+#home-col-right img{
     animation: vibrate-home-img-1;
     animation-timing-function: ease-out;
     animation-duration: 1s;
-  }
+}
   
-
 #explore-home-col-right img{
     animation: vibrate-home-img-1;
     animation-timing-function: ease-out;
